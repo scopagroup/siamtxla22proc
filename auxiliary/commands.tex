@@ -1,0 +1,122 @@
+%% Session name
+\newcommand{\Session}{Session name}
+
+%% Session date
+\providecommand{\Date}{Date of session}
+
+%% Session as a section + toc
+\newcommand{\Section}[1]{\clearpage \vspace{1cm}\section*{#1}
+%\renewcommand{\Session}{#1}
+\addcontentsline{toc}{section}{ #1}
+}
+
+
+
+\raggedbottom
+%% Èimveè strani naj bo èimbolj polnih.
+
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\floatpagefraction}{0.8}
+\newcommand{\room}{\vspace*{0.7ex}}
+
+\newcommand{\ProgramItem}[4]{
+{\setlength{\parindent}{0cm}
+#1\hspace{5pt} \textbf{#2} \ifx\@empty#3}  \else{{\hspace{5pt}#3}  \fi
+\hfill \ifthenelse{\isempty{#4}}{\vspace*{5pt}\\}{\hfill#4\vspace*{0pt}\\}
+}
+}
+
+\newcommand{\mininumber}{}
+
+\newcounter{talkcounter}
+
+
+\newcommand{\mini}[5]{
+\setlength{\parindent}{0cm}
+{\bfseries #2} \ #3 \hfill p\pageref{#1}\\
+#4\\
+#5
+\vspace{-0.7ex}
+}
+
+
+\newcommand{\talk}[3]{
+\setlength{\parindent}{0cm}
+{\itshape #1}\\%\hfill\mininumber-\arabic{talkcounter}\\
+\hspace*{9pt}#2 (#3)
+}
+
+
+\newenvironment{talks}
+  {\begin{enumerate}
+    \setlength{\itemindent}{0.7em}
+    \setlength{\itemsep}{3pt}
+    \setlength{\parskip}{1pt}
+    }
+  {\end{enumerate}}
+
+
+\newcommand{\abs}[4] % Nc-x  N=mini number; c=session number of mini N; x=speaker number
+{
+%\label{#1}  % Nc-x  N=mini number; c=session number of mini N; x=speaker number
+#1 (#2) % author and affiliation
+
+\smallskip
+{\itshape#3} % title
+
+\smallskip
+{\small #4} % abstract
+}
+
+
+\newcommand{\miniabs}[3]{
+\setlength{\parindent}{0cm}
+{\bfseries #1}
+
+\smallskip
+#2
+
+\smallskip
+{\small #3}
+\vspace{-0.7ex}
+}
+
+
+\newcommand{\PrTalk}[2]{\item \textbf{#1} -- \textit{#2}}
+
+\newcommand{\A}[4]{
+\section*{#1}
+
+\begin{center}
+\large\textit{#2}\\
+\end{center}
+{\setlength{\parindent}{0pt} #3}\\
+#4
+
+}
+
+\newcommand{\Afilliation}[1]{#1}
+%\newcommand{\Email}[1]{\href{mailto:#1}{#1}}
+
+
+\newcommand{\Presenting}[1]{\underline{#1}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

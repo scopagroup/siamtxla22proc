@@ -1,0 +1,30 @@
+\documentclass[11pt,twoside,letter]{article}
+
+\input auxiliary/preamble
+\input auxiliary/commands
+
+
+\begin{document}
+
+\input auxiliary/frontmatter
+
+\clearpage\pagestyle{plain}
+\centerline{\bfseries\LARGE  Program}
+\input program/progsum
+\input program/progfri
+\input program/progsat
+\input program/progsun
+\cleardoublepage
+
+\centerline{\bfseries\LARGE  Abstracts}
+\input program/plenary
+\cleardoublepage
+\input program/absfri
+\input program/abssat
+\input program/abssun
+\cleardoublepage
+
+\printindex
+
+
+\end{document}

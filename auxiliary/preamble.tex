@@ -1,0 +1,46 @@
+\textheight 19.7 true cm
+
+\usepackage[dvips]{epsfig}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{enumerate}
+\usepackage[english]{babel}
+\selectlanguage{english}
+\usepackage{ragged2e}
+
+\usepackage{tikz}
+\usepackage{pgf}
+\usetikzlibrary{arrows,shapes,backgrounds}
+\usepackage{color, colortbl}
+
+\parindent 10 pt
+\def\RR{\hbox{\sf I\kern-.14em\hbox{R}}}
+\newcommand{\ttx}[1]{\small\sf{#1}\normalsize\rm}
+\renewcommand\indexname{Index of Authors}
+\makeindex
+
+
+\usepackage{xifthen}% provides \isempty test
+
+\usepackage[colorlinks,
+  pdfborder=0 0 0,
+  pdfauthor={Andreas Mang},
+  pdfpagemode=UseOutline,
+  pdfstartview=Fit,
+  pdfpagelabels, pageanchor,
+  bookmarks, bookmarksopen, bookmarksnumbered,
+  citecolor= black, linkcolor=black, urlcolor=black
+]{hyperref}
+
+\providecommand{\Email}[1]{\href{mailto:#1}{\nolinkurl{#1}}\\}
+
+\oddsidemargin  0.0in
+\evensidemargin 0.0in
+\textwidth      6.7in
+\headheight     0.5in
+\topmargin    -1in % -0.75in
+\textheight=    9.2in
+
+\usepackage[hyphenbreaks]{breakurl}
