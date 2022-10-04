@@ -2,29 +2,110 @@
 
 \miniabs
 {Recent advances in large-scale inverse problems: Numerics, theory, and applications}
-{Organizer: A. Mamonov, A. Mang \& D. Onofrei}
+{Organizer: Alexander Mamonov, Andreas Mang \& Daniel Onofrei}
 {Despite formidable advances in recent years, significant challenges remain. In inverse problems, parameters are typically related to indirect measurements by a mathematical model (for example, a PDE) in a highly nonlinear way, resulting in non-convex, non-linear optimization problems. These problems are challenging to solve in an efficient way. We will discuss recent advances in numerical methods and the theory of inverse problems to address these challenges. This minisymposium aims to attract researchers at the forefront of inverse problems, inference, and data science to present their latest work on fast algorithms and theory in inverse problems, and exciting applications.}
 
 \vspace{2ex}
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
-}
+{Some results on inverse problems to elliptic {PDE}s with solution data and their implications in operator learning}
+{Kui Ren}
+{Department of Applied Physics and Applied Mathematics and Data Science Institute, Columbia University}
+{In recent years, there have been great interests in discovering structures of partial differential equations from given solution data. Very promising theory and computational algorithms have been proposed for such identification problems in different settings. We will try to review some recent understandings of such PDE learning problems from the perspective of inverse problems. In particularly, we will highlight a few computational and analytical understandings on learning a second-order elliptic PDE from single and multiple solutions.}
+
+
+\vspace{1.5ex}
+\abs
+{Estimating the noise level in seismic data while overcoming cycle skipping}
+{S. Minkoff$^{1}$, H. Chen$^{1}$ \& W. Symes$^{2}$}
+{1: Department of Mathematical Sciences, University of Texas at Dallas, 2:  Department of Computational and Applied Mathematics, Rice University}
+{Full waveform inversion (FWI) suffers from the well-known cycle skipping problem in which local gradient-based optimization may fail to converge to geologically meaningful earth models if the initial guess for the optimization is not close enough to the true earth model. Extension methods attempt to overcome the cycle skipping problem by enlarging the space of acceptable models. In the case of source extension, the inverse problem is extended to allow for estimation of both the medium parameters (velocity) and the source wavelet via the addition of a penalty term. The extension does not require the source to be compactly supported in time. This extended objective function can be minimized efficiently  via the discrepancy principle in which the source time function and velocity are estimated in a nested loop. While this approach has been shown to overcome cycle skipping, it does require use of a well-tuned penalty weight which depends on the data noise level, which is generally unknown. In this talk I will describe and illustrate an algorithm to simultaneously solve the inverse problem while accurately estimating the data noise level.}
+
+
+\vspace{1.5ex}
+\abs
+{On the Robustness of Inverse Scattering for Penetrable, Homogeneous Objects with Complicated Boundary}
+{Carlos Borges}
+{Department of Mathematics, University of Central Florida}
+{The acoustic inverse obstacle scattering problem consists of determining the shape of a domain from measurements of the scattered far field due to some set of incident fields (probes). For a penetrable object with known sound speed, this can be accomplished by treating the boundary alone as an unknown curve. Alternatively, one can treat the entire object as unknown and use a more general volumetric representation, without making use of the known sound speed. Both lead to strongly nonlinear and nonconvex optimization problems for which recursive linearization provides a useful framework for numerical analysis. After extending our shape optimization approach developed earlier for impenetrable bodies, we carry out a systematic study of both methods and compare their performance on a variety of examples. Our findings indicate that the volumetric approach is more robust, even though the number of degrees of freedom is significantly larger. We conclude with a discussion of this phenomenon and potential directions for further research. This is joint work with Leslie Greengard (New York University and Flatiron Institute) and Manas Rachh (Flatiron Institute).}
+
+
+\vspace{1.5ex}
+\abs
+{TBD}
+{TBD}
+{TBD}
+{TBD}
 
 \vspace{1.5ex}
 
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
-}
+{TBD}
+{Alexandros G. Dimakis}
+{Oden Institute, University of Texas at Austin}
+{TBD}
 
 \vspace{1.5ex}
 
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
-}
+{{L}ippmann--{S}chwinger--{L}anczos algorithm for inverse scattering problems}
+{V. Druskin$^{1}$, S. Moskow$^{2}$ \& M. Zaslavsky$^{3}$}
+{1: Department of Mathematical Sciences, Worcester Polytechnic Institute, 2: Department of Mathematics, Drexel University, 3: Schlumberger-Doll Research Center}
+{Data-driven reduced order models (ROMs) are combined with the Lippmann[1]Schwinger integral equation to produce a direct nonlinear inversion method. The ROM is viewed as a Galerkin projection and is sparse due to Lanczos orthogonalization. Embedding into the continuous problem, a data-driven internal solution is produced. This internal solution is then used in the Lippmann-Schwinger equation, thus making further iterative updates unnecessary. We show numerical experiments for spectral domain data for which our inversion is far superior to the Born inversion and works as well as when the true internal solution is known.}
+
+
+
+\vspace{1.5ex}
+\abs
+{Spatio-temporal quantification of pathological tau spreading in Alzheimer's disease}
+{Zheyu Wen, Ali Ghafouri \& George Biros}
+{Oden Institute, The University of Texas at Austin}
+{Tau lesions (tau) are one of the main biomarkers of Alzheimer's disease (AD). Quantitatively describing how tau spreads in human brains can help with AD diagnosis and prognosis. Tau can be imaged spatially using positron emission tomography (tau-PET). Our goal is to use tau-PET images along with traditional magnetic resonance imaging to learn a spatio-temporal model of tau propagation. In this talk we will discuss the mathematical and computational challenges of the underlying methodology as well as a set of new algorithms that enable quantification and classification of tau spreading. We test our method on a cohort of subjects selected from publically available datasets.}
+
+
+\vspace{1.5ex}
+\abs
+{Conductivity imaging from thermal noise}
+{Trent DeGiovanni \& Fernando Guevara Vasquez}
+{University of Utah}
+{We present a method for imaging the conductivity of a body from measurements of thermal noise currents between the body and the ground. Concretely we show that if the variances of the thermal noise currents are known, the inverse problem can be formulated as a deterministic internal functional inverse problem identical to the one occurring in ultrasound modulated electrical impedance tomography.}
+
+
+\vspace{1.5ex}
+\abs
+{Carleman Weighted Hilbert Spaces for Coefficient Inverse Problems}
+{Michael V. Klibanov}
+{Department of Mathematics, University of North Carolina at Charlotte}
+{Coefficient Inverse Problems (CIPs) are both ill-posed and highly nonlinear. These two factors cause the non-convexity of conventional least squares cost functionals, which are constructed for numerical solutions of CIPs. The speaker with coauthors has developed a new approach to numerical solutions of CIPs, called convexification. The convexification constructs globally strictly convex cost functionals for a broad class of CIPs. This functional is defined on a bounded convex set of an arbitrary but fixed diameter in an appropriate Hilbert space, which we call Carleman Weighted Hilbert Space. The weight is the Carleman Weight Function, which is used in the Carleman estimate for a corresponding PDE operator. Uniqueness and existence of the minimizer of such a functional on that set is established. Convergence of minimizers to the true solution of the CIP is proven, provided that the noise in the data tends to zero. Many numerical examples, including ones with experimentally collected data, confirm the theory.\\
+Some of these results will be presented in my talk.\\
+Main contributors are (in the alphabetical order): Vo Khoa, Thuy Le and Loc Nguyen.}
+% Preferred date: Saturday, November 5
+
+
+\vspace{1.5ex}
+\abs
+{New sampling indicator functions for stable imaging of photonic crystals}
+{Dinh-Liem Nguyen}
+{Kansas State University}
+{This talk is concerned with the inverse problem of determining the shape of penetrable periodic scatterers using electromagnetic waves. This inverse problem arises from the imaging of photonic crystals using electromagnetic inverse scattering. We develop a sampling method with a novel indicator function for solving this inverse problem. This indicator function is very simple to implement and robust against noise in the data. The resolution and stability analysis of the indicator function is analyzed. Our numerical study shows that the proposed sampling method is more stable than the factorization method and more efficient than the direct or orthogonality sampling method in reconstructing periodic scatterers. This is based on joint work with Kale Stahl and Trung Truong.}
+% Preferred date: Saturday, November 5 or Friday, November 4
+
+
+\vspace{1.5ex}
+\abs
+{Reconstructing a space-dependent source term of the Helmholtz equation via the quasi-reversibility method}
+{Loc Hoang Nguyen}
+{Department of Mathematics and Statistics, University of North Carolina at Charlotte}
+{Our aim is to solve an important inverse source problem which is the linearization of the well-known inverse scattering problem. We propose to truncate the Fourier series of the solution to the governing equation with respect to a special basis of $L^2$. By this, we obtain a system of linear elliptic equations. Solutions to this system are the Fourier coefficients of the solution to the governing equation. After computing these Fourier coefficients, we can directly find the desired source function. Numerical examples are presented.}
+% Preferred date: Saturday November 5
+
+
+\vspace{1.5ex}
+\abs
+{On active control of scalar Helmholtz fields in the presence of impenetrable obstacles and on inverse scattering problems with partial data}
+{Lander Besabe \& Daniel Onofrei}
+{Department of Mathematics, University of Houston}
+{In this talk, we consider the problem of actively manipulating scalar Helmholtz fields by using a source $D_a$ in the presence of one sound-soft or sound-hard obstacle. We prove the existence of and characterize a necessary input on the boundary $\partial D_a$ such that the radiated field satisfies desired control constraints in near field exterior regions and prescribed far field directions. We will show a numerical scheme to compute these boundary inputs using the method of moments, the addition theorem, Tikhonov regularization, and Laplace spherical functions. Further, we present results in solving inverse scattering problems for impenetrable obstacles given only the measured scattered field due to a fixed frequency and single direction of incidence on a compact exterior region on the near field of the unknown impenetrable scatterer.}
+
+
+
+

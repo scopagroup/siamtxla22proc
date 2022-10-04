@@ -60,13 +60,30 @@
 \newcommand{\abs}[4] % Nc-x  N=mini number; c=session number of mini N; x=speaker number
 {
 %\label{#1}  % Nc-x  N=mini number; c=session number of mini N; x=speaker number
-#1 (#2) % author and affiliation
+{\itshape Title:} #1
 
 \smallskip
-{\itshape#3} % title
+{\itshape Authors:}
+#2  % author and affiliation
+(#3) % affiliations
 
 \smallskip
-{\small #4} % abstract
+{\small {\itshape Abstract:} #4} % abstract
+}
+
+
+\newcommand{\plenabs}[4]{
+\setlength{\parindent}{0cm}
+{\bfseries #1} % speaker
+
+\smallskip
+#2 % title
+
+\smallskip
+{\itshape Title:} #3 %title
+
+\smallskip
+{\small {\itshape Abstract:} #4}
 }
 
 
