@@ -4,28 +4,103 @@
 {Sparse representation and model reduction for scientific problems}
 {Organizers: Y. Lou, J. Hu \& Y. Yang}
 {Many scientific problems involve predictive models of multi-scale and multi-physics systems, most of which are extremely complex and computationally expensive to simulate. Yet, a common feature of these problems is that there is often an underlying sparse or reduced representation which can greatly ease the heavy computation burden. This mini-symposium will bring researchers working on these relevant regimes to exchange ideas and encourage collaborations.}
+
 \vspace{2ex}
-
-
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
-}
+{Blind image inpainting: from sparse multiscale representations to CNNs}
+{Demetrio Labate}
+{University of Houston}
+{Image inpainting is an image processing task aimed at recovering missing blocks of data in an image or a video. In the first part of the talk, I will show that sparse multiscale representations offer a well-justified theoretical setting to address the image inpainting problem. Since images found in most applications are dominated by edges, I will assume a simplified image model consisting of distributions supported on curvilinear singularities. I will prove that the theoretical performance of image inpainting depends on the microlocal properties of the representation system, namely exact image recovery is achieved if the size of the missing singularity is smaller than the size of the structure elements of the representation system. As a result, shearlet-based image inpainting algorithms significantly outperforms traditional multiscale methods due to the superiour microlocal properties of shearlets. In the second part of the talk, I will show how to apply this theoretical observation to improve a state-of-the-art algorithm for blind image inpainting based on Convolutional Neural Networks.  This is a collaborative work with J. Schmalfuss, E. Scheurer, H. Zhao, N. Karantzas and A. Bruhn}
+
 
 \vspace{1.5ex}
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
-}
+{Moment Estimation for Nonparametric Mixture Models through Implicit Tensor Decomposition}
+{Yifan Zhang, Joe Kileel}
+{University of Texas at Austin}
+{Mixture models give reduced representations for complex data distributions.
+	Despite the success of the Expectation-Maximization (EM) algorithm for fitting mixture models, recently Method of Moment (MoM) based algorithms have been receiving increased attention.
+	In this talk, I will present a new nonparametric MoM algorithm on high dimensional conditionally independent mixture models (features are independent conditioning on the class label) that computes the mixture weights and moments of each class.
+	It hinges on efficient computations with higher-order tensors and a certain coupled system of low-rank tensor problems. 
+	I will develop an alternating least-squares optimization scheme to solve this, with cost essentially independent of the tensor orders.
+	I will compare this method to EM on a variety of simulated mixture models and also a real dataset.
+	Time permitting, I will mention theoretical results on convergence and identifiability as well as a possible application to microscopy imaging. 
+	Joint work with Joe Kileel.}
+
 
 \vspace{1.5ex}
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
+{Context-aware learning of hierarchies of low-fidelity models for multi-fidelity uncertainty quantification}
+{Ionut-Gabriel Farcas$^{1}$, Benjamin Peherstorfer$^{2}$, Tobias Neckel$^{3}$, Frank Jenko$^{4}$, Hans-Joachim Bungartz$^{3}$}
+{1: The University of Texas at Austin 2: New York University, 3: Technical University of Munich, 4: Max Planck Institute for Plasma Physics}
+{Multi-fidelity Monte Carlo methods leverage low-fidelity and surrogate models for variance
+	reduction to make tractable uncertainty quantification even when numerically simulating the
+	physical systems of interest is computationally expensive.
+	In this presentation, we will introduce a context-aware multi-fidelity Monte Carlo method that
+	optimally balances the costs of training low-fidelity models with the costs of Monte Carlo
+	sampling. 
+	It generalizes the previously developed context-aware bi-fidelity Monte Carlo method 
+	to hierarchies of multiple models and to more general types of low-fidelity models.
+	When training low-fidelity models, the proposed approach takes into account the context in which
+	the learned low-fidelity models will be used, namely for variance reduction in Monte Carlo
+	estimation, which allows it to find optimal trade-offs between training and sampling to minimize
+	upper bounds of the mean-squared errors of the estimators for given computational budgets. 
+	This is in stark contrast to traditional surrogate modeling and model reduction techniques that
+	construct low-fidelity models with the primary goal of approximating well the high-fidelity model
+	outputs and typically ignore the context in which the learned models will be used in upstream
+	tasks. 
+	The proposed context-aware multi-fidelity Monte Carlo method applies to hierarchies of a
+	wide range of types of low-fidelity models such as sparse-grid and deep-network models. 
+	Numerical experiments with the gyrokinetic simulation code \textsc{Gene} show speedups of up to
+	two orders of magnitude compared to standard estimators when quantifying uncertainties in small-scale fluctuations in confined plasma in fusion reactors. 
+	This corresponds to a runtime reduction from 72 days to about four hours on one node of the
+	Lonestar6 supercomputer at the Texas Advanced Computing Center.
 }
+
+
+\vspace{1.5ex}
+\abs
+{A general framework of rotational sparse approximation in uncertainty quantification}
+{Mengqi Hu, Yifei Lou, and Xiu Yang}
+{1: Lehigh University, 2: University of Texas at Dallas}
+{This paper proposes a general framework to estimate coefficients of generalized  polynomial chaos (gPC) used in uncertainty quantification via rotational sparse approximation. In particular, we aim to identify a rotation matrix such that the gPC expansion of a set of random variables after the rotation has a sparser representation. However, this rotational approach alters the underlying linear system to be solved, which makes finding the sparse coefficients more difficult than the case without rotation.}
+
+
+\vspace{1.5ex}
+\abs
+{Low-rank methods for solving high-dimensional collisional kinetic equations}
+{Jingwei Hu}
+{University of Washington}
+{Kinetic equations describe the nonlinear equilibrium dynamics of a complex system using a probability density function. Despite their important role in multiscale modeling to bridge microscopic and macroscopic scales, numerically solving kinetic equations is computationally demanding as they lie in the six-dimensional phase space. Dynamical low-rank method is a dimension-reduction technique that has been recently applied to kinetic theory, yet most of the endeavor is devoted to linear or collisionless problems. In this talk, we introduce efficient dynamical low-rank methods for BGK and Vlasov-Fokker-Planck equations, building on certain prior knowledge about the low-rank structure of the solution. This talk is based on the joint work with J. Coughlin, L. Einkemmer, and L. Ying.}
+
+
+\vspace{1.5ex}
+\abs
+{An Inverse Problem in Mean Field Games from Partial Boundary Measurement}
+{Siting Liu}
+{University of California Los Angeles}
+{In this talk, we consider a novel inverse problem in mean-field games (MFG). We aim to recover the MFG model parameters that govern the underlying interactions among the population based on a limited set of noisy partial observations of the population dynamics under the limited aperture. Due to its severe ill-posedness, obtaining a good quality reconstruction is very difficult. Nonetheless, it is vital to recovering the model parameters stably and efficiently to uncover the underlying causes of population dynamics for practical needs.
+	Our work focuses on the simultaneous recovery of running cost and interaction energy in the MFG equations from a finite number of boundary measurements of population profile and boundary movement. To achieve this goal, we formalize the inverse problem as a constrained optimization problem of a least squares residual functional under suitable norms. We then develop a fast and robust operator splitting algorithm to solve the optimization using techniques including harmonic extensions, three-operator splitting scheme, and primal-dual hybrid gradient method. Numerical experiments illustrate the effectiveness and robustness of the algorithm.
+	A future direction will be to develop a faster algorithm for inverse problems in higher dimensions with the help of machine learning techniques and neural network architecture.}
+
+
+\vspace{1.5ex}
+\abs
+{Adaptive deep density approximation for Fokker-Planck equations}
+{Xiaoliang Wan}
+{Department of Mathematics and Center for Computation and Technology, Louisiana State University, USA}
+{	In this talk we present an adaptive deep density approximation strategy based on
+	KRnet for solving Fokker-Planck (F-P) equations. F-P equations are usually high-dimensional 
+	and defined on an unbounded domain, which limits the application of traditional grid based numerical methods. With the Knothe-Rosenblatt rearrangement, KRnet improves the normalizing flow 
+	based on real NVP and provides an explicit PDF model as an effective solution candidate for
+	the Fokker-Planck equations. KRnet has a weaker dependence on dimensionality than
+	traditional computational approaches and can efficiently approximate general high-dimensional
+	density functions. To obtain effective stochastic collocation points for the training set, we develop an adaptive sampling procedure, where samples are generated iteratively using the approximate PDF given by KRnet. Numerical experiments will be presented.}
+
+
+\vspace{1.5ex}
+\abs
+{TBA}
+{Sergey Fomel}
+{Jackson School of Geosciences, the University of Texas at Austin}
+{TBA}

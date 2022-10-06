@@ -4,28 +4,65 @@
 {High-order numerical methods for partial differential equations}
 {Organizers: J. Huang \& Z. Sun}
 {High order numerical methods have been continuously receiving intensive attentions for solving partial differential equations. They are typically able to better resolve solutions with overall fewer computational resources. The goal of the special session is to gather researchers in this area and to discuss the recent advances in the development of high order methods. Topics may cover but are not limited to numerical analysis of high order methods, techniques for enhancing robustness and efficiency of numerical schemes, and development of structure-preserving high order methods for physical models.}
+
 \vspace{2ex}
-
-
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
-}
+{Hermite Methods for Wave Equations}
+{Tom Hagstrom$^{1}$ and Yann-Meing Law-Kam-Cio$^{2}$ and Daniel Appelo$^{2}$}
+{1: Southern Methodist University, 2: Michigan State University}
+{An amazing property of Hermite interpolation is that it is a projection in a Sobolev seminorm. As a result, in contrast with the usual Lagrange interpolant, Hermite interpolation has a smoothing effect. We show how to exploit this projection property to develop Hermite-based solvers for differen- tial equations which, for hyperbolic pdes, admit order-independent time steps and highly localized evolution processes which can be exploited on modern computer architectures. We highlight the application of Hermite methods to Maxwell’s equations as well as recent developments related to the imposition of boundary conditions.}
+
 
 \vspace{1.5ex}
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
-}
+{An energy-based discontinuous Galerkin method for a nonlinear variational wave equation}
+{Lu Zhang}
+{Columbia University}
+{We design and numerically validate an energy-based discontinuous Galerkin method for a nonlinear variational wave equation originally proposed to model liquid crystals. Energy-conserving or energy-dissipating methods follow from simple, mesh-independent choices of the interelement fluxes. Error estimates in an energy norm are established, and numerical experiments on structured grids display optimal convergence in the L2 norm for certain fluxes.}
+
 
 \vspace{1.5ex}
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
-}
+{Build Frequency Domain Maxwell/Helmholtz Solver form Time Domain Solvers with WaveHoltz Method and Its Preconditioning}
+{Zhichao Peng}
+{Michigan State University}
+{Two main challenges to design efficient iterative solvers for the frequency-domain Maxwell/Helmholtz equations are the indefinite nature of the underlying system and the high resolution requirements. Scalable parallel solvers are highly desired. Recently, we develop a scalable iterative solver built on time-domain solvers called WaveHoltz to solve the Helmholtz equation and the time-harmonic Maxwell equations. Three main advantages of the proposed method are as follows. (1) It always results in a better conditioned linear system, and the resulting linear system is positive definite for energy conserving problems with PEC boundary conditions. The number of iterations for the convergence is independent of points per wavelength. (2) It is flexible and simple to convert available scalable time-domain solvers to an efficient frequency-domain solver. (3) It is possible to obtain solutions for multiple frequencies in one solve.  In this talk, we would present the formulation of electromagnetic WaveHoltz for the time-harmonic Maxwell equations, and discuss deflation techniques to further accelerate the WaveHoltz iterative solver.}
+
+
+\vspace{1.5ex}
+\abs
+{On a numerical artifact of solving shallow water equations with a discontinuous bottom: Analysis and a nontransonic fix} 
+{Zheng Sun$^{1}$ and Yulong Xing$^{2}$} 
+{1: The University of Alabama, 2: The Ohio State University} 
+{In this talk, we discuss a numerical artifact of solving the nonlinear shallow water equations with discontinuous bottom topography. For a few first-order schemes, the numerical solution will form a spurious spike in the momentum, which should not exist in the exact solution. The height of the spike cannot be reduced by the mesh refinement. In many problems, this numerical artifact may cause the wrong convergence, which means that the limit of the numerical solution is not a weak solution of the shallow water equations. To explain the formation of the spurious spike, we perform a convergence analysis of the numerical methods. It is shown that the spurious spike is caused by the numerical viscosity at the discontinuous bottom and its height is proportional to the viscosity constant in the numerical flux. Furthermore, by adopting appropriate modifications at the bottom discontinuity, we show that this numerical artifact can be removed in many cases. For various of numerical tests with nontransonic Riemann solutions, the modified scheme is able to retrieve the correct convergence.}
+
+
+\vspace{1.5ex}
+\abs
+{Structure preserving methods for the Euler-Poisson system}
+{Ignacio Tomas$^{1}$ and Matthias Maier$^{2}$ and John Shadid$^{3}$}
+{1: Texas Tech University, 2: Texas A\&M University, 3: Sandia National Laboratories}
+{Depending on whether the forces are repulsive or attractive, the Euler-Poisson model may represent electrons subject to an electric field or a mass density subject to gravitational effects. This simple PDE model embodies one of the central themes of mathematical physics: the evolution of a density subject to its own self-consistent field. An exhaustive, but still incomplete, list of desirable properties for a numerical scheme solving the Euler-Poisson model is: (i) Preservation of positivity of density and internal energy, (ii) Satisfaction of discrete total energy-balance (kinetic + internal + potential), (iii) Asymptotically well-posed linear algebra (i.e. no artificial rank-deficiencies at asymptotic limits), (iv) Satisfaction of a discrete Gauss-law at the end of each time-step, (v) Numerical stability in the context of large plasma frequency regimes, (vi) Asymptotic preservation in the context of quasi-neutrality, (vii) Asymptotic preservation with respect to the drift-diffusion limit. All of these requirements are of great importance in practice, but in general, they will compete against each other and might not be attainable at the same time. In this talk, we advance numerical methods that can achieve properties (i)-(v).}
+
+
+\vspace{1.5ex}
+\abs
+{A positivity preserving strategy for entropy stable discontinuous Galerkin discretizations of the compressible Euler and Navier-Stokes equations}
+{Yimin Lin$^{1}$, Jesse Chan$^{1}$, Ignacio Tomas$^{2}$}
+{1: Rice University, 2: Sandia National Laboratories}
+{High-order entropy-stable discontinuous Galerkin methods for the compressible Euler and Navier-Stokes equations require the positivity of thermodynamic quantities in order to guarantee their well-posedness. In this work, we introduce a positivity limiting strategy for entropy-stable discontinuous Galerkin discretizations constructed by blending high order solutions with a low order positivity-preserving discretization. The proposed low order discretization is semi-discretely entropy stable, and the proposed limiting strategy is positivity preserving for the compressible Euler and Navier-Stokes equations. Numerical experiments confirm the high order accuracy and robustness of the proposed strategy.}
+
+
+\vspace{1.5ex}
+\abs
+{A structure preserving, conservative, low-rank tensor scheme for solving the 1D2V Vlasov-Fokker-Planck equation}
+{Joseph H. Nakao}
+{University of Delaware}
+{We propose a hybrid low-rank tensor scheme for solving the 1D2V Vlasov-Fokker-Planck equation in Cartesian physical space and cylindrical velocity space. The solution is full rank in physical space and low rank in velocity space. By incorporating several robust methods into our proposed algorithm, we attain a scheme that is conservative, equilibrium preserving, relative entropy dissipative, and low-rank with low storage complexity. A kinetic ion -- fluid electron model is assumed; the Leonard-Bernstein-Fokker-Planck operator is discretized using a structure preserving Chang-Cooper method; and the updated solution is truncated using a local macroscopic conservative low rank tensor method. Preliminary numerical results are presented to demonstrate these properties.}
+
+\vspace{1.5ex}
+\abs
+{Uniform accuracy of implicit-explicit methods for stiff hyperbolic relaxation systems and kinetic equations}
+{Ruiwen Shu$^{1}$ and Jingwei Hu$^{2}$}
+{1: University of Georgia, 2: University of Washington}
+{Many hyperbolic and kinetic equations contain a non-stiff convection/transport part and a stiff relaxation/collision part (characterized by the relaxation or mean free time $\varepsilon$). To solve this type of problems, implicit-explicit (IMEX) methods have been widely used and their performance is understood well in the non-stiff regime ($\varepsilon=O(1)$) and limiting regime ($\varepsilon\rightarrow 0$). However, in the intermediate regime (say, $\varepsilon=O(\Delta t)$), uniform accuracy has been reported numerically for most IMEX multistep methods, while complicated behavior of order reduction has been observed for IMEX Runge-Kutta (RK) methods. In this talk, I will take a linear hyperbolic systems with stiff relaxation as a model problem, and discuss how to use energy estimates with multiplier techniques to prove the uniform accuracy of IMEX methods. In particular, I will present my joint works with Jingwei Hu on the uniform accuracy of IMEX backward differentiation formulas (IMEX-BDF) up to fourth order, and that of IMEX-RK methods up to third order.}

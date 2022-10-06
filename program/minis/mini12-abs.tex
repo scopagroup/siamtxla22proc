@@ -4,28 +4,34 @@
 {Tensor modeling and applications}
 {Organizers: Y. Lou \& S. Minkoff}
 {In many data-driven applications, high-dimensional data can be naturally represented by a tensor. Tensor-based methodologies ranging from modeling to optimization have received tremendous attention.  This mini-symposium will feature talks on tensor algebra, representation theories, and optimization algorithms together with their applications. The aim is to provide a platform to exchange ideas across disciplines and encourage collaborations.}
+
 \vspace{2ex}
-
-
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
-}
+{Tensor regularization and reconstruction workflow for time-lapse seismic data}
+{Jonathan Popa, Susan E. Minkoff, and Yifei Lou}
+{The University of Texas at Dallas}
+{Seismic surveys record data to image the Earth's subsurface. Time-lapse seismic data consists of multiple seismic surveys recorded over the same area. The time-lapse difference reveals changes in the subsurface over time. Inconsistencies in survey parameters, such as source and receiver locations, motivate the need for data processing to improve the repeatability between surveys. One such processing tool is regularization (or binning) that aligns multiple surveys with different source or receiver configurations onto a common grid. The binned data from each survey can be stored in a tensor. The presence of gaps and noise in data increases the rank of the tensor. By applying low rank based tensor completion seismic data can be reconstructed. The tensor nuclear norm (TNN) is defined by the tensor singular value decomposition (tSVD) which generalizes the matrix SVD. The tensor resulting from binning the time-lapse data can be completed using the alternating direction method of multipliers (or ADMM) to minimize the TNN. We apply this workflow of binning and reconstruction using TNN-ADMM to recover both synthetic and field time-lapse seismic data.}
+
 
 \vspace{1.5ex}
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
-}
+{Tensor-tensor algebra for optimal representations and compression of multiway data} 
+{Misha Kilmer$^{1}$ and Lior Horesh$^{2}$ and Haim Avron$^{3}$ and Elizabeth Newman$^{4}$}
+{1: Tufts University, 2: IBM Research, 3: Tel Aviv University, 4: Emory University}
+{The explosion of data and data-driven approaches has demanded advancements in dimensionality reduction and feature extraction.  Tensor-based approaches have gained significant traction in data compression by exploiting multilinear relationships in multiway data.  In this talk, we will describe a matrix-mimetic tensor algebra that offers provably optimal compressed representations of high-dimensional data.  We will compare this tensor-algebraic approach to other popular tensor decomposition techniques and show that our approach offers both theoretical and numerical advantages.}
+
 
 \vspace{1.5ex}
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
-}
+{Modewise tensor decompositions and applications}
+{HanQin Cai$^{1}$, Keaton Hamm$^{2}$, Longxiu Huang$^{3}$, and Deanna Needell$^{4}$}
+{1: University of Central Florida, 2: University of Texas at Arlington, 3: Michigan State University, 4: University of California, Los Angeles}
+{We discuss low-Tucker rank tensor decompositions obtained by subsampling along modes of a given tensor. These are tensor analogues of CUR decompositions for matrices (also called pseudoskeleton decompositions). We will characterize exact decompositions, low-rank approximations, and applications to image and video processing.}
+
+
+\vspace{1.5ex}
+\abs
+{Riemannian Optimization for Projection Robust Optimal Transport}
+{Shiqian Ma}
+{Rice University}
+{The optimal transport problem is known to suffer the curse of dimensionality. A recently proposed approach to mitigate the curse of dimensionality is to project the sampled data from the high dimensional probability distribution onto a lower-dimensional subspace, and then compute the optimal transport between the projected data. However, this approach requires to solve a max-min problem over the Stiefel manifold, which is very challenging in practice. In this talk, we propose a Riemannian block coordinate descent (RBCD) method to solve this problem. We analyze the complexity of arithmetic operations for RBCD to obtain an $\epsilon$-stationary point, and show that it significantly improves the corresponding complexity of existing methods. Numerical results on both synthetic and real datasets demonstrate that our method is more efficient than existing methods, especially when the number of sampled data is very large.}

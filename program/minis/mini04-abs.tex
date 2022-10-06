@@ -5,28 +5,149 @@
 {Organizers: F. Marazzato, A. Bonito, A. Quaini, M. Olshanskii \& F. Marazzato}
 {The last three decades have witnessed the development of powerful algorithms and corresponding numerical analysis leading to efficient approximations of the location and behavior of thin structures. Novel methods and modeling techniques have joined the more traditional front tracking techniques and in synergy with the development of ever more powerful and versatile computers, the simulation and understanding of rather complex phenomena are achievable.\\
 This mini-symposium gathers experts in the numerical simulation of thin structures with a particular focus on geometric partial differential equations for their technical complexity and practical relevance.}
+
 \vspace{2ex}
-
-
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
+{A Descent Scheme for Thick Elastic Curves with Self-contact and Container Constraints}
+{Shawn Walker}
+{Louisiana State university}
+{We present a numerical method to simulate thick elastic curves that accounts for self-contact and container constraints under large deformations (the motivating model is DNA packing). The base model includes bending, torsion, and inextensibility. A minimizing movements, descent scheme is proposed for computing energy minimizers, under the non-convex inextensibility, self-contact, and container constraints (if the container is non-convex). At each pseudo time-step of the scheme, the constraints are linearized, which yields a convex minimization problem (at every time-step) with affine equality and inequality constraints. First order conditions are established for the descent scheme at each time-step, under reasonable assumptions on the admissible set. Furthermore, under a mild time-step restriction, we prove energy decrease for the descent scheme, and show that all constraints are satisfied to second order in the time-step, regardless of the total number of time-steps taken.
+
+We also give a modification of the scheme that regularizes the inequality constraints, and establish convergence of the regularized solution. We then discretize the regularized problem with a finite element method using Hermite and Lagrange elements. Several numerical experiments are shown to illustrate the method, including an example that exhibits massive amounts of self-contact for a tightly packed curve inside a sphere.  We also demonstrate the effect of parameter choices on packing configurations.
 }
+
 
 \vspace{1.5ex}
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
+{Finite Element Approximation of a Membrane Model for Liquid Crystal Polymeric Networks}
+{Lucas Bouck}
+{University of Maryland}
+{Liquid crystal polymeric networks are materials where a nematic liquid crystal is coupled with a rubbery material. When actuated with heat or light, the interaction of the liquid crystal with the rubber creates complex shapes. Starting from the classical 3D trace formula energy of Bladon, Warner and Terentjev (1994), we derive a 2D membrane energy as the formal asymptotic limit of the 3D energy. We characterize the zero energy deformations and prove that the energy lacks certain convexity properties. We propose a finite element method to discretize the problem. To address the lack of convexity of the membrane energy, we regularize with a term that mimics a higher order bending energy. We prove that minimizers of the discrete energy converge to minimizers of the continuous energy. For minimizing the discrete problem, employ a nonlinear gradient flow scheme, which is energy stable. Additionally, we present computations showing the geometric effects that arise from liquid crystal defects. Computations of configurations from nonisometric origami are also presented.
 }
+
 
 \vspace{1.5ex}
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
+{The Preasymptotic Model of Prestrained Plates}
+{Angelique Morvant}
+{Texas A\&M University}
+{A prestrained plate is a thin sheet of material that naturally deforms into some target configuration. Prestrained plates can be used to model various physical phenomena, from the closing of the Venus flytrap to the movement of microscopic medical devices. In this talk, we will discuss the preasymptotic model for the large bending of prestrained plates. This model assumes that the thickness of the plate is small and involves a bending and a stretching energy. After deriving this model, we will discuss an LDG-type discretization of the energy, its Gamma convergence and a discrete gradient flow for minimizing the energy. This discrete gradient flow will be compared to an alternate scheme involving a Nesterov acceleration. Finally, we present some simulations to demonstrate the applications of the model.}
+
+
+\vspace{1.5ex}
+\abs
+{Mixed quasi-trace surface finite element methods}
+{Alan Demlow}
+{Texas A\&M University}
+{In standard trace (or cut) finite element methods for surface PDE, a three-dimensional bulk mesh is approximately intersected with the given surface in order to obtain a highly unstructured anisotropic surface mesh. The surface finite element method is taken to be the restriction of a bulk finite element space to the surface mesh. This methodology works well for H1-conforming spaces, but it is not clear how to extend it to other fundamental finite element settings such as H(div)-conforming spaces. In this talk we explore the idea of using a trace mesh, but then defining a mixed finite element space directly on the trace mesh rather than as the trace of an bulk space. We prove basic error estimates and also discuss extension to higher-order trace surface approximations.}
+
+
+\vspace{1.5ex}
+\abs
+{Convergence of TraceFEM to minimum regularity solutions}
+{Lucas Bouck, Ricardo H. Nochetto, Mansur Shakipov$^{1}$ and Vladimir Yushutin$^{2}$}
+{1: University of Maryland, 2: Clemson University}
+{Existing convergence results for unfitted methods such as TraceFEM require sufficient regularity of solutions in order to show error-with-rate estimates. The difficulty of analysis stems from the stabilization form which ensures the well-posedness and robustness of discrete problems. To circumvent this issue, we study the strong convergence of continuous-in-time TraceFEM approximations for prototypical PDEs using compactness arguments and  assuming no additional regularity above what is required by weak formulations. For example, to the best of our knowledge, we present the first convergence proof for solutions to Laplace--Beltrami problem on a surface $\Gamma$ which belong to $H^1(\Gamma)$ only.\\
+We show how the stabilization form can be modified for several prototypical problems so the resulting scheme becomes amenable to a proof by compactness. Moreover, we demonstrate in numerical experiments that the suggested modifications improve  the robustness and effectiveness of time adaptive schemes when the time step size is forced to get arbitrarily small relative to the mesh size.\\
+The developed analysis framework relies on an abstract structure,  \textit{T-Rex} FEM, and it
+involves notions of abstract \textit{tr}ace  and \textit{ex}tension operators as well as of an abstract
+stabilization form. The framework can be of merit for other unfitted/non-conforming finite
+element methods.}
+
+
+\vspace{1.5ex}
+\abs
+{FEM for surface Navier-Stokes-Cahn-Hilliard equations}
+{Yerbol Palzhanov}
+{University of Houston}
+{This talk addresses a thermodynamically consistent phase-field model of a two-phase flow of incompressible viscous fluids which allows for a non-linear dependence of fluid density on the
+phase-field order parameter. Driven by applications in biomembrane studies, the model is written for
+tangential flows of fluids constrained to a surface and consists of (surface) Navier–Stokes–Cahn–Hilliard
+type equations. We apply an unfitted finite element method to discretize the system and introduce a
+fully discrete time-stepping scheme with the following properties: (i) the scheme decouples the fluid
+and phase-field equation solvers at each time step, (ii) the resulting two algebraic systems are linear,
+and (iii) the numerical solution satisfies the same stability bound as the solution of the original system
+under some restrictions on the discretization parameters. Numerical examples are provided to demonstrate the stability, accuracy, and overall efficiency of the approach.}
+
+
+\vspace{1.5ex}
+\abs
+{Interpolation based immersogeometric analysis with application to Kirchhoff--Love shells}
+{Jennifer Fromm$^{1}$, Nils Wunsch$^{2}$,  Ru Xiang $^{1}$, Han Zhao$^{1}$, Kurt Maute$^{2}$, John A. Evans$^{2}$,and David Kamensky$^{1}$}
+{1: University of California San Diego, 2: University of Colorado Boulder}
+{Thin shells appear in numerous engineering applications, including biological membranes, wind turbine blades, and aerospace structures, which can all be accurately modeled using the Kirchhoff--Love (KL) shell theory.
+ However, this theory is rarely applied in classical finite element (FE) analysis because it involves $4^{\text{th}}$-order derivatives of the displacement field, requiring $C^1$ continuity of the discrete solution space.
+ The growth of isogeometric analysis (IGA) has led to increased interest in numerical analysis of KL shell theory  because IGA's smooth spline spaces naturally accommodate KL theory's regularity requirements.
+ IGA would ideally use spline spaces corresponding to design geometries from industrial computer aided design (CAD) software where structured rectangular B-spline or NURBS patches are often ``trimmed'', resulting in a need for immersed-boundary methods. 
+ We refer to the combination of isogeometric and immersed-boundary analysis as ``immersogeometric'' analysis. 
+ Most existing immersogeometric methods have been implemented in custom (often application-specific) research codes, which limits their accessibility.
+ In this work, we introduce EXHUME (EXtraction for High-order Unfitted MEthods), which enables non-invasive implementation of immersed-boundary methods in existing FE solvers through a novel class of ``interpolation-based'' immersed-boundary discretizations.
+ As its name implies, EXHUME employs a generalization of (Lagrange) extraction, which interpolates basis functions from an unfitted background mesh using Lagrangian nodal basis functions defined on a foreground mesh over which variational formulations are integrated. 
+ The foreground mesh is subject to fewer element quality or topological constraints than a standard FE mesh and is thus easier to generate. 
+ Interestingly, this approach remains highly effective even when the extraction is only approximate (and the discretization is no longer mathematically equivalent to existing CutFEM/CutIGA approaches).  Approximate extraction permits significant improvements in both user convenience and computational efficiency. 
+ We demonstrate EXHUME's capabilities on benchmarks involving several different PDEs and on the application of immersogeometric KL shell analysis with trimmed geometries.}
+
+
+\vspace{1.5ex}
+\abs
+{Navier-Stokes equations on evolving surfaces}
+{A. Reusken, P. Brandner, P. Schwering$^{1}$ and M. Olshanskii$^{2}$}
+{1: RWTH Aachen University, 2: University of Houston}
+{In this presentation we briefly address several derivations of
+incompressible Navier-Stokes type equations that model the dynamics of an
+evolving fluidic surface. These derivations differ
+in the physical principles used in the modeling approach and in the
+coordinate systems in which the resulting equations are represented.
+The resulting surface Navier-Stokes equations have a natural splitting
+into equations for the normal and tangential velocity  components.
+We  present well-posedness results for the equations that describe the
+tangential motion of the fluid flow.}
+
+
+\vspace{1.5ex}
+\abs
+{Continuum field theory for the deformations of planar kirigami}
+{Paul Plucinsky$^1$, Ian Tobasco$^2$, Yue Zheng$^3$, and Paolo Celli$^4$}
+{1: University of Southern California, 2: University of Illinois Chicago, 3: University of Massachusetts Amherst, 4: Stony Brook University}
+{Mechanical metamaterials exhibit exotic properties that emerge from the interactions of many nearly rigid building blocks.
+Determining these properties theoretically has remained an open challenge outside a few select examples.
+Here, for a large class of periodic and planar kirigami, we provide a coarse-graining rule linking the design of the panels and slits to the kirigami’s macroscale deformations.
+The procedure gives a system of nonlinear partial differential equations expressing geometric compatibility of angle functions related to the motion of individual slits.
+Leveraging known solutions of the partial differential equations, we present an illuminating agreement between theory and experiment across kirigami designs.
+The results reveal a dichotomy of designs that deform with persistent versus decaying slit actuation, which we explain using the Poisson’s ratio of the unit cell.}
+
+
+\vspace{1.5ex}
+\abs
+{Numerical Approximations of Origami with Curved Creases}
+{Andrea Bonito}
+{Texas A\&M University}
+{The folding of thin elastic sheets along a prepared curved arc is considered.  The resulting curved origamis find applications in many strategical areas. Telescopes, self-deployable structures, flapping and flytrap mechanisms, shields, airbags are a few examples.
+
+We start from a thin three-dimensional hyper-elastic model and include a material defect favoring folding. We then justify the plate model obtained in the limit when the material thickness vanishes. In this reduced setting, the plate deformations satisfy a two-dimensional fourth order problem with interface along with a nonlinear constraint expressing the fact that the plate cannot sustain shear nor stretch.
+In passing, we offer a simple differential geometry argument explaining the rigidity (i.e. robustness) of isometric deformations in presence of curved creases.
+
+We present a numerical algorithm based on local discontinuous Galerkin methods, where high order derivatives in the continuous models are replaced by weakly converging discrete reconstructions. We discuss its properties and conclude the talk by exploring numerically the features of this new model.}
+
+
+\vspace{1.5ex}
+\abs
+{The Poisson coefficient of zigzag sums}
+{Hussein Nassar$^{1}$ and Arthur Leb\'ee$^{2}$}
+{1: University of Missouri, 2: \'Ecole des Ponts}
+{We call ``zigzag sums'' periodic polyhedral surfaces whose period is composed of four parallelograms. These include notorious origami tessellations such as the ``Miura ori'' and have inspired designs of deployable structures useful in certain engineering applications. Indeed, zigzag sums can deform, isometrically, by folding along parallelogram edges so as to go from densely-packed states into states that ``shadow'' large areas. Throughout this folding motion, the ratio of the relative change in width to the relative change in length defines what is commonly referred to as a ``Poisson coefficient''. Zigzag sums can also deform isometrically by bending the parallelogram faces so as to go from apparently flat states to apparently doubly-curved states. Here, we demonstrate that, in the limit of infinitely small periods, the ratio of apparent normal curvatures due to bending is equal, but opposite, to the Poisson coefficient due to folding. This equality encodes a non-linear PDE whose solutions are the isometric deformations of the zigzag sums (again, in the limit of infinitely small periods). Interestingly, we find that the type of the PDE is function of the sign of the Poisson coefficient. This is important in applications, as it suggests the appropriate way of controlling the deformation path from the boundary, e.g., in terms of Dirichlet v.s. Cauchy boundary conditions. Last, for illustration purposes, we solve the PDE for axisymmetric states and explain certain origami forms that are aesthetically appealing. In particular, we show how to design an origami pseudosphere, almost.
 }
+
+
+\vspace{1.5ex}
+\abs
+{Computation of Miura Surfaces}
+{Frederic Marazzato}
+{Louisiana State university}
+{Origami folds have found a large range of applications in engineering as, for instance, solar panels for satellites, or the folding of airbags for optimal deployment or metamaterials.
+A homogenization process turning origami folds into smooth surfaces, developed in [Nassar et al, 2017], is first discussed.
+Then, its application to two specific folds is presented alongside the PDEs characterizing the associated smooth surfaces.
+The talk will then focus on the nonlinear elliptic equations describing Miura surfaces by studying existence and uniqueness of solutions and by proposing a numerical method to approximate them.
+The numerical method is based on a least-squares formulation, $\mathbb{P}^1$--Lagrange finite elements and a Newton method to solve the nonlinear system.
+Finally, some numerical examples are presented.}
+

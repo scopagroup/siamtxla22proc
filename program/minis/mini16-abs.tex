@@ -1,0 +1,88 @@
+\label{mini16}
+
+\miniabs
+{}
+{Organizers: }
+{}
+
+\vspace{2ex}
+%Session 1
+\abs
+{Operator inference for non-intrusive model reduction with quadratic manifolds}
+{Rudy Geelen$^{1}$ and Stephen Wright$^{2}$ and Karen Willcox$^{1}$}
+{1: University of Texas at Austin, 2: University of Wisconsin-Madison}
+{Linear dimensionality reduction underlies a large class of model reduction techniques, including principal component analysis ? or as it known in the model reduction literature ? Proper Orthogonal Decomposition (POD). However, for many physics-based systems linear dimension reduction imposes a fundamental limitation to the accuracy that can be achieved using reduced-order models. In this talk we propose a novel approach for learning a data-driven quadratic manifold from high-dimensional data, then employing this quadratic manifold to derive efficient physics-based reduced-order models. The key ingredient of the approach is a polynomial mapping between high-dimensional states and a low-dimensional embedding. This mapping consists of two parts: a representation in a linear subspace (computed in this work using POD) and a quadratic component. The approach can be viewed as a form of data-driven closure modeling, since the quadratic component introduces directions into the approximation that lie in the orthogonal complement of the linear subspace, but without introducing any additional degrees of freedom to the low-dimensional representation. Combining the quadratic manifold approximation with the operator inference method for projection-based model reduction leads to a scalable non-intrusive approach for learning reduced-order models of dynamical systems. Applying the new approach to transport-dominated systems of partial differential equations illustrates the gains in efficiency that can be achieved over approximation in a linear subspace.}
+
+
+\vspace{1.5ex}
+\abs
+{A fast and accurate domain-decomposition nonlinear reduced order model using shallow masked autoencoders}
+{Alejandro N. Diaz}
+{Rice University}
+{Training reduced order models (ROMs) from data typically requires access to high-dimensional full order model (FOM) simulation data. However, for so-called "extreme-scale" problems, the storage of such high-dimensional FOM simulation data renders ROM training infeasible. Domain-decomposition (DD) alleviates this issue by solving the FOM on smaller subdomains, thereby generating training data of more manageable sizes. Model reduction can then be applied to each subdomain, and the separate ROMs can be reassembled to compute a global ROM for the DD FOM. A promising model reduction approach for the DD problem is the so-called nonlinear-manifold ROM (NM-ROM). NM-ROM has provided improved accuracy over linear-subspace ROMs (LS-ROMs), particularly for advection-dominated problems. NM-ROM approximates the FOM state in a nonlinear-manifold, which is learned from training a shallow, sparse-masked autoencoder using the FOM simulation data. The shallow, sparse architecture of the autoencoder allows for hyper-reduction to be applied, yielding computational speedup. In this talk, the DD formulation of the FOM and the application of NM-ROM to each subdomain are discussed. The results of the DD NM-ROM approach with hyper-reduction are numerically compared to DD LS-ROM with hyper-reduction for the 2D steady-state Burgers' Equation.}
+
+
+\vspace{1.5ex}
+\abs
+{Stabilization of linear time?varying reduced order models, a feedback controller approach}
+{Rambod Mojgani and Maciej Balajewicz}
+{Rice University}
+{Time-varying reduced-order models (ROMs) are results of the reduction of time-varying systems or time-invariant systems on time-varying manifolds.
+The latter problem is especially of our interest as we have shown the possibility of learning an optimal rank-reduction by projecting partial differential equations of travelling waves and features, (e.g., wave equations) on low-rank time-varying grids.
+The stability of such ROMs is not a priori guaranteed. However, a posteriori stabilization schemes can be used for accurate predictive ROMs. In this talk, we present the stabilization of linear time-varying ROMs by controlling the largest singular values of the state matrices, i.e., an extension of the eigenvalue reassignment method developed to stabilize linear time-invariant ROMs.
+In a post-processing step, trajectories of ROMa are controlled to enforce stability while maintaining their accuracy using a constrained nonlinear least-square minimization problem. The controller and the input signals are defined at the algebraic level, using left and right singular vectors of the reduced system matrices, to restrict the upper bound of the growth of the energy of the reduced system. The optimization problem is applied to several time-invariant, time-periodic, and time-varying problems. The method is evaluated in both reproductive and predictive (i.e., unseen inputs and the system parameters) test cases.}
+
+
+\vspace{1.5ex}
+\abs
+{The Loewner framework in the time-domain}
+{A.C. Antoulas}
+{Rice University Houston and Max-Planck Institute Magdeburg}
+{The Loewner framework is used for building models (linear and nonlinear) from given data.
+The data can be frequency responses or time series. In this talk we will concentrate on the latter case
+and will show how time-domain responses of systems described by PDEs can be used for constructing
+low order models. The results will be illustrated by means of several numerical examples.}
+
+
+\vspace{1.5ex}
+%Session 2
+\abs
+{Waveform inversion via reduced order modeling}
+{Alexander V. Mamonov$^{1}$ and Liliana Borcea$^{2}$ and Josselin Garnier$^{3}$ and J\"{o}rn Zimmerling$^{4}$}
+{1: University of Houston, 2: University of Michigan, 3: Ecole Polytechnique, 4: Uppsala University}
+{A novel approach to full waveform inversion (FWI), based on a data driven reduced order model (ROM) of the wave equation operator is introduced. The unknown medium is probed with pulses and the time domain pressure waveform data is recorded on an active array of sensors. The ROM, a projection of the wave equation operator is constructed from the data via a nonlinear process and is used for efficient velocity estimation. While the conventional FWI via nonlinear least-squares data fitting is challenging without low frequency information, and prone to getting stuck in local minima (cycle skipping), minimization of ROM misfit is behaved much better, even for a poor initial guess. For low-dimensional parametrizations of the unknown velocity the ROM misfit function is close to convex. The proposed approach consistently outperforms conventional FWI in standard synthetic tests.}
+
+
+\vspace{1.5ex}
+\abs
+{Line-search methods for unconstrained optimization with inexactness arising from reduced order models}
+{Dane Grundvig, and Matthias Heinkenschloss}
+{Rice University}
+{This talk discusses line-search algorithms for the solution of smooth unconstrained optimization problems that allow the use of approximate objective function and gradient information. These algorithms are motivated by the need to rigorously incorporate reduced order models (ROMs) into the solution of large-scale optimization problems governed by partial differential equations. Problems of this nature are common in many science and engineering applications. The developed algorithms are error aware and use on the fly updates to error tolerances in order to reduce the accuracy requirements on the ROM approximations. The considered algorithms require no explicit information about the underlying true model and operate entirely using error bounds on the objective and its gradient. These algorithms are implementable and provide convergence guarantees subject to some reasonable assumptions on the underlying optimization problem. Numerical results show that the proposed line-search methods, combined with ROMs, converge to local minima of the original optimization problem at a fraction of the computational cost required by traditional Newton CG algorithms.}
+
+
+\vspace{1.5ex}
+\abs
+{Filtering in non-intrusive data-driven reduced-order modeling of large-scale systems}
+{Ionut-Gabriel Farcas$^{1}$, Rayomand P.~Gundevia$^{2}$, Ramakanth Munipalli$^{3}$, Karen E.~Willcox$^{1}$}
+{1: The University of Texas at Austin 2: Jacobs Engineering Group, Inc., 3: Air Force Research Laboratory}
+{We present a method for enhancing data-driven reduced-order modeling with a preprocessing step in which the training data are filtered prior to training the reduced model.
+Filtering the data prior to training has a number of benefits for data-driven modeling: it attenuates (or even eliminates) wavenumber or frequency content that would otherwise be difficult or impossible to capture with the reduced model, it smoothens discontinuities in the data that would be difficult to capture in a low-dimensional representation, and it reduces noise in the data.
+This makes the reduced modeling learning task numerically better conditioned, less sensitive to numerical errors in the training data, and less prone to overfitting when the amount of training data is limited.
+We first illustrate the effects of filtering in one-dimensional advection and inviscid Burgers' equations.
+We then consider large-scale rotating detonation rocket engine simulations with millions of spatial degrees of freedom for which only a few hundred down-sampled training snapshots are available.
+A reduced-order model is derived from these snapshots using operator inference.
+Our results indicate the potential benefits of filtering to reduce overfitting, which is particularly important for complex physical systems where the amount of training data is limited.
+\newline
+\noindent Distribution Statement A: Approved for Public Release; Distribution is Unlimited. PA$\#$ AFRL-2022-4312
+}
+
+
+\vspace{1.5ex}
+\abs
+{Gaussian process subspace prediction for model reduction}
+{Ruda Zhang$^{1}$, Simon Mak$^{2}$, and David Dunson$^{2}$}
+{1: University of Houston, 2: Duke University}
+{Subspace-valued functions arise in a wide range of problems, including parametric reduced order modeling (PROM), parameter reduction, and subspace tracking. In PROM, each parameter point can be associated with a subspace, which is used for Petrov--Galerkin projections of large system matrices. Previous efforts to approximate such functions use interpolations on manifolds, which can be inaccurate and slow. To tackle this, we propose a novel Bayesian nonparametric model for subspace prediction: the Gaussian process subspace (GPS) model. This method is extrinsic and intrinsic at the same time: with multivariate Gaussian distributions on the Euclidean space, it induces a joint probability model on the Grassmann manifold, the set of fixed-dimensional subspaces. The GPS adopts a simple yet general correlation structure, and a principled approach for model selection. Its predictive distribution admits an analytical form, which allows for efficient subspace prediction over the parameter space. For PROM, the GPS provides a probabilistic prediction at a new parameter point that retains the accuracy of local reduced models, at a computational complexity that does not depend on system dimension, and thus is suitable for online computation. We give four numerical examples to compare our method to subspace interpolation, as well as two methods that interpolate local reduced models. Overall, GPS is the most data efficient, more computationally efficient than subspace interpolation, and gives smooth predictions with uncertainty quantification.}
+
+

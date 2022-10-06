@@ -4,28 +4,34 @@
 {Deep learning methods for biomedical image analysis \& modeling}
 {Organizers: E. Castillo}
 {Topics related to the use of deep learning, either as an ancillary method or as the primary mode of analysis, for biomedical applications will be presented. Discussion areas will include theoretical and computational approaches, as well as clinical translation considerations.}
+
 \vspace{2ex}
-
-
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
-}
+{Respecting Variation in Physician Clinical Practice }
+{Steve Jiang}
+{University of Texas Southwestern Medical Center}
+{Ideally, deep learning models should be trained with large, representative, and high-quality annotated datasets. In reality, we often have to deal with small, biased, noisy, and sometimes scarcely or weakly annotated, or even completely unannotated, datasets. There are lot of research efforts addressing these problems. Here I would like to discuss about the noisy annotation problem due to expertise errors, i.e., the inconsistencies between different observers due to human subjectivity, using medical image segmentation as an example. The conventional wisdom considers this type of noisy annotations as a bad thing. To deal with it, we often try to achieve consensus from a group of expert observers during data annotation and try to use various strategies to mitigate its adverse effect during training. However, sometimes, or even many times, we may need to respect this type of noisy data annotation. This is because, medicine is still an art in many cases. Evidence based medicine and clinical guidelines only give physicians the floor not the ceiling. There is room for physicians to exercise their own judgements, leading to variation in physicians’ clinical practice. There is often no ground truth to tell which one is the best. Additionally, variation among physicians could be inherent due to the variation in handling the tradeoffs between outcome and toxicity, cost and benefit, etc. We have to face this reality when we develop and deploy deep learning models to solve clinical problems. Some strategies will be discussed.}
+
 
 \vspace{1.5ex}
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
-}
+{Application of Deep Learning for real-time non-invasive continuous monitoring for enhanced peripheral oxygen saturation in intensive care unit (ICU) and Operating Room (OR)}
+{Sungsoo Kim$^{1,2}$, Sohee Kwon$^{1}$, Alan Bovik$^{2}$, Mia Markey$^{2}$, and Maxime Cannesson$^{1}$}
+{1: The University of California Los Angeles, 2: The University of Texas at Austin}
+{Non-invasive monitoring for peripheral oxygen saturation (SpO2) has been known as the fifth vital sign given its critical role in patient care in intensive care unit (ICU) or Operating Room (OR). However, a concern about the accuracy of pulse oximetry has been attained the public concerns recently, particularly with the possible racial bias or medical discrimination in this covid-pandemic. In this research, we propose an innovative approach applying Deep Neural Networks (DNNs) to develop an advanced monitoring approach for accurate oxygen saturation in real-time.}
+
 
 \vspace{1.5ex}
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
-}
+{Imaging based estimation of pathology in a large adult glioma population}
+{D. Fuentes, E. Gates, A. Celaya, D. Suki, J. Weinberg, S. Prabhu, D. Schellingerhout}
+{The University of Texas MD Anderson Cancer Center}
+{Stereotactic biopsies were collected in an imaging trial targeting untreated patients with gliomas. The data included preoperative MR imaging and quantitative histopathology on biopsy samples. A random forest method was used to estimate pathology information density using local intensity information from the MR images and quantitative pathology measurements.  We will present our evaluation of the prognostic ability of imaging-based estimates of pathoogy in 1181 glioma patients, with comparison to the gold standard reference of World Health Organization grading.}
+
+
+\vspace{1.5ex}
+\abs
+{Neural Network ’Finite Element’ Based Models for Cardiac Simulations}
+{Michael Sacks, Shruti Motiwale, and Christian Goodbrake}
+{The University of Texas at Austin}
+{All high-fidelity cardiac simulations require a comprehensive image-based finite element modeling pipeline. While quite accurate, such traditional approaches cannot be used in practical for time-sensitive clinical evaluations. In this work we developed a neural network surrogate modeling method to generate fast online predictions while frontload the computational cost to model training. Due to the complex geometry of the cardiac models, the finite element discretization is used and integrated with the neural network. To train the neural network model without the need to generate finite element solutions, we developed a physics-based training scheme using differentiable finite elements to backpropagate the gradients from residuals of partial differential equations (PDEs) to the neural network. We considered active contraction and spatially varying fiber structures, all incorporated into a prolate spheroidal model of the left ventricle (LV) as a first step scenario. We consider a prolate spheroidal model of the left ventricle. The domain is discretized using unstructured tetrahedron elements. The fiber geometry was based on a rules-based approach to approximagte the -60 to 60 degree transmural gradient, and a Fung-type material model with constants taken from the ovine heart used.  The entire pipeline was then trained against a represented pressure-volume loop. To verify our differentiable implementation of finite elements, we utilized the same boundary conditions and use FEniCS for conventional FE model validation. The relative error of the displacements was 3.915×10–7. We then show how a NURBS-based approach can be directly integrated into the NNFE approach as a means to handle real cardiac geometries.  While these and related approaches are in their early stages, they offer a method to perform complex organ-level simulations in clinically relevant time frames without compromising accuracy.}

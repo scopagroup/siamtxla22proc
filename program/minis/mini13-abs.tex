@@ -1,31 +1,74 @@
-\label{mini03}
+\label{mini13}
 
 \miniabs
 {Numerical methods and applications for geosciences}
 {Organizers: G. S. Jones \& L. Cappanera}
 {Computational geosciences often involve complex nonlinear models that couple different physical processes. The study of such problems requires the development of robust and efficient numerical algorithms for high performance computing. In this mini symposium, we focus on numerical methods applied to phenomena arising in geosciences such as reservoir simulation, multiphase flow, water waves, etc. Speakers will present their recent research developments and applications in computational geosciences which includes numerical modeling, numerical analysis, and other computational aspects.}
+
 \vspace{2ex}
-
-
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
-}
+{Coupling and decoupling two-phase flows in superposed free flow and porous media}
+{Daozhi Han}
+{University at Buffalo}
+{In this talk we introduce a Cahn-Hilliard-Navier-Stokes-Darcy model for two-phase flows in superposed free flow and porous media. The model satisfies an energy law. We then present an unconditionally stable numerical algorithm that preserves the energy law and decouples the computation of Cahn-Hilliard equation, Darcy equations, Navier-Stokes equations. Moreover, the velocity field and pressure are also decoupled in the Navier-Stokes solver that avoids the pressure interface boundary condition.}
+
 
 \vspace{1.5ex}
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
-}
+{Finite element methods of porous media flows with low permeability faults/membranes}
+{Jeonghun Lee}
+{Baylor University}
+{In this work we consider porous media flow models with low permeability fault/membrane structures.
+Macroscopic models of such structures give fluid flow solutions with low regularities and pressure fields with jumps across the fault/membranes. We develop finite element methods for the models and analyze a priori and a posteriori error estimates of solutions. We then consider extensions of the models for miscible displacement problems.}
+
 
 \vspace{1.5ex}
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
-}
+{Finite element methods for incompressible flows with variable density applied to thermodynamics.}
+{An Vu}
+{University of Houston}
+{We introduce a semi-implicit time stepping scheme for the incompressible Navier-Stokes equations with variable density and viscosity. The scheme uses a projection method to enforce the incompressibility of the flow and the momentum, which equals the product of density and velocity, as dependent variable. We prove the stability and establish first order error estimates of this semi-implicit scheme. We also extend our study to thermodynamics setups by introducing a time stepping multiphase thermal solver and proving the stability estimates of this new method. A fully discretized algorithm is proposed using finite element and pseudo spectral methods, and its convergence properties are verified using numerical simulations.}
+
+
+\vspace{1.5ex}
+\abs
+{Convergence Analysis of a Continuous Interior Penalty Method for the Modified Phase Field Crystal Equation}
+{Natasha Sharma$^{1}$, Amanda E. Diegel$^{2}$, Daniel Bond$^{3}$}
+{1: University of Texas at El Paso, 2: Mississippi State University, 3: University of Tennessee}
+{The so-called phase-field crystal (PFC) approach proposed by Elder et al. has been employed as a continuum model to describe the microstructure of solid-liquid systems such as the crystal growth in a supercooled liquid and provides an accurate way to model crystal dynamics, especially defect dynamics in atomic-scale resolution. However, it fails to distinguish between elastic relaxation and diffusion time scales. To overcome this difficulty and to incorporate both the faster elastic relaxation (e.g., in a rapid quasi-phononic time scale) and the slower mass diffusion, the modified phase-field crystal (MPFC) equation has recently been proposed by P. Stefanovic and co-authors. The MPFC is a generalized damped wave equation characterized through the presence of a second-order time derivative weighted by a positive parameter. In this talk, we present a continuous interior penalty finite element method for the sixth-order modified phase field crystal equation and  prove that the numerical scheme is uniquely solvable, unconditionally energy stable, and convergent. Finally, we close this talk with a numerical experiment demonstrating the performance of our proposed method.}
+
+
+\vspace{1.5ex}
+\abs
+{Multiscale Modeling for Clean Energy Transition}
+{Kyung Jae Lee and Jiahui You}
+{University of Houston}
+{Tackling climate change is one of the major challenges facing the U.S. today, and it has led to significant efforts to decarbonize energy use as a way to minimize greenhouse gas emissions. Major ways to achieve this energy transition involve electrifying transportation and increasing renewable energy use in electricity generation. As both electric vehicles and renewable solar–and–wind electricity generation rely on lithium–ion energy storage (i.e., lithium–ion batteries), the demand for lithium has greatly increased during the past decade; it is predicted to escalate along the market growth of electric vehicles and renewable power generation. To enhance and diversify the supply of lithium, we investigate petroleum source rock brines as a sustainable new source of lithium, given that water produced from organic–rich petroleum and natural gas source rocks has been recently revealed as a potential source of substantial amounts of lithium. This opens new pathways to address the natural petroleum source rock systems at various scales. Micro (pore)–scale modeling with Finite Volume Method (FVM), which describes fluid–rock interactions, enables the understanding of mineralization and dissolution of lithium. Macro (basin)–scale modeling with Integrated Finite Discrete Method (IFDM), which describes the release, transport, and accumulation of lithium in petroleum source rock brines, enables the identification of high concentration zones of lithium. Throughout developing the multiscale modeling approach for the new and promising application area, the computational geoscience profession will be able to progress toward a solution to a complex and expensive problem.}
+
+
+\vspace{1.5ex}
+\abs
+{A sequential discontinuous Galerkin method for three-phase flows in porous media}
+{Giselle Sosa Jones$^{1}$, Loic Cappanera$^{2}$, and Beatrice Riviere$^{3}$}
+{1: Oakland University, 2: University of Houston, 3: Rice University}
+{In this talk, we first present and analyze a sequential discontinuous Galerkin method for the incompressible three-phase flow problem in porous media. We show existence and uniqueness of a discrete solution and obtain a priori error estimates. Then, we present a novel formulation for the black oil problem which uses as primary unknowns the liquid pressure and the aqueous and liquid saturations. This choice of primary variable produces a well-posed numerical scheme without any stringent restriction on the data, and without the introduction of nonphysical quantities. The equations are solved sequentially using an implicit time stepping scheme. We demonstrate the convergence properties of the method numerically, and present different realistic simulations such as injection problems in highly heterogeneous media.}
+
+
+\vspace{1.5ex}
+\abs
+{Numerical solution of two-phase poroelasticity equations}
+{Beatrice Riviere$^{1}$ and Boqian Shen$^{2}$}
+{1: Rice University, 2: KAUST}
+{The two-phase Biot problem is discretized by a sequential scheme that utilizes the discontinuous Galerkin method in space. Because of appropriate stabilization terms, no iterations are required for stability. We study the effect of heterogeneities (different capillary pressures in different subdomains) and the effect of loading on the propagation of the fluid in three-dimensional domains.}
+
+
+\vspace{1.5ex}
+\abs
+{Applications of Space-Time Methods to Multiphase Flow in Porous Media  :  Channel Flow and  Snap Shot Selection for Deep-Learning Reduced-Order Models }
+{Mary Wheeler$^{1}$, Thamer  Abbas Alsulaimani$^{2}$ and Hanyu Li$^{3}$}
+{1: University of Texas at Austin, 2: Aramco, 3: Lawrence Livermore National Laboratory}
+{Numerical simulation of subsurface flow for applications such as carbon sequestration and nuclear waste deposit has always been a computational challenge. The main reason points to the strong nonlinearity inherited in the governing equations that describe the multiphysics phenomena. The enormous number of unknowns and small timesteps required for stable Newtonian convergence make this type of problems computationally exhaustive. To address this issue, we introduce adaptive finite element approaches guided by a posteriori error estimators to improve computational efficiency. A space-time discretization scheme with temporal and spatial mesh adaptivity is formulated for multiphase flow system. The solution algorithm adopts a geometric multigrid procedure that starts with solving the system in the coarsest resolution and locally refines the mesh in both space and time. 
+
+Error estimators that measure the spatial and temporal discretization error are employed to guide such an adaptivity. These estimators provide a global upper bound on the dual norm of the residual and the non-conformity of the numerical solution. Results from two-phase immiscible and three-phase miscible flow are presented to confirm solution accuracy and computational efficiency as compared to the uniformly fine timestep and fine spatial discretization solution. We also resolve the common issue of high frequency residuals in multigrid methods by local residual minimization and dynamic advection-diffusion coupling to achieve additional computational speedup and stability. 
+
+Here we introduce a novel approach based on space-time to select an optimal set of snapshots for training  deep-learning ROM for two phase flow.. Snapshot selection is based on the jump in the number of local refinements between two consecutive snapshots provided by the space-time  geometric multigrid solver. Results from the deep-learning reduced-order model show that we can achieve faster convergence to the solution using only 65\% of the snapshots generated at fixed intervals. Computational time savings accrued while generating the snapshots and while using the optimized snapshots in the deep-learning model. Results generated using fixed time interval snapshots, and adaptively selected snapshots show similar accuracy.}

@@ -4,28 +4,66 @@
 {Mathematical modeling for biological dynamics}
 {Organizers: Z. Qu,	L. Asik \& X.-S. Wang}
 {Mathematical models are powerful tools for understanding and informing complex biological phenomena. In recent years, there has been broad interest in applying mathematics to study a variety of biological fields, such as epidemiology, ecology, and neurology. Mathematical models at different spatial and temporal scales have been developed to focus on population-level dynamics, within-host processes, as well as multiscale dynamics that span several biological scales and capture the feedback between them. The utility of the proposed models requires a solid model formulation from realistic biological phenomena, rigorous analysis using mathematical theories, and accurately solved by numerical methods. This mini-symposium will highlight the new developments in these areas and bring together researchers who work on various models for biological systems from the perspectives of modeling, analysis, and computation. It will serve as a platform to present recent progress, exchange research ideas, extend academic networks, and seek future cooperation.}
+
 \vspace{2ex}
-
-
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
-}
+{Stochastic Avian Influenza Model}
+{U. Bulut$^{1}$, T. Oraby$^{2}$, and E. Suazo$^{2}$}
+{1: University of the Incarnate Word, 2: The University of Texas Rio Grande Valley}
+{Avian Influenza (AI) is a zootonic disease with a 53 \% case fatality rate (H5N1 strain) since 2003. The number of human infectious with AI has increased in the recent epidemic wave during the period 2016-2017.  In this paper, the stochastic diffusion advection equation is studied, with the time-dependent white noise, to model the spread of Avian Influenza (AI) through environmental contamination. Our goal is to see whether applying a random perturbation to the migration speed of the wild bird population can eradicate the disease. We prove that the disease-free equilibrium is exponentially asymptotically stable almost surely. Besides that, bird to human transmission model is constructed to understand the different dynamics  of avian influenza among the human population.}
+
 
 \vspace{1.5ex}
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
-}
+{Multiscale Modeling of Infectious Disease: The Case of Malaria}
+{Juan B. Guti\'errez$^{1}$}
+{1: University of Texas at San Antonio}
+{Malaria is one of the most complex diseases known. It can be better understood through the systematic aggregation of the multiple scales at which its dynamics take place. Building a multiscale model of malaria that informs public health and clinical action requires pushing the boundary beyond traditional multiscale modeling. In this presentation we will discuss the different aspects involved in creating quantitative models of malaria by passing through the realms of dynamical systems, molecular biology, PDEs, immunology, artificial intelligence, physiology, human-mosquito interactions, data science, and epidemiology. This discussion will demonstrate that quantitative areas that are not traditionally considered part of the mathematical corpus are needed to create realistic models.}
+
 
 \vspace{1.5ex}
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract
-}
+{Reconciling contrasting effects of nitrogen on pathogen transmission and host immunity using stoichiometric models }
+{ Dedmer B. Van de Waal $^{1,2}$, Lauren A. White $^{3}$, Rebecca Everett$^{4}$, Lale Asik$^{5,6}$, Elizabeth T. Borer$^{7}$, Thijs Frenken $^{1,8}$, Angélica L. González$^{9}$, Rachel Paseka$^{7}$, Eric W. Seabloom$^{7}$, Alexander T. Strauss $^{7,10}$, and Angela Peace $^{6}$}
+{1:Department of Aquatic Ecology, Netherlands Institute of Ecology (NIOO-KNAW), Wageningen, The Netherlands, 2:Department of Freshwater and Marine Ecology, Institute for Biodiversity and Ecosystem Dynamics, University of Amsterdam, Amsterdam, The Netherlands, 3:National Socio-Environmental Synthesis Center (SESYNC), University of Maryland, Annapolis, MD, US, 4:Department of Mathematics and Statistics, Haverford College, Haverford, PA, USA, 5:Department of Mathematics and Statistics, University of the Incarnate Word, San Antonio, TX, USA, 6:Department of Mathematics and Statistics, Texas Tech University, Lubbock, TX, USA, 7:Department of Ecology, Evolution, and Behavior, University of Minnesota, St. Paul, MN, USA, 8: Great Lakes Institute for Environmental Research (GLIER), University of Windsor, Windsor, ON, Canada, 9:Department of Biology and Center for Computational and Integrative Biology, Rutgers University, Camden, NJ, US, 10:Odum School of Ecology. University of Georgia, Athens, GA, USA}
+{Hosts rely on the availability of nutrients for growth, as well as for their defense against pathogens. At the same time, changes in primary producer nutrition can alter the dynamics of pathogens that rely on their host for reproduction. Enhanced nutrient loads may thus promote faster pathogen transmission through increased pathogen reproduction, as well as through higher host biomass that stimulates density-dependent transmission. However, this effect may be reduced if hosts allocate a growth-limiting nutrient to pathogen defense. In canonical disease models, transmission is not a function of nutrient availability, while this is required to mechanistically understand their response to changes in the environment. Here, we explored the implications of nutrient-mediated pathogen infectivity and host immunity on infection outcomes using a stoichiometric disease model that explicitly integrates the contrasting dependencies of pathogen infectivity and host immunity on nitrogen (N). Our findings reveal dynamic shifts in host biomass build-up, pathogen prevalence, and force of infection, along N supply gradients with N-mediated host infectivity and immunity, compared to a model where the transmission rate was fixed. We show contrasting responses in pathogen performance with increasing N supply between N-mediated infectivity and N-mediated immunity, revealing an optimum for pathogen transmission at intermediate N supply. This is caused by N limitation of the pathogen at low N supply and by pathogen suppression via enhanced host immunity at high N supply. By integrating both nutrient-mediated pathogen infectivity and host immunity into a stoichiometric model, we provide a theoretical framework that is a first step in reconciling the contrasting role nutrients can have on host-pathogen dynamics.}
+
+
+\vspace{1.5ex}
+\abs
+{Modeling Immunity to Malaria with an Age-Structured PDE Framework}
+{Zhuolin Qu$^{1}$, Denis Patterson$^{2}$, Lauren Childs$^{3}$, Christina Edholm$^{4}$, Joan Ponce$^{5}$, Olivia Prosper$^{6}$, and Lihong Zhao$^{7}$}
+{1: University of Texas at San Antonio, 2: Princeton University, 3: Virginia Tech, 4: Scripps College, 5: University of California, Los Angeles, 6: University of Tennessee, Knoxville, 7: University of California, Merced}
+{Malaria is one of the deadliest infectious diseases globally, causing hundreds of thousands of deaths each year. It disproportionately affects young children, with two-thirds of fatalities occurring in under-fives. Individuals acquire protection from disease through repeated exposure, and this immunity plays a crucial role in the dynamics of malaria spread. We develop a novel age-structured PDE malaria model, which couples vector-host epidemiological dynamics with immunity dynamics. Our model tracks the acquisition and loss of anti-disease immunity during transmission and its corresponding nonlinear feedback onto the transmission parameters. We derive the basic reproduction number $R_0$ as the threshold condition for the stability of disease-free equilibrium; we also interpret $R_0$ probabilistically as a weighted sum of cases generated by infected individuals at different infectious stages and different ages. We parameterize our model using demographic and immunological data from sub-Saharan regions. Numerical bifurcation analysis demonstrates the existence of an endemic equilibrium, and we observe a forward bifurcation in $R_0$. Our numerical simulations reproduce the heterogeneity in the age distributions of immunity profiles and infection status created by frequent exposure. Motivated by the recently approved RTS,S vaccine, we also study the impact of vaccination; our results show a reduction in severe disease among young children but a small increase in severe malaria among older children due to lower acquired immunity from delayed exposure.}
+
+
+\vspace{1.5ex}
+\abs
+{Global Dynamics of Discrete Mathematical Models of Tuberculosis}
+{Saber Elaydi$^{1}$ and Rene Lozi$^{2}$}
+{1: Trinity University, 2:  Universite de Provence Côte d'Azur}
+{We investigate the global stability and bifurcation of discrete-time mathematical models of Tuberculosis. First we study a mathematical model of TB with endogenous or exogenous infection without treatment. Then we extend our study to mathematical models with treatment wit endogenous or exogenous infection.}
+
+
+\vspace{1.5ex}
+\abs
+{Population Persistence in Stream Networks: Growth Rate and Biomass}
+{ T. D. Nguyen$^{1}$*, Y. Wu$^{2}$, A. Veprauskas$^{3}$, T. Tang$^{4}$, Y. Zhou$^{5}$, C. Beckford$^{6}$, B. Chau$^{7}$, X. Chen$^{8}$, B. D. Rouhani$^{9}$, A. Imadh$^{10}$, Y. Wu$^{11}$, Y. Yang$^{12}$, and Z. Shuai$^{13}$ } 
+{1: Texas A$\&$M University, 2: Middle Tennessee State University, 3: University of Louisiana at Lafayette, 4: San Diego State University, 5: Lafayette College, 6: University of Tennessee, 7: University of Alberta, 8: University of North Carolina at Charlotte, 9: University of Texas at El Paso, 10: University of Central Florida, 11: Georgia State University, 12: The Ohio State University, 13: University of Central Florida}
+{We consider the logistic metapopulation model over a stream network and use the population growth rate and the total biomass (of the positive equilibrium) as measures for population persistence. Our objective is to find distributions of resources that maximize these persistence measures. We begin our study by considering stream networks consisting of three nodes and prove that the strategy to maximize the total biomass is to concentrate all the resources in the most upstream locations. In contrast, when the diffusion rates are sufficiently small, the population growth rate is maximized when all resources are concentrated in one of the most downstream locations. These two main results are generalized to stream networks with any number of patches.}
+
+
+\vspace{1.5ex}
+\abs
+{Assessing Southern Pine Beetle Infestation Risks Using Agent-Based Modeling}
+{John G. Alford$^{1}$, William I. Lutterschmidt$^{1}$, and Abigail Miller$^{2}$}
+{1: Sam Houston State University, 2: American Institutes for Research}
+{In Texas, the southern pine beetle (SPB) is recognized as the most destructive pest of commercial pine. In 1985 an outbreak killed over 50,000 acres. Over the last two decades the landscape of pine timberlands in Texas and across the southern United States has changed in dramatic ways that affect our current understanding of SPB outbreaks. For example, vast acreage has changed hands from pine timber managers to conservation managers. Conservation managers are expected to be less likely to cut-out beetle outbreaks or use chemical control, possibly increasing risk of outbreaks. Furthermore, conservation minded managers may be more likely to convert susceptible loblolly to more resistant longleaf pine. In this preliminary study, we discuss an agent-based model to simulate forest growth in a highly managed monoculture to be used to investigate various land management practices that may affect SPB infestation risk.}
+
+
+\vspace{1.5ex}
+\abs
+{Global dynamics of a cholera model with two nonlocal and delayed transmission mechanisms}
+{Xiang-Sheng Wang$^{1}$}
+{1: University of Louisiana at Lafayette}
+{A nonlocal and delayed cholera model with two transmission mechanisms in a spatially heterogeneous environment is derived. We introduce two basic reproduction numbers, one is for the bacterium in the environment and the other is for the cholera disease in the host population. If the basic reproduction number for the cholera bacterium in the environment is strictly less than one and the basic reproduction number of infection is no more than one, we prove globally asymptotically stability of the infection-free steady state. Otherwise, the infection will persist and there exists at least one endemic steady state. For the special homogeneous case, the endemic steady state is actually unique and globally asymptotically stable. Under some conditions, the basic reproduction number of infection is strictly decreasing with respect to the diffusion coefficients of cholera bacteria and infectious hosts. When these conditions are violated, numerical simulation suggests that spatial diffusion may not only spread the infection from high-risk region to low-risk region, but also increase the infection level in high-risk region.}

@@ -1,0 +1,88 @@
+\label{mini20}
+
+\miniabs
+{}
+{Organizers: }
+{}
+
+\vspace{2ex}
+%Session 1
+\abs
+{A symplectic deep autoencoder for Hamiltonian systems}
+{Wei Guo$^{1}$, Qi Tang$^{2}$, Joshua Burby$^{2}$}
+{1: Texas Tech University, 2: Los Alamos National Labotary}
+{In this talk, we introduce a novel symplectic deep autoencoder for model order reduction (MOR) of simulating parametric Hamiltonian systems with high dimensional state variables. The existing MOR techniques for parametric Hamiltonian systems suffer two limitations. First, the inherent symplectic structure of Hamiltonian systems is not necessarily inherited by the reduced order model. This may lead to instability and blowup of the system energy. Second, due to non-dissipative nature of Hamiltonian systems, the popular global linear subspace solution representation becomes less effective, and it is related to the slow decay of the Kolmogorov n-width of the solution manifold. To overcome the difficulties, we propose a deep autoencoder using HenonNets that can preserve the symplectic structure. HenonNets are constructed by composing a sequence of Henon maps which are parametrized by neural networks. Since a Henon map is symplectic, a HenonNet preserves symplectic structures when used to learn a nonlinear embedding of the solution manifold. Hence, the reduced system is still Hamiltonian, and the system energy and long-term stability is preserved. A collection of numerical tests is presented to verify the effectiveness of the proposed MOR technique. This is a joint work with Qi Tang and Joshua Burby from Los Alamos National Laboratory.}
+
+
+\vspace{1.5ex}
+\abs
+{Contrast-independent partially explicit time discretizations for multiscale problems}
+{Wenyuan Li$^{1}$,Yalchin Efendiev$^{1}$, Wing Tat Leung$^{2}$}
+{1: Texas A\&M University, 2: City University of Hong Kong}
+{Multiscale nature arise in many applications and they are typically described by some parabolic partial differential equations. When the media properties are high, the flow and transport become fast and requires small time steps to resolve the dynamics. Implicit 
+discretization
+can be used to handle fast dynamics. However, this requires
+solving large-scale nonlinear systems. Explicit methods
+are used when possible to avoid solving nonlinear systems.
+ The main drawback of explicit methods is that they
+require small time steps that scale as the fine mesh and depend
+on physical parameters, e.g., the contrast. To alleviate this issue, 
+we propose
+a novel algorithm called partially explicit splitting scheme. In this scheme, we split the solution space into two parts, coarse-grid
+part, and the correction part. Coarse-grid solution is computed using
+multiscale basis functions with CEM-GMsFEM. The correction part 
+uses special spaces in the complement space (complement to the coarse space). We handle degrees of freedom from the first space implicitly and others explicitly. With this careful design of basis functions, our stability analysis shows that the time step scales as the coarse mesh size and is independent of the contrast, which provides computation savings. The numerical results also show that our proposed scheme obtains similar accuracy as the fully implicit scheme.}
+
+
+\vspace{1.5ex}
+\abs
+{Achieving Stable Long-Term Predictions in Machine Learning Architectures with Parameterization}
+{Daniel Serino$^{1}$, Qi Tang$^{1}$, Joshua Burby$^{1}$}
+{1: Los Alamos National Labotary}
+{In fields such as high energy physics and climate modeling, reduced order models (ROMs) provide a significant speed-up compared to direct numerical simulations. However, ROMs typically lack accuracy and stability for long-time predictions. Traditionally in data-based ML models, a regularization penalty term is introduced to control the behavior of the tunable weights and, in turn, improve stability. Implementing regularization often involves making a non-trivial choice of a suitable penalty function and its parameter constants. This can lead to training sub-optimal models. Instead, a novel approach is introduced where the weights of the network are parameterized to automatically enforce stability properties in the network without sacrificing regions in the parameter space which may contain an optimal solution. The stability of feed-forward neural networks is related to the singular values of the weight matrices in each layer while the stability of neural ODE networks is related to the eigenvalues of the network. Therefore, parameterization approaches involving the Singular Value Decomposition (SVD) and Block Schur Decomposition are utilized. Algorithms for parameterizing these decompositions and their building blocks will be presented. Additionally, theoretical benefits of employing these parameterizations in networks will be discussed. The model is trained on datasets involving problems in dynamical systems, high-energy physics, radiography, and climate modeling and is compared with other state-of-the-art approaches.
+}
+
+
+\vspace{1.5ex}
+\abs
+{Bayesian operator inference for data-driven reduced-order modeling}
+{Shane~A.~McQuarrie$^{1}$, Mengwu~Guo$^{2}$, and Karen~Willcox$^{1}$}
+{1: The University of Texas at Austin, 2: University of Twente}
+{This work proposes a Bayesian inference method for the reduced-order modeling of time-dependent systems. Informed by the structure of the governing equations, the task of learning a reduced-order model from data is posed as a Bayesian inverse problem with Gaussian prior and likelihood. The resulting posterior distribution characterizes the operators defining the reduced-order model, hence the predictions subsequently issued by the reduced-order model are endowed with uncertainty. The statistical moments of these predictions are estimated via a Monte Carlo sampling of the posterior distribution. Since the reduced models are fast to solve, this sampling is computationally efficient. Furthermore, the proposed Bayesian framework provides a statistical interpretation of the regularization term that is present in the deterministic operator inference problem. The proposed method is demonstrated on a single-injector combustion process.}
+
+
+\vspace{1.5ex}
+%Session 2
+\abs
+{Least-squares Parametric Reduced-order Modeling}
+{Petar Mlinari\'{c} and Serkan G\"{u}\u{g}ercin}
+{Virginia Tech}
+{In this talk, we consider reduced-order modeling for (parametric) linear time-invariant systems, based on nonlinear least-squares. We show how it is a special case of a more general $\mathcal{L}_2$-optimal parametric reduced-order modeling problem by the choice of a measure space. Based on this, we propose a gradient-based optimization algorithm for finding locally optimal reduced-order models. Then, we discuss its relation to the vector fitting method for least-squares reduced-order modeling of linear time-invariant systems. Furthermore, we present the necessary optimality conditions in the interpolation form, related to interpolatory $\mathcal{H}_2$-optimality conditions. Finally, we demonstrate the results on a number of numerical examples.}
+
+
+\vspace{1.5ex}
+\abs
+{Structure-preserving machine learning moment closures for the radiative transfer equation}
+{Juntao Huang$^{1}$, Yingda Cheng$^{2}$, Andrew J. Christlieb$^{2}$, Luke F. Roberts$^{3}$ and Wen-An Yong$^{4}$}
+{1: Texas Tech University, 2: Michigan State University, 3: Los Alamos National Lab, 4: Tsinghua University}
+{In this talk, we present our work on structure-preserving machine learning (ML) moment closure models for the radiative transfer equation. Most of the existing ML closure models are not able to guarantee the stability, which directly causes blow up in the long-time simulations. In our work, with carefully designed neural network architectures, the ML closure model can guarantee the stability (or hyperbolicity). Moreover, other mathematical properties, such as physical characteristic speeds, are also discussed. Extensive benchmark tests show the good accuracy, long-time stability, and good generalizability of our ML closure model.}
+
+
+\vspace{1.5ex}
+\abs
+{Fast Online Adaptive Enrichment for Poroelasticity with High Contrast}
+{Xin Su$^{1}$, Sai-Mang Pun$^{1}$}
+{1: Texas A\&M University}
+{In this work, we develop an online enrichment strategy within the framework of the Constraint Energy Minimizing Generalized Multiscale Finite Element Method (CEM-GMsFEM) to solve the problem of linear heterogeneous poroelasticity with coefficients of high contrast. The proposed method makes use of the fast online adaptive method to enrich the multiscale spaces for the displacement and the pressure. Additional online basis functions are computed in oversampled regions based on current residual information and are adaptively chosen to decrease the error the most. A complete theoretical analysis of the online enrichment algorithm is provided and justified by numerical experiments.
+}
+
+
+\vspace{1.5ex}
+\abs
+{A new reduced order model of  linear parabolic PDEs}
+{Yangwen Zhang$^{1}$, Noel Walkington$^{1}$, Franziska Weber$^{2}$}
+{1: Carnegie Mellon University, 2: University of California Berkeley}
+{How to build an accurate reduced order model (ROM) for  multidimensional time dependent partial differential equations (PDEs) is quite open. In this paper, we propose a new ROM for linear parabolic PDEs.  We prove that our new method can be orders of magnitude faster than
+standard solvers, and is also much less memory intensive. Under some assumptions on the problem data, we prove that the convergence rates of the new method is the same with standard solvers. Numerical experiments are presented to confirm our theoretical result.}
+
+

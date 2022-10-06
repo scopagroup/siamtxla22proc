@@ -1,0 +1,75 @@
+\label{mini17}
+
+\miniabs
+{}
+{Organizers: }
+{}
+
+\vspace{2ex}
+%Session 1
+\abs
+{Residual-based error correction for neural operator accelerated infinite-dimensional Bayesian inverse problem}
+{Lianghao Cao$^1$, Thomas O'Leary-Roseberry$^1$, Prashant K. Jha$^1$, J. Tinsley Oden$^1$, Omar Ghattas$^1$}
+{1: Oden Institute for Computational Engineering and Sciences, The University of Texas at Austin}
+{We explore using neural operators to accelerate infinite-dimensional Bayesian inverse problems (BIPs) governed by nonlinear parametric partial differential equations (PDEs). Neural operators have gained attention in recent years for their ability to approximate the parameter-to-solution mappings defined by PDEs using their numerical solutions at a limited number of parameter samples. On the one hand, the computational cost of BIPs can be drastically reduced if the large number of PDE solves required in posterior characterization are replaced with evaluations of trained neural operators. On the other hand, reducing error in the resulting BIP solutions via reducing approximation error of the neural operators in training can be challenging and unreliable. We provide an a-priori error bound result that implies certain BIPs can be ill-conditioned to the approximation error of neural operators, thus leading to inaccessible accuracy requirements in training. To reliably reduce error of neural operator predictions to be used in, but not limited to, BIPs, we consider correcting predictions of a trained neural operator by solving a linear variational problem based on the PDE residual. We show that a neural operator with error correction can possibly achieve quadratic reduction of its approximation error. Finally, we provide two numerical examples of infinite-dimensional BIPs based on a nonlinear Poisson equation and deformation of hyperelastic materials. We demonstrate that posterior representations of the two BIPs produced using neural operators are greatly and consistently enhanced by the error correction, while still retaining substantial computational speed ups.}
+
+
+\vspace{1.5ex}
+\abs
+{Scalable Model Selection of Interacting Particle Models with Gaussian processes}
+{Jinchao Feng$^1$, Charles Kulick$^2$, Sui Tang$^2$}
+{1: Deparment of Applied Mathematics and Statistics, Johns Hopkins University; 2: Department of Mathematics, University of California, Santa Barbara}
+{Interacting particle or agent systems that display a rich variety of collection motions are ubiquitous in science and engineering. A fundamental and challenging goal is to understand the link between individual interaction rules and collective behaviors. We study the data-driven discovery of distance-based interaction laws in interacting particle systems, and propose a learning approach that models the latent interaction kernel functions as Gaussian processes, which can simultaneously determine the governing equations of the dynamic systems (types of interactions $\&$ orders of the systems), and provide nonparametric inferences for the interaction kernel functions and the unknown parameters in the non-collective forces of the system. By connecting with a statistical inverse problem, we also establish an operator-theoretical framework to analyze the recoverability via the coercivity of the associated operator and provide a finite sample analysis. The numerical results on prototype systems, including the applications to two real data sets with flocking and milling patterns, show that our approach can discover the governing equations successfully, produce faithful estimators from scarce and noisy trajectory data, and make accurate predictions of the collective behaviors.}
+
+
+\vspace{1.5ex}
+\abs
+{Data-Driven Learning Based Algorithms for Multiscale Problems}
+{Sai Mang Pun}
+{Deparment of Mathematics, Texas A\&M University}
+{In this talk, we present some recent progress on the development of data-driven, machine learning algorithms for solving a class of forward and inverse problems with multiple scale features. The algorithms make use of existing multiscale solvers to build the internal structures of the whole simulator. The first part of the talk focuses on a class of parametrized and multiscale time-dependent problems. For the forward problem, we developed a multi-stage neural network architecture, containing a front-end reduction module formed by the multiscale solvers, for approximating the solutions of the problem. The second part of this talk considers a class of multiscale inverse problems. We formulate the problem into the framework of reinforcement learning and solve it with the aid of multi-level Monte Carlo Markov Chain sampling methods. Numerical results will be presented to demonstrate the efficiency and accuracy of the proposed computational methods.}
+
+
+\vspace{1.5ex}
+\abs
+{Efficient Computation of Multiscale Hamiltonian Systems Aided by Machine Learning}
+{Rui Fang$^1$, Richard Tsai$^1$}
+{$1$: Oden Institute for Computational Engineering $\&$ Sciences, The University of Texas at Austin}
+{We introduce a data-driven approach to learn the flow map for a fixed time interval for multiscale Hamiltonian systems. In particular, we focus on appropriate training data generation and loss function design. We propose Hamiltonian Monte Carlo (HMC) based methods to sample training data from an invariant measure of the exact dynamics. Moreover, we use a multi-step loss function to improve the stability of the learned flow map when used for long-time integration. Through several numerical examples, the proposed approach is shown to have higher computational efficiency compared to classical integrators.}
+
+
+\vspace{1.5ex}
+%Session 2
+\abs
+{TNet: A Model-Constrained Tikhonov Network Approach for Inverse Problems}
+{Hai Van Nguyen$^1$, Tan Bui Thanh$^1$}
+{$1$: Oden Institute for Computational Engineering \& Sciences, The University of Texas at Austin}
+{Deep Learning (DL), in particular deep neural networks (DNN), by default is purely data-driven and in general does not require physics. This is the strength of DL but also one of its key limitations when applied to science and engineering problems in which underlying physical properties and desired accuracy need to be achieved. DL methods in their original forms are not capable of respecting the underlying mathematical models or achieving desired accuracy even in big-data regimes. However, many data-driven science and engineering problems, such as inverse problems, typically have limited experimental or observational data, and DL would overfit the data in this case. Leveraging information encoded in the underlying mathematical models, we argue, not only compensates missing information in low data regimes but also provides opportunities to equip DL methods with the underlying physics, hence promoting better generalization. This paper develops a model-constrained deep learning approach and its variant TNet that are capable of learning information hidden in both the training data and the underlying mathematical models to solve inverse problems governed by partial differential equations. We provide the constructions and some theoretical results for the proposed approaches. We show that data randomization can enhance the smoothness of the networks and their generalizations. Comprehensive numerical results not only confirm the theoretical findings but also show that with even as little as 20 training data samples for 1D deconvolution, 50 for inverse 2D heat conductivity problem, 100 and 50 for inverse initial conditions for time-dependent 2D Burgers' equation and 2D Navier-Stokes equations, respectively. TNet solutions can be as accurate as Tikhonov solutions while being several orders of magnitude faster. This is possible owing to the model-constrained term, replications, and randomization.}
+
+
+\vspace{1.5ex}
+\abs
+{Approximation with Neural Networks: advantages and limitations}
+{Guergana Petrova}
+{Deparment of Mathematics, Texas A\&M University}
+{We discuss  the approximation properties of the outputs of Neural Networks and mention some classes of functions  that can be approximated with sometimes surprising accuracy by these outputs. We compare the Neural Network approximation  with traditional approximation methods from the viewpoint of rate distortion and touch upon the stability of this approximation and its limitations.}
+
+
+\vspace{1.5ex}
+\abs
+{Optimal Recovery from Inaccurate Data in Hilbert Spaces: Regularize, but what of the parameter?}
+{Simon Foucart$^1$, Chunyang Liao$^1$}
+{1: Deparment of Mathematics, Texas A\&M University}
+{In Optimal Recovery, the task of learning a function from observational data is tackled deterministically by adopting a worst-case perspective tied to an explicit model assumption made on the functions to be learned. Working in the framework of Hilbert spaces, this article considers a model assumption based on approximability. It also incorporates observational inaccuracies modeled via additive errors bounded in $\ell_2$. Earlier works have demonstrated that regularization provides algorithms that are optimal in this situation, but did not fully identify the desired hyperparameter. This article fills the gap in both a local scenario and a global scenario. In the local scenario, which amounts to the determination of Chebyshev centers, the semidefinite recipe of Beck and Eldar (legitimately valid in the complex setting only) is complemented by a more direct approach, with the proviso that the observational functionals have orthonormal representers. In the said approach, the desired parameter is the solution to an equation that can be resolved via standard methods. In the global scenario, where linear algorithms rule, the parameter elusive in the works of Micchelli et al. is found as the byproduct of a semidefinite program. Additionally and quite surprisingly, in the case of observational functionals with orthonormal representers, it is established that any regularization parameter is optimal.}
+
+
+\vspace{1.5ex}
+\abs
+{Learning of Transition Operators From Sparse Space-Time Samples}
+{Christian Kuemmerle$^1$, Mauro Maggioni$^2$, Sui Tang$^3$}
+{1: Department of Computer Science, University of North Carolina, Charlotte; 2: Department of Mathematics and Department of Applied Mathematics and Statistics, Johns Hopkins University; Department of Mathematics, University of California Santa Barbara}
+{We present a framework for the learning of a transition operator A from partial observations across different time scales. For two observation models consisting of uniformly and adaptively selected random space-time sampling locations, we show that the non-linearity of the resulting inverse problem can be addressed computationally by reformulating it as a matrix completion problem utilizing a low-rank property of a suitable block Hankel embedding matrix, which is low-rank even if the graph operator is of full rank.
+In particular, we show local quadratic convergence of a suitable Iteratively Reweighted Least Squares algorithm under the two observation models from $\Theta(r n log(rn))$ space-time samples if the (n x n) transition operator is of rank r and incoherent. Furthermore, we show how our analysis informs a suitable adaptive sampling strategy to distribute a budget of spatio-temporal samples across multiple trajectories to recover a linear dynamical system based on the topology of a graph from partial information.}
+
+
+

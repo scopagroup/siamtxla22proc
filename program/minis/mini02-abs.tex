@@ -4,25 +4,33 @@
 {Nonlocal models in mathematics and computation}
 {Organizers: P. Diehl, D. Bhattacharya, B. Aksoylu \& R. Lipton}
 {Nonlocal models have drawn increasing interest from both the mathematical and computational science communities in recent years. This is due to their ability to describe physical processes which lie outside classical local theories. Over the last fifteen years, mathematicians have begun to identify the mathematical theory behind these approaches. These efforts complement the advances in model development, computational methods and experiments necessary to validate nonlocal modeling. The objective of this mini-symposia is to bring together experts in nonlocal models from mathematics, computational science, and mechanics, in order to further the dialogue between these communities.}
+
 \vspace{2ex}
-
-
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract}
+{Four Mutual Properties of Classical and Nonlocal Wave Equations}
+{Burak Aksoylu}
+{Texas A\&M University-San Antonio}
+{The main advantage that our nonlocal (NL) operators provide is the ability to enforce local boundary condition (BC) through the use of a forcing function only on the local boundary, not in the interior of the domain.  The ability to incorporate such a widely accepted BC type into NL formulations is quite valuable. 
+
+We provide a comparative study on classical and NL wave equations.  The NL operators employ local BCs, and this is why a comparison to the classical wave equation is relevant. We find out that the two equations are qualitatively identical in terms of the balance of linear momentum (BLM), conservation of energy, and the resonance and beating phenomena. For both equations, the BLM is satisfied for the Neumann and periodic BCs and fails for Dirichlet and antiperiodic BCs.
+
+We also reveal a close connection between classical and NL wave equations.  In d’Alembert’s formula on a bounded domain, the BC is encoded in the solution using the extension artifice known as the method of images. Whereas in our integral formulation, since the only degree of freedom is the kernel function, it is encoded in the kernel of the operator. This is a striking difference from the local formulation. What is even more striking is the following similarity: we discovered that the same combination of the function piece (even or odd) and extension type (antiperiodic or periodic) is used in structuring the kernel function.  We were able to discover such suitable kernel structures thanks to functional calculus.}
+
 
 \vspace{1.5ex}
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract}
+{Macroscopic effects of inter and intra particle dynamics on vehicle dynamics using nonlocal particle based modeling}
+{Debdeep Bhattacharya and Robert P. Lipton}
+{Louisiana State University}
+{
+We investigate vehicle mobility over dry gravel roads as a function of gravel shape, elastic deformation, topology, and damage at the particle level. We examine these effects on the dynamics at the particle length scale and their impact on the macroscopic properties of gravel aggregates that effect vehicle mobility.  A shape-agnostic method is used to restrict the peridynamic interaction within gravel boundaries so that arbitrary gravel geometry, including nonconvex rock chips, can be accommodated.  A history-dependent damage model is used to capture the breakage of the rock fragments.  Motivated by the Discrete Element Method (DEM) framework, inter particle interactions are mediated by separate nonlocal particle boundary forces.  Various types of gravel particle geometries and topologies are investigated. We apply numerical simulations to extract macroscopic properties of the gravel bed. We find that vehicle transit time and power consumption are affected by the shape and strength of particle grains.  The driving torque to maintain a fixed wheel slip and the progressive damage due to the wheel weight is compared across aggregates consisting of gravels of different shapes.
+}
+
 
 \vspace{1.5ex}
-
 \abs
-{Author}{Affiliation}
-{Title}
-{Abstract}
+{Challenges for coupling approaches for classical linear elasticity and bond-based peridynamic models for non-uniform meshes and damage}
+{Patrick Diehl, Serge Prudhomme, Emily Downing, and Autumn Edwards}
+{Louisiana State University}
+{Local-nonlocal coupling approaches provide a means to combine the computational efficiency of local models and the accuracy of nonlocal models. This paper studies the continuous and discrete formulations of three existing approaches for the coupling of classical linear elasticity and bond-based peridynamic models, namely 1) a method that enforces matching displacements in an overlap region, 2) a variant that enforces a constraint on the stresses instead, and 3) a method that considers a variable horizon in the vicinity of the interfaces. The performance of the three coupling approaches is compared on a series of one-dimensional numerical examples that involve cubic and quartic manufactured solutions. Accuracy of the proposed methods with respect to non-uniform meshes and damage is measured in terms of the difference between the solution to the coupling approach and the solution to the classical linear elasticity model, which can be viewed as a modeling error. The objective of the paper is to assess the quality and performance of the discrete formulation for this class of force-based coupling methods.
+}
