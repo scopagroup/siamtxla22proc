@@ -16,42 +16,25 @@
 \vspace{1.5ex}
 \abs
 {Estimating the noise level in seismic data while overcoming cycle skipping}
-{S. Minkoff$^{1}$, H. Chen$^{1}$ \& W. Symes$^{2}$}
+{Susan Minkoff$^{1}$, Huiyi Chen$^{1}$ \& William Symes$^{2}$}
 {1: Department of Mathematical Sciences, University of Texas at Dallas, 2:  Department of Computational and Applied Mathematics, Rice University}
 {Full waveform inversion (FWI) suffers from the well-known cycle skipping problem in which local gradient-based optimization may fail to converge to geologically meaningful earth models if the initial guess for the optimization is not close enough to the true earth model. Extension methods attempt to overcome the cycle skipping problem by enlarging the space of acceptable models. In the case of source extension, the inverse problem is extended to allow for estimation of both the medium parameters (velocity) and the source wavelet via the addition of a penalty term. The extension does not require the source to be compactly supported in time. This extended objective function can be minimized efficiently  via the discrepancy principle in which the source time function and velocity are estimated in a nested loop. While this approach has been shown to overcome cycle skipping, it does require use of a well-tuned penalty weight which depends on the data noise level, which is generally unknown. In this talk I will describe and illustrate an algorithm to simultaneously solve the inverse problem while accurately estimating the data noise level.}
 
 
 \vspace{1.5ex}
 \abs
-{On the Robustness of Inverse Scattering for Penetrable, Homogeneous Objects with Complicated Boundary}
-{Carlos Borges}
-{Department of Mathematics, University of Central Florida}
-{The acoustic inverse obstacle scattering problem consists of determining the shape of a domain from measurements of the scattered far field due to some set of incident fields (probes). For a penetrable object with known sound speed, this can be accomplished by treating the boundary alone as an unknown curve. Alternatively, one can treat the entire object as unknown and use a more general volumetric representation, without making use of the known sound speed. Both lead to strongly nonlinear and nonconvex optimization problems for which recursive linearization provides a useful framework for numerical analysis. After extending our shape optimization approach developed earlier for impenetrable bodies, we carry out a systematic study of both methods and compare their performance on a variety of examples. Our findings indicate that the volumetric approach is more robust, even though the number of degrees of freedom is significantly larger. We conclude with a discussion of this phenomenon and potential directions for further research. This is joint work with Leslie Greengard (New York University and Flatiron Institute) and Manas Rachh (Flatiron Institute).}
+{Inverse problems of subsurface flows with low permeability fault structures}
+{Jeonghun (John) Lee}
+{Department of Mathematics, Baylor University}
+{In this work we consider inverse problems of subsurface flow models with low permeability fault structures. We first consider deterministic inversion of fault transmissibility parameters via constrained optimization approach with Newton conjugate gradient methods. We then consider efficient Bayesian inversion using the Laplace approximation of posterior at MAP point. This is a joint work with Umberto Villa, Tan Bui-Thanh, Omar Ghattas at the Oden Institute of Computational Engineering and Sciences in University of Texas Austin.}
 
 
 \vspace{1.5ex}
 \abs
-{TBD}
-{TBD}
-{TBD}
-{TBD}
-
-\vspace{1.5ex}
-
-\abs
-{TBD}
-{Alexandros G. Dimakis}
+{An inverse solver for a multispecies tumor growth model}
+{Ali Ghafouri \& George Biros}
 {Oden Institute, University of Texas at Austin}
-{TBD}
-
-\vspace{1.5ex}
-
-\abs
-{{L}ippmann--{S}chwinger--{L}anczos algorithm for inverse scattering problems}
-{V. Druskin$^{1}$, S. Moskow$^{2}$ \& M. Zaslavsky$^{3}$}
-{1: Department of Mathematical Sciences, Worcester Polytechnic Institute, 2: Department of Mathematics, Drexel University, 3: Schlumberger-Doll Research Center}
-{Data-driven reduced order models (ROMs) are combined with the Lippmann[1]Schwinger integral equation to produce a direct nonlinear inversion method. The ROM is viewed as a Galerkin projection and is sparse due to Lanczos orthogonalization. Embedding into the continuous problem, a data-driven internal solution is produced. This internal solution is then used in the Lippmann-Schwinger equation, thus making further iterative updates unnecessary. We show numerical experiments for spectral domain data for which our inversion is far superior to the Born inversion and works as well as when the true internal solution is known.}
-
+{Biophysical models of tumor growth at the tissue level can be used for patient stratification, preoperative planning, treatment planning, and prognosis. They also help bridge imaging phenotype with molecular drivers of cancer. Here we focus on the mathematical structure of a parameter estimation problem for multi-species model of tumor growth. This model is designed for glioblastomas but in principle it can be used to other solid tumors.  We establish connections with classical inverse problem theory, and we discuss some unique challenges. It is a single-shot inversion (that is we using only one time snapshot), it has a large number of parameters, and involves nonlinear, non-differential operators. We propose an inversion methodology that attempts to address some of these challenges, and we present numerical results that illustrate the strengths and weaknesses of the proposed scheme.}
 
 
 \vspace{1.5ex}
@@ -63,6 +46,23 @@
 
 
 \vspace{1.5ex}
+\abs
+{TBD}
+{Alexandros G. Dimakis}
+{Oden Institute, University of Texas at Austin}
+{TBD}
+
+
+\vspace{1.5ex}
+\abs
+{{L}ippmann--{S}chwinger--{L}anczos algorithm for inverse scattering problems}
+{V. Druskin$^{1}$, S. Moskow$^{2}$ \& M. Zaslavsky$^{3}$}
+{1: Department of Mathematical Sciences, Worcester Polytechnic Institute, 2: Department of Mathematics, Drexel University, 3: Schlumberger-Doll Research Center}
+{Data-driven reduced order models (ROMs) are combined with the Lippmann[1]Schwinger integral equation to produce a direct nonlinear inversion method. The ROM is viewed as a Galerkin projection and is sparse due to Lanczos orthogonalization. Embedding into the continuous problem, a data-driven internal solution is produced. This internal solution is then used in the Lippmann-Schwinger equation, thus making further iterative updates unnecessary. We show numerical experiments for spectral domain data for which our inversion is far superior to the Born inversion and works as well as when the true internal solution is known.}
+
+
+\vspace{1.5ex}
+
 \abs
 {Conductivity imaging from thermal noise}
 {Trent DeGiovanni \& Fernando Guevara Vasquez}
@@ -105,7 +105,3 @@ Main contributors are (in the alphabetical order): Vo Khoa, Thuy Le and Loc Nguy
 {Lander Besabe \& Daniel Onofrei}
 {Department of Mathematics, University of Houston}
 {In this talk, we consider the problem of actively manipulating scalar Helmholtz fields by using a source $D_a$ in the presence of one sound-soft or sound-hard obstacle. We prove the existence of and characterize a necessary input on the boundary $\partial D_a$ such that the radiated field satisfies desired control constraints in near field exterior regions and prescribed far field directions. We will show a numerical scheme to compute these boundary inputs using the method of moments, the addition theorem, Tikhonov regularization, and Laplace spherical functions. Further, we present results in solving inverse scattering problems for impenetrable obstacles given only the measured scattered field due to a fixed frequency and single direction of incidence on a compact exterior region on the near field of the unknown impenetrable scatterer.}
-
-
-
-
