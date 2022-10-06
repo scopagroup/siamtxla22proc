@@ -5,8 +5,120 @@
 {Organizers: }
 {}
 
-\vspace{1.5ex}
 \vspace{2ex}
+\abs
+{Finite Expression Method for Solving High-Dimensional PDEs}
+{Haizhao$^{1}$}
+{1: University of Maryland, College Park}
+{Designing efficient and accurate numerical solvers for high-dimensional partial differential equations (PDE) remains a challenging and essential topic in computational science and engineering, mainly due to the ``curse of dimensionality" in designing numerical schemes that scale in dimension. This talk introduces a new methodology that seeks an approximate PDE solution in the space of functions with finitely many analytic expressions and, hence, this methodology is named the finite expression method (FEX). It is proved in approximation theory that FEX can avoid the curse of dimensionality. As a proof of concept, a deep reinforcement learning method is proposed to implement FEX for various high-dimensional PDEs in different dimensions, achieving high and even machine accuracy with a memory complexity polynomial in dimension and an amenable time complexity. An approximate solution with finite analytic expressions also provides interpretable insights into the ground truth PDE solution, which can further help to advance the understanding of physical systems and design postprocessing techniques for a refined solution.}
 
+
+\vspace{1.5ex}
+\abs
+{Deep Learning of the Evolution of Unknown Systems}
+{Victor Churchill$^1$, Dongbin Xiu$^1$}
+{1: The Ohio State University}
+{Many phenomena in science and engineering are observable but not yet explainable. That is, we can observe solution data generated from many physical systems, but the actual physics, e.g. an ordinary or partial differential equation model, are unknown. In this case, developing a deep neural network based model that replicates the system’s behavior is desirable. Hence in this talk, we’ll explore how to learn the time evolution of unknown ODE and PDE systems from their solution data using deep neural networks. The specific neural network architectures used are grounded in numerical methods for solving ODEs and PDEs. We also consider the case of partially observing the solution vector, where a time history of the observed variables are required.}
+
+
+\vspace{1.5ex}
+\abs
+{Development of a Physics-Informed Machine Learning Method for Pressure Transient Test}
+{Daniel Badawi$^1$, Eduardo Gildin$^1$}
+{1: Petroleum Engineering Department - Texas A\&M University}
+{Physics-Informed Machine Learning (PIML) have recently emerged with some interesting and unique features that can be applied to reservoir engineering. In reservoir engineering, well testing  is performed to determine reservoir and well properties such as reservoir average permeability, well skin factor, boundary distance, and reservoir average pressure. Well testing is an inverse problem where bottom-hole pressure or production rates are recorded and then matched with the solution of the diffusivity equation that best describes the flow regime. The diffusivity equation is a stiff partial differential equation (PDE) and often very challenging to solve or approximate using traditional numerical methods. Perhaps the most popular test in well testing is the buildup test. In short, a buildup test is the measurement and analysis of bottom-hole pressure data acquired after a producing well is shut in, then the pressure data is matched with a set of approximated solutions to the diffusivity equation which enables the estimation of reservoir and well properties mentioned above. In this talk, we will show the power physics-informed neural networks (PINNs) for determining reservoir properties without having to actually run the well test. To this end, we  show how to tackle the stiffness of the PDE that governs the diffusivity equation in porous media flow. Also, we show the inverse capabilities of PINNs for accurately determining reservoir intrinsic properties.}
+
+
+\vspace{1.5ex}
+\abs
+{Learning Data-driven Subgrid-Scale Models: Stability, Extrapolation, and Interpretation}
+{Pedram Hassanzadeh$^{1}$, Yifei Guan$^{1}$,  Ashesh Chattopadhyay$^{1}$, Adam Subel$^{1}$ }
+{1: Rice University}
+{To make simulations of these turbulent flows or other high-dimensional multi-scale systems computationally tractable, processes with scales smaller than the typical grid size of numerical solvers have to be parameterized. Recently, there has been substantial interest (and progress) in using deep learning techniques to develop data-driven subgrid-scale (SGS) parameterizations for many canonical dynamical systems and turbulent flows. However, for these data-driven SGS parameterizations to be useful and reliable in practice, a number of major challenges have to be addressed. These include: 1) instabilities arising from the coupling of data-driven SGS parameterizations to coarse-resolution solvers, 2) learning in the small-data regime, 3) interpretability, and 4) extrapolation to different parameters and forcings. Using several setups of 2D turbulence, as well as two-layer quasi-geostrophic turbulence and Rayleigh-Benard convection as test cases, we introduce methods to address (1)-(4). These methods are based on combining turbulence physics and recent advances in theory and applications of deep learning. For example, we will use backscattering analysis to shed light on the source of instabilities and incorporate physical constraints to enable learning in the small-data regime. We will further introduce a novel framework based on spectral analysis of the neural network to interpret the learned physics and will show how transfer learning enables extrapolation to flows with very different physical characteristics. In the end, we will discuss scaling up these methods to more complex systems and real-world applications, e.g., for SGS modeling of atmospheric gravity waves.}
+
+
+\vspace{1.5ex}
+%Session 2
+\abs
+{Deep Learning Enhanced Geophysical Inversion Schemes}
+{Jiefu Chen$^{1}$, Yanyan Hu$^{1}$, Xuqing Wu$^{1}$, Yueqin Huang$^{1}$}
+{1: University of Houston}
+{Using joint inversion to reveal underlying geology has drawn considerable research attention due to the availability of multiple geophysical datasets, ever-increasing computational resources, advanced inversion methodologies, and reduced uncertainties. We propose a deep learning enhanced joint inversion framework to simultaneously reconstruct different models by fusing different types of geophysical data. A key issue of joint inversion is to develop effective strategies to fuse different geophysical data in a unified mathematical framework. In our work, we enforce the constraint of structural similarity by a deep neural network (DNN) during the learning process. The framework is designed to combine the DNN and the traditional separate inversion workflow together and improve the joint inversion results iteratively. In each iteration, the separately inverted models will be input into the well-trained network, get improved by the network, and then perform as the initials of the separate inversions in the next iteration. A weighting and cooling strategy is adopted during this process to obtain reasonable and guaranteed inversion results (where the coefficients $\alpha_{EM}$ and $\alpha_S$ are involved). The network can be easily extended to incorporate multi-physics without structural changes. In addition, this learning-based framework demonstrates excellent flexibility when the sensing configuration changes or different discretization is used for different models. We will show several numerical experiments to demonstrate that our deep learning enhanced joint inversion framework can reconstruct more accurate both physical property values and structural features of the anomalous bodies than separate inversions and traditional cross-gradient based joint inversion.}
+
+
+\vspace{1.5ex}
+\abs
+{A Model-Constrained Tangent Manifold Learning Approach for Dynamical Systems}
+{Hai Nguyen$^1$ and Tan Bui-Thanh$^1$}
+{1: University of Texas at Austin}
+{Real-time accurate solutions of large-scale complex dynamical systems are in critical need for control, optimization, uncertainty quantification, and decision-making in practical engineering and science applications. This paper contributes in this direction a model-constrained tangent manifold learning (mcTangent) approach. At the heart of mcTangent is the synergy of several desirable strategies: i) a tangent manifold learning to take advantage of the neural network speed and the time-accurate nature of the method of lines; ii) a model-constrained approach to encode the neural network tangent with the underlying governing equations; iii) sequential learning strategies to promote long-time stability and accuracy; and iv) data randomization approach to implicitly enforce the smoothness of the neural network tangent and its likeliness to the truth tangent up second order derivatives in order to further enhance the stability and accuracy of mcTangent solutions. Both semi-heuristic and rigorous arguments are provided to analyze and justify the proposed approach. Several numerical results for transport equation, viscous Burger's equation, and Navier-Stokes equation are presented to study and demonstrate the capability of the proposed mcTangent learning approach.}
+
+
+\vspace{1.5ex}
+\abs
+{Exploiting the local parabolic landscapes of adversarial losses to accelerate black-box adversarial attack}
+{Hoang Tran$^{1}$, Dan Lu$^{1}$, Guannan Zhang$^{1}$}
+{1: Oak Ridge National Laboratory}
+{Machine learning models, and convolutional neural networks (CNNs) in particular, have demonstrated remarkable performance in many classification tasks. However, deep learning technology also exposed certain security risks, as they are susceptible to malicious inputs, which are small, human-imperceptible perturbations to the inputs designed to fool the model prediction. In this talk, we present an investigation into the vulnerability of CNN classifiers from the shape of the loss’s landscape perspective. We theoretically and experimentally justify that the adversarial losses of many standard and robust image classifiers behave like parabolas with respect to perturbations in the Fourier domain, but not in the pixel domain. Then, we exploit the parabolic landscape to design a new black-box adversarial attack methods with improved query efficiency, compared to the other state-of-the-art baselines. To mitigate the security risk of the neural networks and avoid overconfident predictions on noisy or malicious inputs, we integrate a recent UQ method, called PI3NN, into CNN to quantify prediction uncertainty and identify out-of-distribution inputs of classification models. The performance of this approach will be demonstrated on the problem of identification of transient location in power systems.}
+
+
+\vspace{1.5ex}
+\abs
+{The approximation of the wave equation operator using deep learning }
+{Ziad Aldirany$^{1}$, Marc Laforest$^{1}$, Régis Cottereau$^2$, Serge 
+Prudhomme$^{1}$ }
+{1: Polytechnique Montréal, 2: Centrale Marseille}
+{The solution of the wave equation is required in a wide variety of 
+fields, such as seismology, electromagnetism, and acoustics. In the 
+last few years, a number of deep learning methods have been developed for the solution 
+of PDE-based problems, with the objective of producing techniques that 
+are more flexible and faster than the traditional FEM, FD, FV 
+approaches. Deep operator networks (DeepONet) attempt to solve PDEs by 
+learning the inverse of the differential operator for a wide class of 
+initial data, rather than learn a single solution. However, this 
+approach is especially expensive for problems containing high 
+frequencies, such as those with the linear wave equation.
+For the approximation of the homogeneous wave equation, we present a 
+neural network architecture that is based on the integral 
+representation formula of the wave equation.
+This architecture yields a faster learning and a better generalization 
+error when compared to the classical DeepONet architecture. Moreover, 
+with the proposed architecture, a trained network can be retrained for 
+solutions with higher frequencies which results in an efficient 
+learning strategy for high frequency functions.
+Numerical results in 1D and 2D will be presented to analyze frequency 
+dependent convergence of the proposed approach. }
+
+
+\vspace{1.5ex}
+%Session 3
+\abs{Strengthening Gradient Descent by Sequential Motion Optimization for Deep Neural Networks}
+{Thang Duc-Le$^{1}$, Quoc-Hung Nguyen$^{2}$, Jaehong Lee$^{1}$ and H. Nguyen-Xuan$^{3}$}
+{1:  Deep Learning Architecture Research Center, Sejong University, Seoul 05006, Republic of Korea, 2: Department of Computational Engineering, Vietnamese-German University (VGU), Binh Duong City, Viet Nam, 3: CIRTech Institute, HUTECH University, Ho Chi Minh City, Viet Nam}
+{In this report, we introduce a new optimization framework named Sequential Motion Optimization (SMO) to strengthen gradient-based methods. The key idea of SMO comes from a movement mechanism in a recent metaheuristic method called Balancing Composite Motion Optimization (BCMO). Specifically, SMO establishes a sequential motion chain of two gradient-guided individuals including a leader and a follower to enhance the effectiveness of parameter updates in each iteration. A surrogate gradient model is theoretically presented to estimate the gradient of the follower by that of the leader through chain rule during the training process. Experimental results in terms of training quality on both fully-connected multilayer perceptrons (MLPs) and convolutional neural networks (CNNs) with respect to three popular benchmark datasets including MNIST, Fashion-MNIST and CIFAR-10 show the superior performance of the proposed framework in comparison with the vanilla stochastic gradient descent (SGD) implemented via back-propagation (BP) algorithm. Although this study only introduces the vanilla gradient descent (GD) as a main gradient-guided factor in SMO for deep neural networks (DNNs) training application, it has great potential to combine with other gradient-based variants to improve its effectiveness and solve other large-scale optimization problems in practice.}
+
+
+\vspace{1.5ex}
+\abs
+{Leveraging Data-driven Surrogates to Enable Efficient Density Estimation of Sparse Observable Data on Low-dimensional Manifolds}
+{Tian Yu Yen$^1$, Tim Wildey$^1$}
+{1: Sandia National Laboratories}
+{Non-parametric density estimation is well-known to suffer from the curse of dimensionality. When the dimension of observable data is large, the number of samples required for reliable density estimates becomes prohibitively expensive, especially in physical applications where limited data is available. However, in realistic scenarios, the manifold hypothesis suggests that observable data lies on a low-dimensional manifold embedded in this high-dimensional space. In this talk, we propose utilizing physics-based surrogate models to learn an approximate low-dimensional manifold for the data. By restricting the density estimation problem to this lower-dimensional manifold, we are able to perform efficient density estimation in contexts where observational data is sparse. We demonstrate the proposed approach on both idealized scenarios and realistic physical applications, e.g., fluid flow in porous media.}
+
+
+\vspace{1.5ex}
+\abs
+{Layerwise Sparsifying Training and Sequential Learning Strategy for Neural Architecture Adaptation}
+{C G Krishnanunni$^{1}$, Tan Bui-Thanh$^{1}$}
+{1: University of Texas at Austin}
+{This work presents a two-stage framework for progressively developing neural architectures to adapt/generalize well on a given training data set.  In the first stage, a manifold-regularized layerwise sparsifying training approach is adopted where a new layer is added each time and trained independently by freezing parameters in the previous layers.  In order to constrain the functions that should be learned by each layer,  we employ a sparsity regularization term, manifold regularization term and a physics-informed term. We derive the necessary conditions for the trainability of a newly added layer and analyze the role of manifold regularization. In the second stage of the Algorithm, a sequential learning process is adopted where a sequence of small networks is employed to extract useful information from the residual produced in stage I and thereby making robust and more accurate predictions. Numerical investigations with fully connected network on prototype regression problem, physics-informed neural network (PINNs) problems, and classification problem demonstrate that the proposed approach can outperform adhoc baseline networks.}
+
+
+\vspace{1.5ex}
+\abs
+{Scalable neural network approximation for high-dimensional inverse problems}
+{Jinwoo Go $^1$, Peng Chen $^1$}
+{1: Georgia Institute of Technology}
+{High-dimensional inverse problems governed by large-scale models, e.g., partial differential equations, are challenging to solve. In this talk, we present a scalable method using invertible neural networks to solve model-constrained high-dimensional inverse problems. In particular, we investigate the impact of different loss functions for the training of forward neural networks as approximation of the parameter-to-observable map and inverse neural networks as approximation of the observable-to-parameter map, both in latent spaces.}
 
 

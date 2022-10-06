@@ -5,8 +5,68 @@
 {Organizers: }
 {}
 
-\vspace{1.5ex}
 \vspace{2ex}
+%Session 1
+\abs
+{Reduced Order Modeling for a LES filtering approach}
+{M. Girfoglio$^{1}$ and A. Quaini$^{2}$ and G. Rozza$^{1}$}
+{1: International School for Advanced Studies, 2: University of Houston}
+{It is well known that the extension of reduced order models (ROMs) to turbulent flows presents several challenges. We choose to work with a large eddy simulation (LES) approach that describes the small-scale effects by a set of equations to be added to the discrete Navier-Stokes equations. This extra problem acts as a low-pass differential filter. We propose a Proper Orthogonal Decomposition (POD)-Galerkin based ROM when a linear filter is used and a hybrid projection/data-driven strategy in the case of a nonlinear filter. The novelties of our ROMs include: 1) the use of a ROM differential filter, i.e. a ROM spatial filter that uses an explicit lengthscale, 2) the computation of the pressure field at the ROM level, 3) the use of a finite volume method for the space discretization, which is common in many commercial codes, and 4) the use of different POD coefficients and bases to approximate the intermediate and end-of-step velocities. The performance of the proposed methods is assessed through 2D and 3D test cases.}
 
+
+\vspace{1.5ex}
+\abs
+{Adaptive Model Order Reduction for Turbulent Reacting Flows}
+{Cheng Huang$^{1}$}
+{1: University of Kansas}
+{Even with exascale computing capabilities, high-fidelity simulations of turbulent combustion in realistic applications such as rocket combustion remain computationally expensive and inaccessible for many-query applications. Projection-based model order reduction (PMOR) has shown promise in greatly improving computational efficiency. However, classical MOR methods that seek reduced solutions in static low-dimensional subspaces fail for realistic turbulent combustion problems because reacting flows feature extreme stiffness, sharp gradients, and multi scale transport, which pose great challenges in deriving effective low order representations and developing predictive reduced-order models (ROMs). In this talk, an adaptive reduced-order modeling method is introduced which updates the low-dimensional space on the fly, thus circumventing representation barriers faced by static reduced dimensional spaces. The method leverages model-form preserving least-squares projections with variable transformation (MP-LSVT) for improved robustness of ROM and adapt the low-dimensional subspaces based on the evaluated dynamics during online calculations to enable predictive ROMs for turbulent reacting flows.}
+
+
+\vspace{1.5ex}
+\abs
+{A low-order nonlinear model of a stalled airfoil from data: Exploiting sparse regression with physical constraints}
+{A. Leonid Heide$^{1}$,Katherine J. Asztalos$^{2}$,Scott T. M. Dawson$^{2}$, and Maziar S. Hemati$^{1}$}
+{1: University of Minnesota, 2: Illinois Institute of Technology}
+{This work uses data-driven sparsity-promoting methods to obtain low-order governing equations for the wake of a stalled airfoil. 
+Direct numerical simulation data of a NACA-0009 airfoil at an angle of attack of $\alpha=15^{\circ}$ is utilized in this study, with actuation being performed by injecting momentum into the flow near the airfoil’s leading edge. 
+Proper Orthogonal Decomposition (POD) is used to obtain a reduced order representation of the flow field.
+The Sparse Identification of Nonlinear Dynamics (SINDy) framework is then implemented to obtain low-order quadratic governing equations for the  flow over the stalled airfoil.
+The SINDy model is constrained to preserve the energy-conserving property of the quadratic nonlinearity and associated triadic energy-transfer mechanisms. 
+Low-order nonlinear models of the unsteady flow field associated with the stalled airfoil are obtained and cross-validated using off-design data. 
+Furthermore, an output equation that predicts the lift coefficient is also identified and cross-validated.
+These low-order nonlinear models are expected to facilitate future developments in model-based analysis and control of separated flows.}
+
+
+\vspace{1.5ex}
+\abs
+{Dimensionality reduction for spatial-temporal fields beyond POD and CNN}
+{Shaowu Pan$^{1,2}$, Steve Brunton$^{2}$, Nathan Kutz$^{2}$}
+{1: Rensselaer Polytechnic Institute, 2: University of Washington, Seattle}
+{Fluid dynamics exhibits complex, multi-scale spatial structure, chaotic dynamics in time, and bifurcation in the relevant parameters. Among these challenges, spatial complexity is the major barrier for modeling and control of fluid dynamics, which motivates the need of dimensionality reduction. Existing paradigms, such as proper orthogonal decomposition or convolutional autoencoders, both struggle to accurately and efficiently represent flow structures for problems requiring variable geometry, non-uniform grid resolution (e.g., wall-bounded flows, flow phenomenon induced by small geometry features), adaptive mesh refinement, or parameter-dependent meshes. To resolve these difficulties, we propose a general framework called \textit{Neural Implicit Flow} (NIF) that enables a compact and flexible dimension reduction of large-scale, parametric, spatial-temporal data into mesh-agnostic fixed-length representations. This work complements existing meshless methods, e.g., physics-informed neural networks, and we focus specifically on obtaining effective reduced coordinates where modeling and control tasks may be performed more efficiently. We apply our mesh-agnostic approach to several fluid flows, including flow past a cylinder, sea surface temperature data, 3D homogeneous isotropic turbulence, and a transonic 3D flow over ONERA M6 wing. In these examples, we demonstrate the utility of NIF for parametric surrogate modeling, efficient differentiable query in space, learning non-linear manifolds, and the interpretable low-rank decomposition of fluid flow data.}
+
+
+\vspace{1.5ex}
+%Session 2
+\abs
+{Discovering Model Error with interpretability and Data-Assimilation: Sparse observations of multi-scale flows}
+{Rambod Mojgani$^{1}$, Ashesh Chattopadhyay$^{1}$, Pedram Hassanzadeh$^{1}$}
+{1: Rice University}
+{We are developing a framework for discovering structural model errors from temporally and spatially sparse data to improve accuracy of climate models. Inaccuracies in the models of the Earth system, i.e., structural and parametric model errors, lead to inaccurate predictions. Such errors may have originated from unresolved phenomena due to a low numerical resolution, as well as misrepresentations of physical phenomena or boundaries (e.g., orography). While calibration methods have been introduced to address parametric uncertainties, representing structural uncertainties in models of the Earth system remains a major challenge. Therefore, along with the increases in both the amount and frequency of observations, algorithmic innovations are required to identify interpretable representations of the model errors. We have introduced Model Error Discovery with Interpretability and Data-Assimilation (MEDIDA), a flexible, general--purpose framework to discover interpretable model errors. Here, we show its performance on a canonical prototype of geophysical turbulence, the two--level quasi--geostrophic system. Accordingly, a Bayesian sparsity--promoting regression framework is used to select the relevant terms from a library of interpretable kernels. As calculating the library from noisy and sparse data (e.g., from observations) using conventional techniques leads to interpolation and numerical errors, here we propose using a coordinate-based multi--layer embedding to impute the sparse observations. We demonstrate the importance of alleviating spectral bias, especially with the multi--scale nature of turbulent flows, and show a random Fourier feature layer can sufficiently increase accuracy of the kernel terms to enable an accurate discovery. Our framework successfully identifies structural model errors due to linear and nonlinear processes (e.g., radiation, surface friction, advection), as well as misrepresented orography.}
+
+
+\vspace{1.5ex}
+\abs
+{Compiler-based Differentiable Programming for Accelerated Simulations}
+{Ludger Paehler$^{1,2}$ and Jan Hueckelheim$^{2}$ and Johannes Doerfert$^{3}$}
+{1: Technical University of Munich, 2: Argonne National Laboratory, 3: Lawrence Livermore National Laboratory}
+{With the ever accelerating advances of modern machine learning techniques such as implicit differentiable layers, and deep equilibrium models the desire to extend these techniques to traditional simulations for the purpose of acceleration or the improvement of outer-loop applications becomes ever stronger. While in some areas it may be feasible to rewrite simulations in differentiable domain specific languages such as Jax, PyTorch or DiffTaichi, this is entirely infeasible for traditional simulations which have been built up, and validated over the past decades. In this talk we build on our recent work on compiler-based automatic differentiation enabling the synthesization of gradients, and vectorization of computation for simulations written in C/C++, Fortran, Julia, Rust, etc. to extend these modern techniques to traditional simulations, and enable the acceleration thereof.}
+
+
+\vspace{1.5ex}
+\abs
+{Advances in parameter space reduction with applications in naval engineering}
+{M. Tezzele$^{1}$ and G. Rozza$^{2}$}
+{1: University of Texas at Austin, 2: International School for Advanced Studies}
+{Active subspaces (AS) method is one of the most widespread linear methods to reduce the dimensionality of the input design space. In this talk we introduce a new localization version of AS exploiting a supervised distance metric for regression and classification tasks. With this technique we are able to find local rotations of the parameter space so to unveil low-dimensional structures of the function. We also present a multi-fidelity extension to increase the accuracy of Gaussian process response surfaces by incorporating a low-dimensionality bias without the need of running low-fidelity simulations. This allows us to extract more information from the same set of initial high-fidelity data. Finally, we show how to incorporate parameter space reduction into a non-intrusive reduced order modelling framework for the structural optimization of passenger ship hulls.}
 
 

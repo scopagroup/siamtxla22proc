@@ -5,8 +5,145 @@
 {Organizers: }
 {}
 
-\vspace{1.5ex}
 \vspace{2ex}
+%Session 1 (Friday)
+\abs
+{Energy stable state redistribution cut-cell discontinuous Galerkin methods for wave propagation}
+{Christina G. Taylor$^{1}$ and Jesse Chan$^{1}$}
+{1: Rice University}
+{Cut cell methods provide the ability to represent complex geometries while maintaining the simplicity of a Cartesian mesh wherever possible. However, cut cell meshes can result in extremely small and/or skewed cut elements that severely restrict the maximum stable time step of a simulation. Special discretizations may also be required to ensure that a cut-cell method is energy stable. In this work we prove the L2 stability of state redistribution, a technique for relaxing the CFL condition when small elements are present, and combine it with a provably energy stable high order discontinuous Galerkin formulation for wave propagation problems.}
 
 
+\vspace{1.5ex}
+\abs
+{Guaranteed upper bound for the maximum speed\\ of propagation in the Riemann problem}
+{Bennet Clayton$^1$, Jean-Luc Guermond$^1$, Bojan Popov$^1$}
+{1: Department of Mathematics, Texas A\&M University, 3368 TAMU, College Station, TX 77843, USA.}
+{We will present a derivation of a guaranteed upper bound for the maximum speed of propagation in the Riemann solution for the Euler system of gas dynamics in Eulerian or Lagrangian frame with the Extended Noble-Abel Stiffened-Gas Equation of State. The novelty is that an accurate upper bound on the speed is given explicitly, hence no iterative solver is needed, and the algorithm can be used in both Eulerian and Lagrangian frame. Moreover, the upper bound can be used to define a first order invariant domain preserving method for the Euler system even when the equation of state is tabulated. 	This is a joint work with Bennet Clayton and Jean-Luc Guermond.}
 
+
+\vspace{1.5ex}
+\abs
+{A second order invariant domain preserving method for the compressible Euler equations with a tabulated equation of state}
+{Bennett Clayton$^{1}$, Jean-Luc Guermond$^{1}$, Matthias Maier$^{1}$, Bojan Popov$^{1}$, Eric Tovar$^{2}$}
+{1: Department of Mathematics, Texas A\&M University 3368 TAMU, College Station, TX 77843, USA. 2: X Computational Physics, Los Alamos National Laboratory, P.O. Box 1663, Los Alamos, NM, 87545, USA}
+{In this talk we present a second order method for approximating the compressible Euler equations with a complicated or tabulated equation of state. This method uses the so-called entropy viscosity which requires an analytic expression for the entropy. This becomes a problem if the equation of state is tabulated or incomplete. To resolve this issue, we propose a surrogate entropy which behaves similar to the physical entropy. Convex limiting is also performed on a surrogate entropy which guarantees an invariant domain preserving property.
+	
+We provide a variety of numerical illustrations with a variety of equations of state which demonstrate the second order convergence as well as convergence to solutions with composite wave structures.}
+
+
+\vspace{1.5ex}
+\abs
+{High-order methods for nonlinear wave equations in second order form}
+{Thomas Hagstrom}
+{Southern Methodist University}
+{The theory of numerical methods for first-order hyperbolic systems in Friedrichs form is well-developed, and at least in one space dimension there are even effective methods to treat singular solutions. However, many physical theories are based on action principles which lead to second order systems. Although it is often possible to recast these as first order Friedrichs systems, with the complication of additional initial and boundary conditions and additional constraints, we would like to develop methods which treat the second order systems directly. We will illustrate our construction with examples from gravitional wave theory and compressible flows, and also discuss some new singularity phenomena which arise.}
+
+
+\vspace{1.5ex}
+%Session 2 (Saturday)
+\abs
+{A high-order explicit Runge-Kutta method for approximating the Shallow Water Equations with sources}
+{Eric J. Tovar}
+{Los Alamos National Laboratory}
+{In this talk, we introduce a new higher-order in space and time approximation of the Shallow Water Equations (SWEs) with sources. In particular, we show how to construct explicit Runge–Kutta (ERK) time stepping techniques for the SWEs that are invariant-domain preserving and well-balanced with respect to rest states.}
+
+
+\vspace{1.5ex}
+\abs
+{Modeling Shallow Water Flows through Obstacles with Windows}
+{Suncica Canic$^{1}$, Alina Chertock$^{2}$, Shumo Cui$^{3}$, Alexander Kurganov$^{3}$, Xin Liu$^{4}$, Abdolmajid Mohammadian$^{4}$ and Tong Wu$^{5}$}
+{1: University of California, Berkeley, and University of Houston, 2: North Carolina State University, 3: Southern University of Science and Technology, 4: University of Ottawa, and 5: The University of Texas at San Antonio}
+{When flooding occurs in urban areas, water may flow into houses and other window structure obstacles. Those kinds of obstacles can be commonly found nearby the base of the raised houses as flood control structures. The investigation of such water flows plays a critical role in both flood mitigation and the planning of new urban areas. Water flows through this type of obstacle can be simulated using the incompressible 3-D Navier-Stokes equations. However, a 3-D model of an urban environment is not practical due to the high computational cost. The 2-D shallow water system is substantially less expensive, which leads us to the idea of using a multi-layer shallow water system to model the flow near the window. We have invented a strategy of locally switching back and forth between the single- and multi-layer shallow water systems, in which the total amount of water and the momentum is conserved. The designed schemes are well-balanced and positivity preserving, and the results from numerical simulations achieve good agreements with the experimental data.}
+
+
+\vspace{1.5ex}
+\abs
+{ A positivity-preserving and conservative high-order flux reconstruction method for the polyatomic Boltzmann–BGK equation}
+{Tarik Dzanic$^{1}$}
+{1: Texas A\&M University}
+{The governing equations for the majority of computational fluid dynamics solvers rely on the continuum assumption for the fluid. For many problems of interest, including rarefied gases and hypersonic flows, this assumption starts to break down, and it becomes necessary to revert to the governing equations of molecular gas dynamics which underpin the macroscopic behavior of the fluid. One such example, the Boltzmann equation, provides a statistical description of particle transport and collision which can recover the hydrodynamic equations in the asymptotic limit while providing a more detailed description of non-equilibrium systems and flows outside of the continuum regime. However, due to its high-dimensional nature, solving the Boltzmann equation comes at a computational cost that can be orders of magnitude higher than the associated transport equations for the macroscopic variables.
+	
+	In this talk, we will present a numerical scheme for solving the polyatomic Boltzmann equation with the aim of increasing the applicability of the approach and drastically reducing the associated computational cost. The proposed scheme combines a positivity-preserving high-order flux reconstruction spatial discretization for unstructured meshes, guaranteeing the positivity of density and internal energy, with a nodal discrete velocity model, ensuring conservation regardless of the resolution. Furthermore, the computational cost of the collision operator is reduced through the Bhatnagar–Gross–Krook (BGK) operator, and internal degrees of freedom are included to extend the approach to polyatomic molecules and general constitutive laws. The applicability of the approach will be shown in a series of multi-scale numerical experiments, ranging from supersonic flows to compressible three-dimensional turbulence.}
+
+
+\vspace{1.5ex}
+\abs
+{Greedy invariant-domain preserving approximation for hyperbolic system}
+{J.-L. Guermond$^1$, M. Maier$^1$, B. Popov$^1$, L. Saavedra$^2$, I. Tomas$^3$}
+{1: Department of Mathematics, Texas A\&M University, 3368
+	TAMU, College Station, TX 77843, USA.
+	2: Departamento de Matem\'atica Aplicada a la Ingenier\'ia
+	Aeroespacial, E.T.S.I. Aeron\'autica y del Espacio, Universidad
+	Polit\'ecnica de Madrid, 28040 Madrid, Spain.
+	3: Department of Mathematics and Statistics,
+	Texas Tech University, 2500 Broadway Lubbock,
+	TX 79409, USA.}
+{In this work we propose a new way to estimate the artificial viscosity
+	that has to be added to make explicit, conservative, and consistent
+	numerical methods invariant-domain preserving and entropy inequality
+	compliant. Instead of computing an estimate on the maximum wave speed
+	in Riemann problems, we estimate a minimum wave speed in the said
+	Riemann problems so that the approximation satisfies predefined bounds
+	and predefined entropy inequalities. This technique eliminates
+	non-essential fast waves from the construction of the artificial
+	viscosity, while preserving pre-assigned invariant-domain properties
+	and entropy inequalities. For instance, this technique eliminate
+	accoustic waves in contact discontinuties. The resulting technique
+	produces a methods that is invariant-domain preserving and satisfies
+	the pre-assigned entropy inequalities.}
+
+
+\vspace{1.5ex}
+%Session 3 (Sunday)
+\abs
+{The immersed interface method for simulating flows around rigid objects represented by triangular meshes}
+{Sheng Xu}
+{Southern Methodist University}
+{A rigid solid moving in a fluid can be modeled as a fluid in rigid motion enclosed by the fluid-solid interface.  The velocity, the pressure and their spatial derivatives across the interface are non-smooth or discontinuous with jumps. The immersed interface method incorporates necessary jump conditions across the interface into numerical schemes to attain the sharp interface, desired accuracy and high efficiency in numerical simulation. In the past, global parametrization was used to represent an interface to ease the computation of jump conditions, but it is generally limited to smooth and simple interfaces. In this talk, we present how to compute jump conditions on a triangular mesh that represents an interface. The interface can be non-smooth and complex. The immersed interface method with triangular mesh representation is robust to simulate flows around multiple moving non-smooth complex rigid solids. We simulate various flows to demonstrate the accuracy, efficiency and robustness of the method.}
+
+
+\vspace{1.5ex}
+\abs
+{A parallel high-order overset framework for compressible turbulent flows}
+{Amir Akbarzadeh$^1$, Lai Wang$^1$, Freddie Witherden$^2$, Antony Jameson$^{1,2}$}
+{$1$: Texas A\&M University, department of aerospace engineering, $1$: Texas A\&M University, department of ocean engineering,}
+{A parallel high-order overset framework is developed to simulate moving object problems such as rotorcrafts and wind turbines. Here, we implement overset grid connectivity developed in TIOGA library into PyFR for simulating compressible flows. The framework is developed to be used with many GPUs on both linear and high-order curved hex grids. Moreover, using high-order interpolations, the framework is capable of visualizing flow fo all grids on the background grid, which alleviates the flow visualization in the case of presence of multiple grids. The framework is validated against benchmarks such as turbulent Taylor-Green vortex with a moving grid, and a spinning sphere.}
+
+
+\vspace{1.5ex}
+\abs
+{Robust and efficient approximation of the compressible Navier-Stokes equations}
+{Matthias Maier}
+{1: Department of Mathematics, Texas A\&M University, 3368
+	TAMU, College Station, TX 77843, USA.}
+{
+	Structure preserving numerical methods provide theoretical guarantees of
+	reliability for situations where ad-hoc stabilization techniques can fail.
+	In this talk we present a fully discrete approximation technique for the
+	compressible Navier-Stokes equations that is second-order accurate in
+	time and space and guaranteed to be invariant domain preserving. This
+	means the method maintains important physical invariants and is
+	guaranteed to be stable without the use of ad-hoc tuning parameters.
+	
+	We discuss the underlying algebraic discretization technique based on
+	collocation and convex limiting, and briefly comment on a high-performance
+	implementation utilizing SIMD (single instruction multiple data)
+	vectorization and OpenMPI parallelization.
+}
+
+
+\vspace{1.5ex}
+\abs
+{Higher-order methods for phase-resolving wave/structure interaction}
+{Chris Kees and Wen-Huai Tsao and Rebecca Schurr}
+{Louisiana State University}
+{We consider viscous, inviscid, and depth-averaged models of
+	non-hydrostatic coastal wave propagation over submerged and emergent
+	structures. Our aim is to model wave height attenuation and momentum
+	dissipation through marsh vegetation and over coastal protective
+	structures. Each model requires a significantly different set of
+	numerical methods to achieve higher-order accuracy in a robust manner,
+	and we will discuss several of these, including CutFEM and flux
+	limiting. Finaly we present results on experimental data obtained from
+	physical models of wave/structure interaction.}

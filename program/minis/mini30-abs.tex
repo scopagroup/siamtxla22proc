@@ -5,8 +5,61 @@
 {Organizers: }
 {}
 
-\vspace{1.5ex}
 \vspace{2ex}
+%Sesssion 1
+\abs
+{A mixture of experts approach for efficient representation of combustion manifolds}
+{Ope Owoyele$^{1,2}$ Pinaki Pal$^2$}
+{1: Argonne National Laboratory, 2: Louisiana State University}
+{Direct numerical modeling of turbulent combustion with detailed chemical kinetics is challenging, due to the vast number of chemical scalars involved, the existence of a wide range of spatio-temporal scales, and the complex interactions between chemical kinetics and turbulent flow. To mitigate these challenges, physically-derived reduced-order models that rely on \textit{a priori} tabulation of chemistry (such as the tabulated flamelet model) have been developed. These models, however, suffer from the curse of dimensionality, where the size of the table and the interpolation complexity increases exponentially as more independent variables are added. In response to these issues, an approach for learning turbulent combustion tables in the context of the flamelet model has been the developed. In this approach, multiple neural networks (called experts) are trained concurrently, each neural network attempting to adversely alter the training of the other competing experts. In this way, the thermochemical space of interest is divided amongst the neural networks, with each one being an expert in specific regions of the thermochemical domain. The proposed approach is applied to the combustion of $n$-dodecane in air, showing improved speed and accuracy compared to the conventional use of single neural networks.}
 
+
+\vspace{1.5ex}
+\abs
+{Neural Ordinary Differential Equations with Physics-Informed Architectures and Constraints for Dynamical Systems Modeling}
+{Cyrus Neary$^1$, Franck Djeumou$^1$, Eric Goubault$^2$, Sylvie Putot$^2$ and Ufuk Topcu$^1$}
+{1: University of Texas at Austin, 2: LIX, CNRS, Ecole Polytechnique, Institut Polytechnique de Paris, France}
+{Effective inclusion of physics-based knowledge into deep neural network models of dynamical systems can greatly improve data efficiency and model robustness. Such a priori knowledge might arise from physical principles (e.g., conservation laws) or from the system's design (e.g., the Jacobian matrix of a robot), even if large portions of the system dynamics remain unknown. We develop a framework to learn dynamics models from trajectory data while incorporating a priori system knowledge as inductive bias. More specifically, the proposed framework uses physics-based side information to inform the structure of the neural network itself and to place constraints on the values of the outputs and the internal states of the model. It represents the system's vector field as a composition of known and unknown functions, the latter of which are parametrized by neural networks. The physics-informed constraints are enforced via the augmented Lagrangian method during the model's training. We experimentally demonstrate the benefits of the proposed approach on a variety of dynamical systems -- including a suite of robotics environments featuring large state spaces, nonlinear dynamics, external forces, contact forces, and control inputs. By exploiting a priori system knowledge, the proposed approach learns to predict the system dynamics two orders of magnitude more accurately than a baseline approach that does not include prior knowledge, while also enforcing physics-based constraints.}
+
+
+\vspace{1.5ex}
+\abs
+{Derivative informed neural operators for PDE-constrained optimization under uncertainty}
+{Dingcheng Luo$^1$, Thomas O'Leary-Roseberry$^1$, Peng Chen$^2$ and Omar Ghattas$^1$}
+{1: University of Texas at Austin, 2: Georgia Institute of Technology}
+{When optimizing the performance of systems governed by PDEs, the presence of uncertainty in the model parameters lead to optimization under uncertainty (OUU) problems, where the optimization cost is defined in terms of risk measures of a quantity of interest. OUU problems are often orders of magnitude more expensive to solve compared to their deterministic counterparts due to the need to evaluate the risk measure by stochastic integration. This can require many evaluations of the governing PDE at every optimization iteration, rendering its solution computationally prohibitive for complex PDEs. In this talk, we present a novel framework for constructing derivative informed neural operator surrogates for the purpose of OUU. In particular, the PDE solution mapping from the uncertain parameters and optimization variables to the state is approximated by a neural operator. Sensitivity information from the PDE is used to determine reduced bases for input and output dimension reduction. Furthermore, we also incorporate the derivatives in a Sobolev-type training loss to ensure that the neural operator has accurate derivatives with respect to the optimization variable, such that they are amenable to derivative based optimization algorithms when solving the OUU problem. Here, we will discuss the construction of such neural operators and its use as surrogates for OUU, demonstrating its capabilities over a suite of numerical examples.}
+
+
+\vspace{1.5ex}
+\abs
+{Prediction of numerical homogenization using deep learning for the Richards equation}
+{Sergei Stepanov$^1$, Denis Spiridonov$^1$ and Tina Mai$^2$}
+{1: North-Eastern Federal University, 2: Duy Tan University and Texas A\&M University}
+{We investigate a coarse-scale approximation based on numerical homogenization for the nonlinear Richards equation as an unsaturated flow over heterogeneous media. Using deep neural networks (DNNs), this approach provides frequent and rapid calculations of macroscopic parameters. To be more precise, during training a neural network, we utilize a training set of stochastic permeability realizations and accordingly computed macroscopic targets (effective permeability tensor, homogenized stiffness matrix, and right-hand side vector). The treatment for the nonlinearity of Richards equation is incorporated in the (predicted) coarse-scale homogenized stiffness matrix, as a novelty in our proposed deep learning method, which creates nonlinear maps between such permeability fields and macroscopic features. Numerous numerical experiments in two-dimensional model problems show how well this technique performs, in terms of predictions of the macroscopic properties and consequently solutions}
+
+
+\vspace{1.5ex}
+%Session 2
+\abs
+{Why are deep learning-based models of geophysical turbulence long-term unstable?}
+{Ashesh Chattopadhyay$^1$ and Pedram Hassanzadeh$^1$}
+{1: Rice University}
+{Deep learning-based data-driven models of geophysical turbulence, e.g., data-driven weather forecasting models, have received substantial attention recently. These models, trained on observational data,  are competitive with numerical weather prediction (NWP) models in terms of short-term performance. Such data-driven weather predictions models, trained on observational data are devoid of numerical biases and can be used for probabilistic forecasts with a large number of ensemble members, as well as efficient data assimilation at a computational cost which is several orders of magnitude smaller than that of NWP models. However, these data-driven models do not remain stable when integrated for a long time period (decadal time scales). This hinders their usefulness to simulate long-term climate statistics with synthetically generated data that could be used for studying the physical mechanisms of extreme events. A physical cause of this instability in data-driven models of weather, and generally turbulence, is yet-so-far unknown and several ad-hoc strategies are often adopted for improving their stability. In this work, we propose a causal mechanism for this instability through the lenses of physical and deep learning theory and propose a mitigation strategy to obtain long-term stable models of weather, climate, and generally geophysical turbulence.}
+
+
+\vspace{1.5ex}
+\abs
+{Smoothness and Sensitivity of Principal Subspace-valued Map}
+{Ruda Zhang$^{1}$}
+{1: University of Houston}
+{Proper orthogonal decomposition (POD) is a popular method to construct bases for reduced order modeling (ROM) of nonlinear systems. It confines the high-dimensional dynamics to a subspace spanned by the principal components of some state snapshots. When POD is used for the local bases of a parametric ROM, the mapping from model parameters to POD subspaces needs to be approximated. The sample complexity of function approximation, however, depends on the smoothness of such principal subspace-valued maps. In this talk, I give some smoothness results on principal subspace-valued maps: (1) sufficient conditions for the map to be analytic ($C^\omega$)and continuous ($C^0$), respectively; (2) sensitivity of the map in terms of the Frechet derivative; (3) in case the map is discontinuous, the continuity gap and its improvement when we use a probabilistic version of the principal subspaces. Remarkably, the full probabilistic version of the map is always continuous. Numerical examples illustrate how these results affect approximation accuracy. Our results apply to any type of principal subspace-valued maps, including POD and parametric principal component analysis (PCA).}
+
+
+\vspace{1.5ex}
+\abs
+{Adaptive planning for digital twins}
+{Marco Tezzele$^{1}$ and Karen Willcox$^{1}$}
+{1: University of Texas at Austin}
+{Digital twins are rapidly spreading and are used in many engineering applications. With digital twin we intend a dynamically updating virtual representation of a physical asset of interest throughout its operational lifespan. Possible applications are predictive maintenance, optimization, and planning. In this talk we present a digital representation of an unmanned aerial vehicle, focusing on its structural health, in the framework of autonomous aerial cargo missions. We focus on how to incorporate adaptive planning, assimilating information during the operational regime. The idea is to exploit a Beta-Bernoulli process to easily update the posterior distribution of the state transition probability of the underlying Markov decision process. This is accomplished without the need of numerical integration. A new policy is selected dynamically using the most recent transition probability estimation. The resulting digital twin is thus adapting the planning strategy online during the mission.}
 
 
