@@ -5,6 +5,7 @@
 {Organizers: E. Castillo}
 {Topics related to the use of deep learning, either as an ancillary method or as the primary mode of analysis, for biomedical applications will be presented. Discussion areas will include theoretical and computational approaches, as well as clinical translation considerations.}
 
+\begin{addmargin}[2em]{0em}
 \vspace{2ex}
 \abs
 {Respecting Variation in Physician Clinical Practice }
@@ -35,3 +36,4 @@
 {Michael Sacks, Shruti Motiwale, and Christian Goodbrake}
 {The University of Texas at Austin}
 {All high-fidelity cardiac simulations require a comprehensive image-based finite element modeling pipeline. While quite accurate, such traditional approaches cannot be used in practical for time-sensitive clinical evaluations. In this work we developed a neural network surrogate modeling method to generate fast online predictions while frontload the computational cost to model training. Due to the complex geometry of the cardiac models, the finite element discretization is used and integrated with the neural network. To train the neural network model without the need to generate finite element solutions, we developed a physics-based training scheme using differentiable finite elements to backpropagate the gradients from residuals of partial differential equations (PDEs) to the neural network. We considered active contraction and spatially varying fiber structures, all incorporated into a prolate spheroidal model of the left ventricle (LV) as a first step scenario. We consider a prolate spheroidal model of the left ventricle. The domain is discretized using unstructured tetrahedron elements. The fiber geometry was based on a rules-based approach to approximagte the -60 to 60 degree transmural gradient, and a Fung-type material model with constants taken from the ovine heart used.  The entire pipeline was then trained against a represented pressure-volume loop. To verify our differentiable implementation of finite elements, we utilized the same boundary conditions and use FEniCS for conventional FE model validation. The relative error of the displacements was 3.915×10–7. We then show how a NURBS-based approach can be directly integrated into the NNFE approach as a means to handle real cardiac geometries.  While these and related approaches are in their early stages, they offer a method to perform complex organ-level simulations in clinically relevant time frames without compromising accuracy.}
+\end{addmargin}

@@ -1,10 +1,11 @@
 \label{mini20}
 
 \miniabs
-{}
-{Organizers: }
-{}
+{Recent Developments in Model Reduction and Low Rank Algorithms}
+{Organizers: Zhichao Peng \& Min Wang}
+{Numerical simulations of many real world scientific and engineering problems from chemically reacting flows to plasma physics involve a large number of degrees of freedom. This makes the outer-loop applications such as optimization, control, design, sensing and uncertainty quantification computationally expensive. Model reduction techniques and low rank algorithms, which explore and utilize the underlying low rank feature of the underlying problem, could dramatically accelerate these large-scale simulations. In this minisyposium, we would focus on the recent developments in model reduction and low rank algorithms such as machine learning based methods, structure preserving methods and least squares methods.}
 
+\begin{addmargin}[2em]{0em}
 \vspace{2ex}
 %Session 1
 \abs
@@ -19,18 +20,18 @@
 {Contrast-independent partially explicit time discretizations for multiscale problems}
 {Wenyuan Li$^{1}$,Yalchin Efendiev$^{1}$, Wing Tat Leung$^{2}$}
 {1: Texas A\&M University, 2: City University of Hong Kong}
-{Multiscale nature arise in many applications and they are typically described by some parabolic partial differential equations. When the media properties are high, the flow and transport become fast and requires small time steps to resolve the dynamics. Implicit 
+{Multiscale nature arise in many applications and they are typically described by some parabolic partial differential equations. When the media properties are high, the flow and transport become fast and requires small time steps to resolve the dynamics. Implicit
 discretization
 can be used to handle fast dynamics. However, this requires
 solving large-scale nonlinear systems. Explicit methods
 are used when possible to avoid solving nonlinear systems.
  The main drawback of explicit methods is that they
 require small time steps that scale as the fine mesh and depend
-on physical parameters, e.g., the contrast. To alleviate this issue, 
+on physical parameters, e.g., the contrast. To alleviate this issue,
 we propose
 a novel algorithm called partially explicit splitting scheme. In this scheme, we split the solution space into two parts, coarse-grid
 part, and the correction part. Coarse-grid solution is computed using
-multiscale basis functions with CEM-GMsFEM. The correction part 
+multiscale basis functions with CEM-GMsFEM. The correction part
 uses special spaces in the complement space (complement to the coarse space). We handle degrees of freedom from the first space implicitly and others explicitly. With this careful design of basis functions, our stability analysis shows that the time step scales as the coarse mesh size and is independent of the contrast, which provides computation savings. The numerical results also show that our proposed scheme obtains similar accuracy as the fully implicit scheme.}
 
 
@@ -85,4 +86,5 @@ uses special spaces in the complement space (complement to the coarse space). We
 {How to build an accurate reduced order model (ROM) for  multidimensional time dependent partial differential equations (PDEs) is quite open. In this paper, we propose a new ROM for linear parabolic PDEs.  We prove that our new method can be orders of magnitude faster than
 standard solvers, and is also much less memory intensive. Under some assumptions on the problem data, we prove that the convergence rates of the new method is the same with standard solvers. Numerical experiments are presented to confirm our theoretical result.}
 
+\end{addmargin}
 

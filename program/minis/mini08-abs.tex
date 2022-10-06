@@ -5,6 +5,9 @@
 {Organizers: Y. Lou, J. Hu \& Y. Yang}
 {Many scientific problems involve predictive models of multi-scale and multi-physics systems, most of which are extremely complex and computationally expensive to simulate. Yet, a common feature of these problems is that there is often an underlying sparse or reduced representation which can greatly ease the heavy computation burden. This mini-symposium will bring researchers working on these relevant regimes to exchange ideas and encourage collaborations.}
 
+
+
+\begin{addmargin}[2em]{0em}
 \vspace{2ex}
 \abs
 {Blind image inpainting: from sparse multiscale representations to CNNs}
@@ -18,14 +21,7 @@
 {Moment Estimation for Nonparametric Mixture Models through Implicit Tensor Decomposition}
 {Yifan Zhang, Joe Kileel}
 {University of Texas at Austin}
-{Mixture models give reduced representations for complex data distributions.
-	Despite the success of the Expectation-Maximization (EM) algorithm for fitting mixture models, recently Method of Moment (MoM) based algorithms have been receiving increased attention.
-	In this talk, I will present a new nonparametric MoM algorithm on high dimensional conditionally independent mixture models (features are independent conditioning on the class label) that computes the mixture weights and moments of each class.
-	It hinges on efficient computations with higher-order tensors and a certain coupled system of low-rank tensor problems. 
-	I will develop an alternating least-squares optimization scheme to solve this, with cost essentially independent of the tensor orders.
-	I will compare this method to EM on a variety of simulated mixture models and also a real dataset.
-	Time permitting, I will mention theoretical results on convergence and identifiability as well as a possible application to microscopy imaging. 
-	Joint work with Joe Kileel.}
+{Mixture models give reduced representations for complex data distributions. Despite the success of the Expectation-Maximization (EM) algorithm for fitting mixture models, recently Method of Moment (MoM) based algorithms have been receiving increased attention. In this talk, I will present a new nonparametric MoM algorithm on high dimensional conditionally independent mixture models (features are independent conditioning on the class label) that computes the mixture weights and moments of each class. It hinges on efficient computations with higher-order tensors and a certain coupled system of low-rank tensor problems. I will develop an alternating least-squares optimization scheme to solve this, with cost essentially independent of the tensor orders. I will compare this method to EM on a variety of simulated mixture models and also a real dataset. Time permitting, I will mention theoretical results on convergence and identifiability as well as a possible application to microscopy imaging. Joint work with Joe Kileel.}
 
 
 \vspace{1.5ex}
@@ -34,28 +30,27 @@
 {Ionut-Gabriel Farcas$^{1}$, Benjamin Peherstorfer$^{2}$, Tobias Neckel$^{3}$, Frank Jenko$^{4}$, Hans-Joachim Bungartz$^{3}$}
 {1: The University of Texas at Austin 2: New York University, 3: Technical University of Munich, 4: Max Planck Institute for Plasma Physics}
 {Multi-fidelity Monte Carlo methods leverage low-fidelity and surrogate models for variance
-	reduction to make tractable uncertainty quantification even when numerically simulating the
-	physical systems of interest is computationally expensive.
-	In this presentation, we will introduce a context-aware multi-fidelity Monte Carlo method that
-	optimally balances the costs of training low-fidelity models with the costs of Monte Carlo
-	sampling. 
-	It generalizes the previously developed context-aware bi-fidelity Monte Carlo method 
-	to hierarchies of multiple models and to more general types of low-fidelity models.
-	When training low-fidelity models, the proposed approach takes into account the context in which
-	the learned low-fidelity models will be used, namely for variance reduction in Monte Carlo
-	estimation, which allows it to find optimal trade-offs between training and sampling to minimize
-	upper bounds of the mean-squared errors of the estimators for given computational budgets. 
-	This is in stark contrast to traditional surrogate modeling and model reduction techniques that
-	construct low-fidelity models with the primary goal of approximating well the high-fidelity model
-	outputs and typically ignore the context in which the learned models will be used in upstream
-	tasks. 
-	The proposed context-aware multi-fidelity Monte Carlo method applies to hierarchies of a
-	wide range of types of low-fidelity models such as sparse-grid and deep-network models. 
-	Numerical experiments with the gyrokinetic simulation code \textsc{Gene} show speedups of up to
-	two orders of magnitude compared to standard estimators when quantifying uncertainties in small-scale fluctuations in confined plasma in fusion reactors. 
-	This corresponds to a runtime reduction from 72 days to about four hours on one node of the
-	Lonestar6 supercomputer at the Texas Advanced Computing Center.
-}
+reduction to make tractable uncertainty quantification even when numerically simulating the
+physical systems of interest is computationally expensive.
+In this presentation, we will introduce a context-aware multi-fidelity Monte Carlo method that
+optimally balances the costs of training low-fidelity models with the costs of Monte Carlo
+sampling.
+It generalizes the previously developed context-aware bi-fidelity Monte Carlo method
+to hierarchies of multiple models and to more general types of low-fidelity models.
+When training low-fidelity models, the proposed approach takes into account the context in which
+the learned low-fidelity models will be used, namely for variance reduction in Monte Carlo
+estimation, which allows it to find optimal trade-offs between training and sampling to minimize
+upper bounds of the mean-squared errors of the estimators for given computational budgets.
+This is in stark contrast to traditional surrogate modeling and model reduction techniques that
+construct low-fidelity models with the primary goal of approximating well the high-fidelity model
+outputs and typically ignore the context in which the learned models will be used in upstream
+tasks.
+The proposed context-aware multi-fidelity Monte Carlo method applies to hierarchies of a
+wide range of types of low-fidelity models such as sparse-grid and deep-network models.
+Numerical experiments with the gyrokinetic simulation code \textsc{Gene} show speedups of up to
+two orders of magnitude compared to standard estimators when quantifying uncertainties in small-scale fluctuations in confined plasma in fusion reactors.
+This corresponds to a runtime reduction from 72 days to about four hours on one node of the
+Lonestar6 supercomputer at the Texas Advanced Computing Center.}
 
 
 \vspace{1.5ex}
@@ -89,13 +84,7 @@
 {Adaptive deep density approximation for Fokker-Planck equations}
 {Xiaoliang Wan}
 {Department of Mathematics and Center for Computation and Technology, Louisiana State University, USA}
-{	In this talk we present an adaptive deep density approximation strategy based on
-	KRnet for solving Fokker-Planck (F-P) equations. F-P equations are usually high-dimensional 
-	and defined on an unbounded domain, which limits the application of traditional grid based numerical methods. With the Knothe-Rosenblatt rearrangement, KRnet improves the normalizing flow 
-	based on real NVP and provides an explicit PDF model as an effective solution candidate for
-	the Fokker-Planck equations. KRnet has a weaker dependence on dimensionality than
-	traditional computational approaches and can efficiently approximate general high-dimensional
-	density functions. To obtain effective stochastic collocation points for the training set, we develop an adaptive sampling procedure, where samples are generated iteratively using the approximate PDF given by KRnet. Numerical experiments will be presented.}
+{In this talk we present an adaptive deep density approximation strategy based on KRnet for solving Fokker-Planck (F-P) equations. F-P equations are usually high-dimensional and defined on an unbounded domain, which limits the application of traditional grid based numerical methods. With the Knothe-Rosenblatt rearrangement, KRnet improves the normalizing flow based on real NVP and provides an explicit PDF model as an effective solution candidate for the Fokker-Planck equations. KRnet has a weaker dependence on dimensionality than traditional computational approaches and can efficiently approximate general high-dimensional density functions. To obtain effective stochastic collocation points for the training set, we develop an adaptive sampling procedure, where samples are generated iteratively using the approximate PDF given by KRnet. Numerical experiments will be presented.}
 
 
 \vspace{1.5ex}
@@ -104,3 +93,4 @@
 {Sergey Fomel}
 {Jackson School of Geosciences, the University of Texas at Austin}
 {TBA}
+\end{addmargin}

@@ -1,10 +1,12 @@
 \label{mini25}
 
-\miniabs
-{}
-{Organizers: }
-{}
 
+\miniabs
+{High Order Methods for Computational Hydrodynamics}
+{Organizers: Madison Sheridan \& Bennett Clayton}
+{The construction of accurate numerical methods is essential for simulating transport phenomena in the field of computational hydrodynamics. The aim of this mini-symposium is to discuss the current state of higher-order accurate methods for simulating realistic hydrodynamics. In particular, we are interested in numerical methods that are higher-order accurate in space and time while maintaining structure preserving properties. The partial differential equations we have in mind are those with dominant hyperbolic features such as: (i) the compressible Euler Equations; (ii) the Shallow Water Equations; (iii) the compressible Navier-Stokes Equations; (iv) radiation transport equations such as the Boltzmann Equation. These equations are often strongly nonlinear and pose numerous challenges when one tries to discretize and solve them numerically.}
+
+\begin{addmargin}[2em]{0em}
 \vspace{2ex}
 %Session 1 (Friday)
 \abs
@@ -28,7 +30,7 @@
 {Bennett Clayton$^{1}$, Jean-Luc Guermond$^{1}$, Matthias Maier$^{1}$, Bojan Popov$^{1}$, Eric Tovar$^{2}$}
 {1: Department of Mathematics, Texas A\&M University 3368 TAMU, College Station, TX 77843, USA. 2: X Computational Physics, Los Alamos National Laboratory, P.O. Box 1663, Los Alamos, NM, 87545, USA}
 {In this talk we present a second order method for approximating the compressible Euler equations with a complicated or tabulated equation of state. This method uses the so-called entropy viscosity which requires an analytic expression for the entropy. This becomes a problem if the equation of state is tabulated or incomplete. To resolve this issue, we propose a surrogate entropy which behaves similar to the physical entropy. Convex limiting is also performed on a surrogate entropy which guarantees an invariant domain preserving property.
-	
+
 We provide a variety of numerical illustrations with a variety of equations of state which demonstrate the second order convergence as well as convergence to solutions with composite wave structures.}
 
 
@@ -63,7 +65,7 @@ We provide a variety of numerical illustrations with a variety of equations of s
 {Tarik Dzanic$^{1}$}
 {1: Texas A\&M University}
 {The governing equations for the majority of computational fluid dynamics solvers rely on the continuum assumption for the fluid. For many problems of interest, including rarefied gases and hypersonic flows, this assumption starts to break down, and it becomes necessary to revert to the governing equations of molecular gas dynamics which underpin the macroscopic behavior of the fluid. One such example, the Boltzmann equation, provides a statistical description of particle transport and collision which can recover the hydrodynamic equations in the asymptotic limit while providing a more detailed description of non-equilibrium systems and flows outside of the continuum regime. However, due to its high-dimensional nature, solving the Boltzmann equation comes at a computational cost that can be orders of magnitude higher than the associated transport equations for the macroscopic variables.
-	
+
 	In this talk, we will present a numerical scheme for solving the polyatomic Boltzmann equation with the aim of increasing the applicability of the approach and drastically reducing the associated computational cost. The proposed scheme combines a positivity-preserving high-order flux reconstruction spatial discretization for unstructured meshes, guaranteeing the positivity of density and internal energy, with a nodal discrete velocity model, ensuring conservation regardless of the resolution. Furthermore, the computational cost of the collision operator is reduced through the Bhatnagar–Gross–Krook (BGK) operator, and internal degrees of freedom are included to extend the approach to polyatomic molecules and general constitutive laws. The applicability of the approach will be shown in a series of multi-scale numerical experiments, ranging from supersonic flows to compressible three-dimensional turbulence.}
 
 
@@ -107,7 +109,7 @@ We provide a variety of numerical illustrations with a variety of equations of s
 \abs
 {A parallel high-order overset framework for compressible turbulent flows}
 {Amir Akbarzadeh$^1$, Lai Wang$^1$, Freddie Witherden$^2$, Antony Jameson$^{1,2}$}
-{$1$: Texas A\&M University, department of aerospace engineering, $1$: Texas A\&M University, department of ocean engineering,}
+{$1$: Texas A\&M University, Department of Aerospace Engineering, $1$: Texas A\&M University, Department of Ocean Engineering}
 {A parallel high-order overset framework is developed to simulate moving object problems such as rotorcrafts and wind turbines. Here, we implement overset grid connectivity developed in TIOGA library into PyFR for simulating compressible flows. The framework is developed to be used with many GPUs on both linear and high-order curved hex grids. Moreover, using high-order interpolations, the framework is capable of visualizing flow fo all grids on the background grid, which alleviates the flow visualization in the case of presence of multiple grids. The framework is validated against benchmarks such as turbulent Taylor-Green vortex with a moving grid, and a spinning sphere.}
 
 
@@ -115,8 +117,7 @@ We provide a variety of numerical illustrations with a variety of equations of s
 \abs
 {Robust and efficient approximation of the compressible Navier-Stokes equations}
 {Matthias Maier}
-{1: Department of Mathematics, Texas A\&M University, 3368
-	TAMU, College Station, TX 77843, USA.}
+{1: Department of Mathematics, Texas A\&M University}
 {
 	Structure preserving numerical methods provide theoretical guarantees of
 	reliability for situations where ad-hoc stabilization techniques can fail.
@@ -125,7 +126,7 @@ We provide a variety of numerical illustrations with a variety of equations of s
 	time and space and guaranteed to be invariant domain preserving. This
 	means the method maintains important physical invariants and is
 	guaranteed to be stable without the use of ad-hoc tuning parameters.
-	
+
 	We discuss the underlying algebraic discretization technique based on
 	collocation and convex limiting, and briefly comment on a high-performance
 	implementation utilizing SIMD (single instruction multiple data)
@@ -147,3 +148,4 @@ We provide a variety of numerical illustrations with a variety of equations of s
 	and we will discuss several of these, including CutFEM and flux
 	limiting. Finaly we present results on experimental data obtained from
 	physical models of wave/structure interaction.}
+\end{addmargin}

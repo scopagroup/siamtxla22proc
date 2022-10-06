@@ -5,6 +5,7 @@
 {Organizers: J. Huang \& Z. Sun}
 {High order numerical methods have been continuously receiving intensive attentions for solving partial differential equations. They are typically able to better resolve solutions with overall fewer computational resources. The goal of the special session is to gather researchers in this area and to discuss the recent advances in the development of high order methods. Topics may cover but are not limited to numerical analysis of high order methods, techniques for enhancing robustness and efficiency of numerical schemes, and development of structure-preserving high order methods for physical models.}
 
+\begin{addmargin}[2em]{0em}
 \vspace{2ex}
 \abs
 {Hermite Methods for Wave Equations}
@@ -31,9 +32,9 @@
 
 \vspace{1.5ex}
 \abs
-{On a numerical artifact of solving shallow water equations with a discontinuous bottom: Analysis and a nontransonic fix} 
-{Zheng Sun$^{1}$ and Yulong Xing$^{2}$} 
-{1: The University of Alabama, 2: The Ohio State University} 
+{On a numerical artifact of solving shallow water equations with a discontinuous bottom: Analysis and a nontransonic fix}
+{Zheng Sun$^{1}$ and Yulong Xing$^{2}$}
+{1: The University of Alabama, 2: The Ohio State University}
 {In this talk, we discuss a numerical artifact of solving the nonlinear shallow water equations with discontinuous bottom topography. For a few first-order schemes, the numerical solution will form a spurious spike in the momentum, which should not exist in the exact solution. The height of the spike cannot be reduced by the mesh refinement. In many problems, this numerical artifact may cause the wrong convergence, which means that the limit of the numerical solution is not a weak solution of the shallow water equations. To explain the formation of the spurious spike, we perform a convergence analysis of the numerical methods. It is shown that the spurious spike is caused by the numerical viscosity at the discontinuous bottom and its height is proportional to the viscosity constant in the numerical flux. Furthermore, by adopting appropriate modifications at the bottom discontinuity, we show that this numerical artifact can be removed in many cases. For various of numerical tests with nontransonic Riemann solutions, the modified scheme is able to retrieve the correct convergence.}
 
 
@@ -66,3 +67,4 @@
 {Ruiwen Shu$^{1}$ and Jingwei Hu$^{2}$}
 {1: University of Georgia, 2: University of Washington}
 {Many hyperbolic and kinetic equations contain a non-stiff convection/transport part and a stiff relaxation/collision part (characterized by the relaxation or mean free time $\varepsilon$). To solve this type of problems, implicit-explicit (IMEX) methods have been widely used and their performance is understood well in the non-stiff regime ($\varepsilon=O(1)$) and limiting regime ($\varepsilon\rightarrow 0$). However, in the intermediate regime (say, $\varepsilon=O(\Delta t)$), uniform accuracy has been reported numerically for most IMEX multistep methods, while complicated behavior of order reduction has been observed for IMEX Runge-Kutta (RK) methods. In this talk, I will take a linear hyperbolic systems with stiff relaxation as a model problem, and discuss how to use energy estimates with multiplier techniques to prove the uniform accuracy of IMEX methods. In particular, I will present my joint works with Jingwei Hu on the uniform accuracy of IMEX backward differentiation formulas (IMEX-BDF) up to fourth order, and that of IMEX-RK methods up to third order.}
+\end{addmargin}

@@ -1,10 +1,11 @@
 \label{mini27}
 
 \miniabs
-{}
-{Organizers: }
-{}
+{Challenges and opportunities in computational science and engineering: Perspectives from data-driven learning and model reduction}
+{Organizers: Ionut Farcas, Marco Tezzele \& Aniketh Kalur}
+{The high computational cost of realistic simulations of real-world phenomena - even on parallel supercomputers - renders tasks that require ensembles of such simulations, i.e., outer-loop applications, such as uncertainty quantification, control, parameter inference or design optimization, computationally infeasible. To this end, model-order reduction can be used to construct fast and accurate reduced models of complex simulations and therefore speed up outer-loop applications. In addition, primarily due to the tremendous recent advances in computing, data-driven learning and modeling emerged as a viable and practically feasible way of addressing the computational challenges in the aforementioned complex tasks as well. The aim of the mini-symposium is to foster discussion on data-driven methods, system identification, model order reduction, and uncertainty quantification for complex applications in computational science and engineering. The talks will present methodological developments as well as applications from different engineering fields.}
 
+\begin{addmargin}[2em]{0em}
 \vspace{2ex}
 %Session 1
 \abs
@@ -27,12 +28,12 @@
 {A low-order nonlinear model of a stalled airfoil from data: Exploiting sparse regression with physical constraints}
 {A. Leonid Heide$^{1}$,Katherine J. Asztalos$^{2}$,Scott T. M. Dawson$^{2}$, and Maziar S. Hemati$^{1}$}
 {1: University of Minnesota, 2: Illinois Institute of Technology}
-{This work uses data-driven sparsity-promoting methods to obtain low-order governing equations for the wake of a stalled airfoil. 
-Direct numerical simulation data of a NACA-0009 airfoil at an angle of attack of $\alpha=15^{\circ}$ is utilized in this study, with actuation being performed by injecting momentum into the flow near the airfoil’s leading edge. 
+{This work uses data-driven sparsity-promoting methods to obtain low-order governing equations for the wake of a stalled airfoil.
+Direct numerical simulation data of a NACA-0009 airfoil at an angle of attack of $\alpha=15^{\circ}$ is utilized in this study, with actuation being performed by injecting momentum into the flow near the airfoil’s leading edge.
 Proper Orthogonal Decomposition (POD) is used to obtain a reduced order representation of the flow field.
 The Sparse Identification of Nonlinear Dynamics (SINDy) framework is then implemented to obtain low-order quadratic governing equations for the  flow over the stalled airfoil.
-The SINDy model is constrained to preserve the energy-conserving property of the quadratic nonlinearity and associated triadic energy-transfer mechanisms. 
-Low-order nonlinear models of the unsteady flow field associated with the stalled airfoil are obtained and cross-validated using off-design data. 
+The SINDy model is constrained to preserve the energy-conserving property of the quadratic nonlinearity and associated triadic energy-transfer mechanisms.
+Low-order nonlinear models of the unsteady flow field associated with the stalled airfoil are obtained and cross-validated using off-design data.
 Furthermore, an output equation that predicts the lift coefficient is also identified and cross-validated.
 These low-order nonlinear models are expected to facilitate future developments in model-based analysis and control of separated flows.}
 
@@ -68,5 +69,6 @@ These low-order nonlinear models are expected to facilitate future developments 
 {M. Tezzele$^{1}$ and G. Rozza$^{2}$}
 {1: University of Texas at Austin, 2: International School for Advanced Studies}
 {Active subspaces (AS) method is one of the most widespread linear methods to reduce the dimensionality of the input design space. In this talk we introduce a new localization version of AS exploiting a supervised distance metric for regression and classification tasks. With this technique we are able to find local rotations of the parameter space so to unveil low-dimensional structures of the function. We also present a multi-fidelity extension to increase the accuracy of Gaussian process response surfaces by incorporating a low-dimensionality bias without the need of running low-fidelity simulations. This allows us to extract more information from the same set of initial high-fidelity data. Finally, we show how to incorporate parameter space reduction into a non-intrusive reduced order modelling framework for the structural optimization of passenger ship hulls.}
+\end{addmargin}
 
 

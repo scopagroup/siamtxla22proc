@@ -1,10 +1,12 @@
 \label{mini26}
 
-\miniabs
-{}
-{Organizers: }
-{}
 
+\miniabs
+{Scientific Deep Learning}
+{Organizers: Hai Nguyen, Tan Bui-Thanh \& C. G. Krishnanunni}
+{The fast growth in practical applications of deep learning in a range of contexts has fueled a renewed interest in deep learning methods over recent years. Subsequently, scientific deep learning is an emerging discipline that merges scientific computing and deep learning. Whilst scientific computing focuses on large-scale models that are derived from scientific laws describing physical phenomena, deep learning focuses on developing data-driven models which require minimal knowledge and prior assumptions. With the contrast between these two approaches follows different advantages: scientific models are effective at extrapolation and can be fitted with small data and few parameters whereas deep learning models require a significant amount of data and a large number of parameters but are not biased by the validity of prior assumptions. Scientific deep learning endeavors to combine the two disciplines in order to develop models that retain the advantages from their respective disciplines. This mini-symposium collects recent works on scientific deep learning methods covering theories, algorithms, and engineering and sciences applications.}
+
+\begin{addmargin}[2em]{0em}
 \vspace{2ex}
 \abs
 {Finite Expression Method for Solving High-Dimensional PDEs}
@@ -65,28 +67,28 @@
 \vspace{1.5ex}
 \abs
 {The approximation of the wave equation operator using deep learning }
-{Ziad Aldirany$^{1}$, Marc Laforest$^{1}$, Régis Cottereau$^2$, Serge 
+{Ziad Aldirany$^{1}$, Marc Laforest$^{1}$, Régis Cottereau$^2$, Serge
 Prudhomme$^{1}$ }
 {1: Polytechnique Montréal, 2: Centrale Marseille}
-{The solution of the wave equation is required in a wide variety of 
-fields, such as seismology, electromagnetism, and acoustics. In the 
-last few years, a number of deep learning methods have been developed for the solution 
-of PDE-based problems, with the objective of producing techniques that 
-are more flexible and faster than the traditional FEM, FD, FV 
-approaches. Deep operator networks (DeepONet) attempt to solve PDEs by 
-learning the inverse of the differential operator for a wide class of 
-initial data, rather than learn a single solution. However, this 
-approach is especially expensive for problems containing high 
+{The solution of the wave equation is required in a wide variety of
+fields, such as seismology, electromagnetism, and acoustics. In the
+last few years, a number of deep learning methods have been developed for the solution
+of PDE-based problems, with the objective of producing techniques that
+are more flexible and faster than the traditional FEM, FD, FV
+approaches. Deep operator networks (DeepONet) attempt to solve PDEs by
+learning the inverse of the differential operator for a wide class of
+initial data, rather than learn a single solution. However, this
+approach is especially expensive for problems containing high
 frequencies, such as those with the linear wave equation.
-For the approximation of the homogeneous wave equation, we present a 
-neural network architecture that is based on the integral 
+For the approximation of the homogeneous wave equation, we present a
+neural network architecture that is based on the integral
 representation formula of the wave equation.
-This architecture yields a faster learning and a better generalization 
-error when compared to the classical DeepONet architecture. Moreover, 
-with the proposed architecture, a trained network can be retrained for 
-solutions with higher frequencies which results in an efficient 
+This architecture yields a faster learning and a better generalization
+error when compared to the classical DeepONet architecture. Moreover,
+with the proposed architecture, a trained network can be retrained for
+solutions with higher frequencies which results in an efficient
 learning strategy for high frequency functions.
-Numerical results in 1D and 2D will be presented to analyze frequency 
+Numerical results in 1D and 2D will be presented to analyze frequency
 dependent convergence of the proposed approach. }
 
 
@@ -120,5 +122,6 @@ dependent convergence of the proposed approach. }
 {Jinwoo Go $^1$, Peng Chen $^1$}
 {1: Georgia Institute of Technology}
 {High-dimensional inverse problems governed by large-scale models, e.g., partial differential equations, are challenging to solve. In this talk, we present a scalable method using invertible neural networks to solve model-constrained high-dimensional inverse problems. In particular, we investigate the impact of different loss functions for the training of forward neural networks as approximation of the parameter-to-observable map and inverse neural networks as approximation of the observable-to-parameter map, both in latent spaces.}
+\end{addmargin}
 
 

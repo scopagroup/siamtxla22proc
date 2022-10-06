@@ -1,10 +1,11 @@
 \label{mini16}
 
 \miniabs
-{}
-{Organizers: }
-{}
+{Recent Advances in Reduced Order Models}
+{Organizers: Matthias Heinkenschloss}
+{The speakers in this minisymposium present recent advances in the construction, analysis, and application of projection-based reduced order models. Projection-based reduced order models (PROMs) are small-dimensional, computational efficient, accurate models obtained by systematically extracting the relevant dynamics of large-scale systems. PROMs are crucial in many query applications, such as uncertainty quantification, optimal control or parameter identification, where they replace the prohibitively expensive large-scale models. The talks in the minisymposium present recent advances the construction of data-driven, non-intrusive PROMs, modifications of PROMs that preserve structure of the underlying large-scale full order models, and applications of PROMs in large-scale optimization and parameter identification.}
 
+\begin{addmargin}[2em]{0em}
 \vspace{2ex}
 %Session 1
 \abs
@@ -24,7 +25,7 @@
 
 \vspace{1.5ex}
 \abs
-{Stabilization of linear time?varying reduced order models, a feedback controller approach}
+{Stabilization of linear time-varying reduced order models, a feedback controller approach}
 {Rambod Mojgani and Maciej Balajewicz}
 {Rice University}
 {Time-varying reduced-order models (ROMs) are results of the reduction of time-varying systems or time-invariant systems on time-varying manifolds.
@@ -36,7 +37,7 @@ In a post-processing step, trajectories of ROMa are controlled to enforce stabil
 \vspace{1.5ex}
 \abs
 {The Loewner framework in the time-domain}
-{A.C. Antoulas}
+{A. C. Antoulas}
 {Rice University Houston and Max-Planck Institute Magdeburg}
 {The Loewner framework is used for building models (linear and nonlinear) from given data.
 The data can be frequency responses or time series. In this talk we will concentrate on the latter case
@@ -56,7 +57,7 @@ low order models. The results will be illustrated by means of several numerical 
 \vspace{1.5ex}
 \abs
 {Line-search methods for unconstrained optimization with inexactness arising from reduced order models}
-{Dane Grundvig, and Matthias Heinkenschloss}
+{Dane Grundvig and Matthias Heinkenschloss}
 {Rice University}
 {This talk discusses line-search algorithms for the solution of smooth unconstrained optimization problems that allow the use of approximate objective function and gradient information. These algorithms are motivated by the need to rigorously incorporate reduced order models (ROMs) into the solution of large-scale optimization problems governed by partial differential equations. Problems of this nature are common in many science and engineering applications. The developed algorithms are error aware and use on the fly updates to error tolerances in order to reduce the accuracy requirements on the ROM approximations. The considered algorithms require no explicit information about the underlying true model and operate entirely using error bounds on the objective and its gradient. These algorithms are implementable and provide convergence guarantees subject to some reasonable assumptions on the underlying optimization problem. Numerical results show that the proposed line-search methods, combined with ROMs, converge to local minima of the original optimization problem at a fraction of the computational cost required by traditional Newton CG algorithms.}
 
@@ -64,7 +65,7 @@ low order models. The results will be illustrated by means of several numerical 
 \vspace{1.5ex}
 \abs
 {Filtering in non-intrusive data-driven reduced-order modeling of large-scale systems}
-{Ionut-Gabriel Farcas$^{1}$, Rayomand P.~Gundevia$^{2}$, Ramakanth Munipalli$^{3}$, Karen E.~Willcox$^{1}$}
+{Ionut-Gabriel Farcas$^{1}$, Rayomand P.~Gundevia$^{2}$, Ramakanth Munipalli$^{3}$, and Karen E.~Willcox$^{1}$}
 {1: The University of Texas at Austin 2: Jacobs Engineering Group, Inc., 3: Air Force Research Laboratory}
 {We present a method for enhancing data-driven reduced-order modeling with a preprocessing step in which the training data are filtered prior to training the reduced model.
 Filtering the data prior to training has a number of benefits for data-driven modeling: it attenuates (or even eliminates) wavenumber or frequency content that would otherwise be difficult or impossible to capture with the reduced model, it smoothens discontinuities in the data that would be difficult to capture in a low-dimensional representation, and it reduces noise in the data.
@@ -86,3 +87,4 @@ Our results indicate the potential benefits of filtering to reduce overfitting, 
 {Subspace-valued functions arise in a wide range of problems, including parametric reduced order modeling (PROM), parameter reduction, and subspace tracking. In PROM, each parameter point can be associated with a subspace, which is used for Petrov--Galerkin projections of large system matrices. Previous efforts to approximate such functions use interpolations on manifolds, which can be inaccurate and slow. To tackle this, we propose a novel Bayesian nonparametric model for subspace prediction: the Gaussian process subspace (GPS) model. This method is extrinsic and intrinsic at the same time: with multivariate Gaussian distributions on the Euclidean space, it induces a joint probability model on the Grassmann manifold, the set of fixed-dimensional subspaces. The GPS adopts a simple yet general correlation structure, and a principled approach for model selection. Its predictive distribution admits an analytical form, which allows for efficient subspace prediction over the parameter space. For PROM, the GPS provides a probabilistic prediction at a new parameter point that retains the accuracy of local reduced models, at a computational complexity that does not depend on system dimension, and thus is suitable for online computation. We give four numerical examples to compare our method to subspace interpolation, as well as two methods that interpolate local reduced models. Overall, GPS is the most data efficient, more computationally efficient than subspace interpolation, and gives smooth predictions with uncertainty quantification.}
 
 
+\end{addmargin}
