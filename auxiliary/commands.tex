@@ -4,13 +4,6 @@
 %% Session date
 \providecommand{\Date}{Date of session}
 
-%% Session as a section + toc
-\newcommand{\Section}[1]{\clearpage \vspace{1cm}\section*{#1}
-%\renewcommand{\Session}{#1}
-\addcontentsline{toc}{section}{ #1}
-}
-
-
 
 \raggedbottom
 %% Èimveè strani naj bo èimbolj polnih.
@@ -23,14 +16,8 @@
 \newcommand{\ProgramItem}[4]{
 {\setlength{\parindent}{0cm}
 #1\hspace{5pt} \textbf{#2} \ifx\@empty#3}  \else{{\hspace{5pt}#3}  \fi
-\hfill \ifthenelse{\isempty{#4}}{\vspace*{5pt}\\}{\hfill#4\vspace*{0pt}\\}
+\hfill \ifthenelse{\isempty{#4}}{\vspace*{5pt}\\}{\hfill#4\vspace*{0pt}\\}}
 }
-}
-
-\newcommand{\mininumber}{}
-
-\newcounter{talkcounter}
-
 
 \newcommand{\mini}[5]{
 \setlength{\parindent}{0cm}
@@ -57,10 +44,11 @@
   {\end{enumerate}}
 
 
+
 \newcommand{\abs}[4] % Nc-x  N=mini number; c=session number of mini N; x=speaker number
 {
 %\label{#1}  % Nc-x  N=mini number; c=session number of mini N; x=speaker number
-{\itshape Title:} #1
+{MS\,\themsid--Talk\,\inctalkid:} {\bfseries #1}
 
 \smallskip
 {\itshape Authors:}
@@ -89,7 +77,8 @@
 
 \newcommand{\miniabs}[3]{
 \setlength{\parindent}{0cm}
-{\bfseries #1}
+\resettalkid
+{\bfseries MS~\incmsid: #1}
 
 \smallskip
 #2

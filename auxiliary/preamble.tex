@@ -1,9 +1,13 @@
 \textheight 19.7 true cm
 
 \usepackage[dvips]{epsfig}
-\usepackage{tgbonum}
+%\usepackage{tgbonum}
 \renewcommand*\familydefault{\sfdefault}
+%\usepackage[cm]{sfmath}
+\usepackage{cmbright}
+
 \usepackage{microtype}
+\usepackage{scrextend}
 
 \usepackage{stix}
 \usepackage{amsmath}
@@ -48,3 +52,11 @@
 \textheight=    9.2in
 
 \usepackage[hyphenbreaks]{breakurl}
+
+
+\newcounter{msid}
+\newcommand{\incmsid}{\stepcounter{msid}\themsid}
+
+\newcounter{talkid}
+\newcommand{\inctalkid}{\stepcounter{talkid}\thetalkid}
+\newcommand{\resettalkid}{\setcounter{talkid}{0}}
