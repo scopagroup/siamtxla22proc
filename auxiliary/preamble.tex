@@ -5,7 +5,7 @@
 %\renewcommand*\familydefault{\sfdefault}
 %\usepackage[cm]{sfmath}
 \usepackage{cmbright}
-
+\usepackage{rotating}
 \usepackage{microtype}
 \usepackage{scrextend}
 \usepackage{amsmath}
@@ -17,7 +17,7 @@
 \usepackage{ragged2e}
 \usepackage{enumitem}
 \usepackage[cm]{sfmath}
-
+\usepackage{xcolor, colortbl}
 
 \usepackage{tikz}
 \usepackage{pgf}
@@ -29,6 +29,14 @@
 \newcommand{\ttx}[1]{\small\sf{#1}\normalsize\rm}
 \renewcommand\indexname{Index of Authors}
 \makeindex
+
+
+\definecolor{p1color}{RGB} {200,  16,  46} % red
+\definecolor{p2color}{RGB} {  0, 179, 136} % teal
+\definecolor{p3color}{RGB} {246, 190,   0} % gold
+\definecolor{p4color}{RGB} {136, 139, 141} % gray
+\definecolor{p5color}{RGB} {255, 249, 217} % cream
+\definecolor{p6color}{RGB} { 51, 102, 155} % ocean
 
 
 \usepackage{xifthen}% provides \isempty test
@@ -45,12 +53,12 @@
 
 \providecommand{\Email}[1]{\href{mailto:#1}{\nolinkurl{#1}}\\}
 
-\oddsidemargin  0.0in
+\oddsidemargin 0.0in
 \evensidemargin 0.0in
-\textwidth      6.7in
-\headheight     0.5in
-\topmargin    -1in % -0.75in
-\textheight=    9.2in
+\textwidth 6.7in
+\headheight 0.5in
+\topmargin -1in % -0.75in
+\textheight=9.2in
 
 \usepackage[hyphenbreaks]{breakurl}
 

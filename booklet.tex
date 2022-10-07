@@ -3,33 +3,40 @@
 \input auxiliary/preamble
 \input auxiliary/commands
 
+%\usepackage{fancyhdr}
 
 \begin{document}
 
 \input auxiliary/frontmatter
 
-\clearpage\pagestyle{plain}
-\centerline{\bfseries\LARGE  Program Summary}
+%\pagestyle{fancy} \fancyhf{}
+%\fancyhead[L]{\rightmark}
+%\clearpage\pagestyle{plain}
+%\fancyhead[R]{\thepage}
+%\renewcommand{\headrulewidth}{0pt}
+
+\centerline{\bfseries\Huge  Program Summary}
 \input program/progsum
 \cleardoublepage
 
-\centerline{\bfseries\LARGE  Program}
+\centerline{\bfseries\Huge  Program}
 \input program/progfri
 \input program/progsat
 \input program/progsun
+\input program/schedroommap
 \cleardoublepage
 
-\centerline{\bfseries\LARGE  Abstracts}
+\centerline{\bfseries\Huge  Abstracts}
 \input program/absplenary
 \cleardoublepage
 \input program/absmini
 \cleardoublepage
 
-\centerline{\bfseries\LARGE Tutorial}
+\centerline{\bfseries\Huge Tutorial}
 \input program/tutorial
 \cleardoublepage
 
-\centerline{\bfseries\LARGE  Poster Presentations}
+\centerline{\bfseries\Huge  Poster Presentations}
 \input program/posters
 
 \printindex
