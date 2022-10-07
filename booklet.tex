@@ -15,10 +15,12 @@
 %\fancyhead[R]{\thepage}
 %\renewcommand{\headrulewidth}{0pt}
 
+\refstepcounter{dummy}\label{programsummary}
 \centerline{\bfseries\Huge  Program Summary}
 \input program/progsum
 \cleardoublepage
 
+\refstepcounter{dummy}\label{program}
 \centerline{\bfseries\Huge  Program}
 \input program/progfri
 \input program/progsat
@@ -26,12 +28,14 @@
 \input program/schedroommap
 \cleardoublepage
 
+\refstepcounter{dummy}\label{abstracts}
 \centerline{\bfseries\Huge  Abstracts}
 \input program/absplenary
 \cleardoublepage
 \input program/absmini
 \cleardoublepage
 
+\refstepcounter{dummy}\label{tutorial}
 \centerline{\bfseries\Huge Tutorial}
 \input program/tutorial
 \cleardoublepage
