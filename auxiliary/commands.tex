@@ -21,27 +21,24 @@
 
 \newcommand{\mini}[5]{
 \setlength{\parindent}{0cm}
-{\bfseries #2} \ #3 \hfill p\pageref{#1}\\
-#4\\
+{\bfseries #2} \\ #3 \hfill p\pageref{#1}\\
+%#4\\
 #5
 \vspace{-0.7ex}
 }
 
 
 \newcommand{\talk}[3]{
-\setlength{\parindent}{0cm}
-{\itshape #1}\\%\hfill\mininumber-\arabic{talkcounter}\\
-\hspace*{9pt}#2 (#3)
+\textit{#1}. \hspace*{9pt}#2 (#3).
 }
 
 
 \newenvironment{talks}
-  {\begin{enumerate}
-    \setlength{\itemindent}{0.7em}
-    \setlength{\itemsep}{3pt}
-    \setlength{\parskip}{1pt}
-    }
-  {\end{enumerate}}
+{\begin{enumerate}[align=left,%
+itemindent=0em,leftmargin=3em,%
+label={(\alph*)},
+labelwidth=2em,itemsep=1pt]}
+{\end{enumerate}}
 
 
 
