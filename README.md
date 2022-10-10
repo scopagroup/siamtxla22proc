@@ -1,4 +1,4 @@
-# 5th Annual Meeting of the SIAM Texas-Louisiana Section
+# 5th Annual Meeting of the SIAM TX-LA Section
 ## November 4th - November 6th, 2022
 ### Hosted by the University of Houston
 
