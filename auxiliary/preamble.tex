@@ -1,10 +1,17 @@
 \textheight 19.7 true cm
 
+
+\usepackage[us,mmddyyyy]{datetime}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+
 \usepackage[dvips]{epsfig}
 \usepackage{cmbright}
 \usepackage[cm]{sfmath}
 \usepackage{adjustbox}
 \usepackage{pdflscape}
+\usepackage{lastpage}
 \usepackage{rotating}
 \usepackage{microtype}
 \usepackage{scrextend}
@@ -70,3 +77,9 @@ citecolor=p1color, linkcolor=p1color, urlcolor=p1color
 \newcounter{talkid}
 \newcommand{\inctalkid}{\stepcounter{talkid}\thetalkid}
 \newcommand{\resettalkid}{\setcounter{talkid}{0}}
+
+
+\renewcommand{\headrulewidth}{0pt} % no line in header area
+\fancyhead{}
+\fancyfoot{}
+\lfoot{\itshape\textcolor{gray}{Last updated on \today\ at \currenttime \hspace{1cm} page \thepage\ of \pageref{LastPage}}}
