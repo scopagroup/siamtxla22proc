@@ -104,8 +104,22 @@ Main contributors are (in the alphabetical order): Vo Khoa, Thuy Le and Loc Nguy
 \vspace{1.5ex}
 \abs
 {Active control of electromagnetic fields in layered media}
-{Chaoxian Qi$^{1,*}$, Neil Jerome A. Egarguin$^2$, Daniel Onofrei$^3$, Jiefu Chen$^1$}
+{Chaoxian Qi$^{1,*}$, Neil Jerome A. Egarguin$^2$, Daniel Onofrei$^3$ \& Jiefu Chen$^1$}
 {1: Department of Electrical and Computer Engineering, University of Houston, 2: Institute of Mathematical Sciences and Physics, University of the Philippines Los Ba\~nos, 3: Department of Mathematics, University of Houston}
 {In this talk, we consider the problem of actively manipulating electromagnetic (EM) fields in layered media. We aim to characterize an EM source given some predetermined desired field patterns in prescribed disjoint exterior regions. The source characterization problem is treated as an inverse problem that requires solving an ill-posed optimization problem. The optimal current distribution is sought after such that the EM source can approximate the given EM fields in exterior regions. This study considers the case when the source and control regions are in a layered media, which can model various applications, such as enhanced subsurface sensing, radio communication through the water-air interface, etc.}
+
+
+
+\vspace{1.5ex}
+\abs
+{Fast approximations of high-rank Hessians: Applications to seismic inversion and uncertainty quantification}
+{Mathew Hu$^{1,*}$, Nick Alger$^{1}$, Longfei Gao$^{1}$, Omar Ghattas$^{1}$ \& Rami Nammour$^{2}$}
+{1: Oden Institute, The University of Texas at Austin; 2: Total E\&P Research and Technology}
+{We propose a high-rank, computationally efficient method to approximate the normal operator (Hessian) arising in the linearized seismic reflection inversion problem in two spatial dimensions. Computing the exact Hessian is intractable for large-scale problems. In fact, performing the Hessian vector product requires solving PDE problems. Moreover, slow decay of the Hessian's eigenvalues means that low-rank approximation of the Hessian is costly.\\
+Our first approach is based on the locality of the Hessian impulses. The approximation includes two steps. First, apply Hessian on several particular vectors to draw information of impulses, and modify the impulses on boundaries if necessary. Second, build the operator with impulses and preset weight functions by a product-convolution scheme. Our second approach is based on the theory that the Hessian is a pseudodifferential operator under certain conditions. The approximation also includes two steps. First, apply the Hessian on a specific probing vector. Second, determine the symbol of the pseudodifferential operator by solving a smaller size optimization problem.\\
+Both approaches approximate the Hessian operator within a small number of applications.\\
+The approximation can be expressed as an H-matrix, which facilitates fast matrix computations, such as inversion, to obtain a preconditioner. We used the inverse of the approximation as a preconditioner in the second-order Newton-Krylov methods applied to full-waveform inversion (FWI). The preconditioner is highly desirable here because such preconditioners can reduce the required number of Krylov iterations within each Newton step, thereby reducing the computational cost.\\
+We validate the method on the Marmousi model with constant density. Numerical experiments demonstrate that the preconditioner can reduce the computational costs substantially.}
+
 
 \end{addmargin}
