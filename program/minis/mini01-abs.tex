@@ -122,4 +122,12 @@ The approximation can be expressed as an H-matrix, which facilitates fast matrix
 We validate the method on the Marmousi model with constant density. Numerical experiments demonstrate that the preconditioner can reduce the computational costs substantially.}
 
 
+
+\vspace{1.5ex}
+\abs
+{Matrix-free PSF approximation of ice-sheet Hessians}
+{Nick Alger$^{1,*}$, Tucker Hartland$^{2}$, Noemi Petra$^{2}$, Omar Ghattas$^{1}$}
+{1: Oden Institute, The University of Texas at Austin; 2: Applied Mathematics, University of California, Merced}
+{We present an efficient matrix-free point spread function (PSF) method for approximating operators that have locally supported non-negative integral kernels. The method uses impulses of the operator (computed at a collection of scattered points) and interpolates translated and scaled versions of these impulses to approximate entries of the integral kernel. Impulse responses are computed by applying the operator to a small number of Dirac combs associated with ``batches'' of point sources. By solving an ellipsoid packing problem, we choose as many point sources as possible per batch, while ensuring that the supports of the impulses within each batch do not overlap. Support ellipsoids are estimated a-priori via a new procedure that involves applying the operator to a small number of polynomial functions. The ability to rapidly evaluate kernel entries allows us to construct a hierarchical matrix (H-matrix) approximation of the operator. Fast H-matrix methods are then used to perform further matrix computations in nearly linear complexity. We illustrate our approach by applying the method to approximate the Hessian in an ice sheet flow PDE constrained inverse problem. Our results show that the method can accurately approximate the high rank ice sheet Hessian using only a small number of operator applies.}
+
 \end{addmargin}
