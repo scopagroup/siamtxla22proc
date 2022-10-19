@@ -26,31 +26,22 @@
 
 \vspace{1.5ex}
 \abs
-{Context-aware learning of hierarchies of low-fidelity models for multi-fidelity uncertainty quantification}
-{Ionut-Gabriel Farcas$^{1}$, Benjamin Peherstorfer$^{2}$, Tobias Neckel$^{3}$, Frank Jenko$^{4}$, Hans-Joachim Bungartz$^{3}$}
-{1: The University of Texas at Austin 2: New York University, 3: Technical University of Munich, 4: Max Planck Institute for Plasma Physics}
-{Multi-fidelity Monte Carlo methods leverage low-fidelity and surrogate models for variance
-reduction to make tractable uncertainty quantification even when numerically simulating the
-physical systems of interest is computationally expensive.
-In this presentation, we will introduce a context-aware multi-fidelity Monte Carlo method that
-optimally balances the costs of training low-fidelity models with the costs of Monte Carlo
-sampling.
-It generalizes the previously developed context-aware bi-fidelity Monte Carlo method
-to hierarchies of multiple models and to more general types of low-fidelity models.
-When training low-fidelity models, the proposed approach takes into account the context in which
-the learned low-fidelity models will be used, namely for variance reduction in Monte Carlo
-estimation, which allows it to find optimal trade-offs between training and sampling to minimize
-upper bounds of the mean-squared errors of the estimators for given computational budgets.
-This is in stark contrast to traditional surrogate modeling and model reduction techniques that
-construct low-fidelity models with the primary goal of approximating well the high-fidelity model
-outputs and typically ignore the context in which the learned models will be used in upstream
-tasks.
-The proposed context-aware multi-fidelity Monte Carlo method applies to hierarchies of a
-wide range of types of low-fidelity models such as sparse-grid and deep-network models.
-Numerical experiments with the gyrokinetic simulation code \textsc{Gene} show speedups of up to
-two orders of magnitude compared to standard estimators when quantifying uncertainties in small-scale fluctuations in confined plasma in fusion reactors.
-This corresponds to a runtime reduction from 72 days to about four hours on one node of the
-Lonestar6 supercomputer at the Texas Advanced Computing Center.}
+{Quantifying uncertainty at scale via structure-exploiting sparse grid approximation}
+{Ionut-Gabriel Farcas$^{1}$, Gabriele Merlo$^{1}$ and Frank Jenko$^{2}$}
+{1:The University of Texas at Austin, 2: Max Planck Institute for Plasma Physics}
+{In many fields of science, remarkably comprehensive and realistic computational models are available nowadays.
+
+Often, the respective numerical calculations call for the use of powerful supercomputers, and therefore only a limited number of cases can be investigated explicitly.
+
+This prevents straightforward approaches to important tasks like uncertainty quantification and sensitivity analysis.
+
+As it turns out, this challenge can be overcome via our recently developed sensitivity-driven dimension-adaptive sparse grid interpolation strategy.
+
+The method exploits, via adaptivity, the structure of the underlying model (such as lower intrinsic dimensionality and anisotropic coupling of the uncertain inputs) to enable efficient and accurate uncertainty quantification and sensitivity analysis at scale.
+
+We demonstrate the efficiency of our approach in the context of fusion research, in a realistic, computationally expensive scenario of turbulent transport in a magnetic confinement device with eight uncertain parameters and more than 264 million degrees of freedom in phase space, reducing the effort by at least two orders of magnitude.
+
+In addition, we show that our method intrinsically provides an accurate surrogate model that is nine orders of magnitude cheaper than the high-fidelity model.}
 
 
 \vspace{1.5ex}
