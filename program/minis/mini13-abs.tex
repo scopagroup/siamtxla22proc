@@ -6,6 +6,7 @@
 {Computational geosciences often involve complex nonlinear models that couple different physical processes. The study of such problems requires the development of robust and efficient numerical algorithms for high performance computing. In this mini symposium, we focus on numerical methods applied to phenomena arising in geosciences such as reservoir simulation, multiphase flow, water waves, etc. Speakers will present their recent research developments and applications in computational geosciences which includes numerical modeling, numerical analysis, and other computational aspects.}
 
 \begin{addmargin}[2em]{0em}
+%Session 1
 \vspace{2ex}
 \abs
 {Coupling and decoupling two-phase flows in superposed free flow and porous media}
@@ -39,14 +40,8 @@ Macroscopic models of such structures give fluid flow solutions with low regular
 {The so-called phase-field crystal (PFC) approach proposed by Elder et al. has been employed as a continuum model to describe the microstructure of solid-liquid systems such as the crystal growth in a supercooled liquid and provides an accurate way to model crystal dynamics, especially defect dynamics in atomic-scale resolution. However, it fails to distinguish between elastic relaxation and diffusion time scales. To overcome this difficulty and to incorporate both the faster elastic relaxation (e.g., in a rapid quasi-phononic time scale) and the slower mass diffusion, the modified phase-field crystal (MPFC) equation has recently been proposed by P. Stefanovic and co-authors. The MPFC is a generalized damped wave equation characterized through the presence of a second-order time derivative weighted by a positive parameter. In this talk, we present a continuous interior penalty finite element method for the sixth-order modified phase field crystal equation and  prove that the numerical scheme is uniquely solvable, unconditionally energy stable, and convergent. Finally, we close this talk with a numerical experiment demonstrating the performance of our proposed method.}
 
 
-\vspace{1.5ex}
-\abs
-{Multiscale Modeling for Clean Energy Transition}
-{Kyung Jae Lee and Jiahui You}
-{University of Houston}
-{Tackling climate change is one of the major challenges facing the U.S. today, and it has led to significant efforts to decarbonize energy use as a way to minimize greenhouse gas emissions. Major ways to achieve this energy transition involve electrifying transportation and increasing renewable energy use in electricity generation. As both electric vehicles and renewable solar–and–wind electricity generation rely on lithium–ion energy storage (i.e., lithium–ion batteries), the demand for lithium has greatly increased during the past decade; it is predicted to escalate along the market growth of electric vehicles and renewable power generation. To enhance and diversify the supply of lithium, we investigate petroleum source rock brines as a sustainable new source of lithium, given that water produced from organic–rich petroleum and natural gas source rocks has been recently revealed as a potential source of substantial amounts of lithium. This opens new pathways to address the natural petroleum source rock systems at various scales. Micro (pore)–scale modeling with Finite Volume Method (FVM), which describes fluid–rock interactions, enables the understanding of mineralization and dissolution of lithium. Macro (basin)–scale modeling with Integrated Finite Discrete Method (IFDM), which describes the release, transport, and accumulation of lithium in petroleum source rock brines, enables the identification of high concentration zones of lithium. Throughout developing the multiscale modeling approach for the new and promising application area, the computational geoscience profession will be able to progress toward a solution to a complex and expensive problem.}
 
-
+%Session 2
 \vspace{1.5ex}
 \abs
 {A sequential discontinuous Galerkin method for three-phase flows in porous media}
@@ -73,4 +68,15 @@ Macroscopic models of such structures give fluid flow solutions with low regular
 Error estimators that measure the spatial and temporal discretization error are employed to guide such an adaptivity. These estimators provide a global upper bound on the dual norm of the residual and the non-conformity of the numerical solution. Results from two-phase immiscible and three-phase miscible flow are presented to confirm solution accuracy and computational efficiency as compared to the uniformly fine timestep and fine spatial discretization solution. We also resolve the common issue of high frequency residuals in multigrid methods by local residual minimization and dynamic advection-diffusion coupling to achieve additional computational speedup and stability.
 
 Here we introduce a novel approach based on space-time to select an optimal set of snapshots for training  deep-learning ROM for two phase flow.. Snapshot selection is based on the jump in the number of local refinements between two consecutive snapshots provided by the space-time  geometric multigrid solver. Results from the deep-learning reduced-order model show that we can achieve faster convergence to the solution using only 65\% of the snapshots generated at fixed intervals. Computational time savings accrued while generating the snapshots and while using the optimized snapshots in the deep-learning model. Results generated using fixed time interval snapshots, and adaptively selected snapshots show similar accuracy.}
+
+
+
+%\vspace{1.5ex}
+%\abs
+%{}
+%{}
+%{}
+%{}
+
+
 \end{addmargin}
