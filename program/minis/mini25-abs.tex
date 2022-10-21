@@ -18,10 +18,23 @@
 
 \vspace{1.5ex}
 \abs
-{Guaranteed upper bound for the maximum speed\\ of propagation in the Riemann problem}
-{Bennet Clayton$^1$, Jean-Luc Guermond$^1$, Bojan Popov$^1$}
-{1: Department of Mathematics, Texas A\&M University, 3368 TAMU, College Station, TX 77843, USA.}
-{We will present a derivation of a guaranteed upper bound for the maximum speed of propagation in the Riemann solution for the Euler system of gas dynamics in Eulerian or Lagrangian frame with the Extended Noble-Abel Stiffened-Gas Equation of State. The novelty is that an accurate upper bound on the speed is given explicitly, hence no iterative solver is needed, and the algorithm can be used in both Eulerian and Lagrangian frame. Moreover, the upper bound can be used to define a first order invariant domain preserving method for the Euler system even when the equation of state is tabulated. 	This is a joint work with Bennet Clayton and Jean-Luc Guermond.}
+{Robust and efficient approximation of the compressible Navier-Stokes equations}
+{Matthias Maier}
+{1: Department of Mathematics, Texas A\&M University}
+{
+	Structure preserving numerical methods provide theoretical guarantees of
+	reliability for situations where ad-hoc stabilization techniques can fail.
+	In this talk we present a fully discrete approximation technique for the
+	compressible Navier-Stokes equations that is second-order accurate in
+	time and space and guaranteed to be invariant domain preserving. This
+	means the method maintains important physical invariants and is
+	guaranteed to be stable without the use of ad-hoc tuning parameters.
+
+	We discuss the underlying algebraic discretization technique based on
+	collocation and convex limiting, and briefly comment on a high-performance
+	implementation utilizing SIMD (single instruction multiple data)
+	vectorization and OpenMPI parallelization.
+}
 
 
 \vspace{1.5ex}
@@ -115,23 +128,10 @@ We provide a variety of numerical illustrations with a variety of equations of s
 
 \vspace{1.5ex}
 \abs
-{Robust and efficient approximation of the compressible Navier-Stokes equations}
-{Matthias Maier}
-{1: Department of Mathematics, Texas A\&M University}
-{
-	Structure preserving numerical methods provide theoretical guarantees of
-	reliability for situations where ad-hoc stabilization techniques can fail.
-	In this talk we present a fully discrete approximation technique for the
-	compressible Navier-Stokes equations that is second-order accurate in
-	time and space and guaranteed to be invariant domain preserving. This
-	means the method maintains important physical invariants and is
-	guaranteed to be stable without the use of ad-hoc tuning parameters.
-
-	We discuss the underlying algebraic discretization technique based on
-	collocation and convex limiting, and briefly comment on a high-performance
-	implementation utilizing SIMD (single instruction multiple data)
-	vectorization and OpenMPI parallelization.
-}
+{Guaranteed upper bound for the maximum speed\\ of propagation in the Riemann problem}
+{Bennet Clayton$^1$, Jean-Luc Guermond$^1$, Bojan Popov$^1$}
+{1: Department of Mathematics, Texas A\&M University, 3368 TAMU, College Station, TX 77843, USA.}
+{We will present a derivation of a guaranteed upper bound for the maximum speed of propagation in the Riemann solution for the Euler system of gas dynamics in Eulerian or Lagrangian frame with the Extended Noble-Abel Stiffened-Gas Equation of State. The novelty is that an accurate upper bound on the speed is given explicitly, hence no iterative solver is needed, and the algorithm can be used in both Eulerian and Lagrangian frame. Moreover, the upper bound can be used to define a first order invariant domain preserving method for the Euler system even when the equation of state is tabulated. 	This is a joint work with Bennet Clayton and Jean-Luc Guermond.}
 
 
 \vspace{1.5ex}
