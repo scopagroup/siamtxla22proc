@@ -1,4 +1,4 @@
-filename=booklet
+filename=roomschedule
 compile=latexmk 
 
 all:
